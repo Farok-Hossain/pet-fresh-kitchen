@@ -1,3 +1,4 @@
+import FaqArea from "@/components/home/FaqArea";
 import ContactUs from "../../components/home/ContactUs";
 import DogMeals from "../../components/home/DogMeals";
 import HeroSection from "../../components/home/HeroSection";
@@ -19,6 +20,7 @@ const Home = () => {
             <ServeMeal />
             <DogMeals />
             <Testimonial />
+            <FaqArea />
             <ContactUs />
             <Footer />
         </div>

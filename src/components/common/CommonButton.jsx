@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const CommonButton = ({
-    className,
-  text,
-  type,
-  linkUrl = "/",
-}) => {
+export const CommonButton = ({ className, text, type, linkUrl = "/" }) => {
   return (
     <Link to={linkUrl}>
       <button
