@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import OfferIcon from "../../assets/Icons/OfferIcon";
 
-const Card = ({ img, title, price, offer, icon }) => {
+const Card = ({ img, title, price, offer }) => {
   return (
     <div className="relative">
       <div className=" absolute right-[16px] top-[-7px] flex justify-end">

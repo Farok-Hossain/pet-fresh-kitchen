@@ -1,8 +1,6 @@
 import { CommonButton } from "../common/CommonButton";
 import CommonWrapper from "../common/CommonWrapper";
 import bgDogImag from "../../assets/images/bgDogFrame.jpg"
-import dogFood1 from "../../assets/images/dogFood1.png"
-import dogFood2 from "../../assets/images/dogFood2.png"
 
 
 const SampleSection = () => {

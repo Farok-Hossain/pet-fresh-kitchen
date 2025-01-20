@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const SectionTitle = ({ title, className }) => {
   return (
     <div className="mb-6">
@@ -6,6 +8,11 @@ const SectionTitle = ({ title, className }) => {
       </h3>
     </div>
   );
+};
+
+SectionTitle.propTypes = {
+  title: PropTypes.string,
+  className: PropTypes.any
 };
 
 export default SectionTitle;

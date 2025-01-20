@@ -1,4 +1,4 @@
-import RightArrow from '../../assets/Icons/RightArrow';
+
 import bgimg from '../../assets/images/herobgImg.jpg';
 import heroImg from "../../assets/images/heroImg.png"
 import { CommonButton } from '../common/CommonButton';

@@ -1,8 +1,6 @@
+import PropTypes from "prop-types";
 import BlueCard from "../../assets/Icons/BlueCard";
 import YellowCard from "../../assets/Icons/YellowCard";
-import testimonialImg1 from "../../assets/images/testImg4.png";
-import testimonialImg2 from "../../assets/images/testImg5.png";
-import testimonialImg3 from "../../assets/images/testImg6.png";
 
 const TestimonialCard = ({ name, image, review, reviewTitle }) => {
   return (
@@ -37,6 +35,13 @@ const TestimonialCard = ({ name, image, review, reviewTitle }) => {
       </div>
     </div>
   );
+};
+
+TestimonialCard.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.any,
+  review: PropTypes.string,
+  reviewTitle: PropTypes.string,
 };
 
 export default TestimonialCard;

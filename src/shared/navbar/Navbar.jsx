@@ -7,7 +7,7 @@ import DropDownIcon from "@/assets/Icons/DropDownIcon";
 const Navbar = () => {
   const navItems = [
     { title: "Home", path: "/" },
-    { title: "Recipes & Nutrition", path: "/nutrition" },
+    { title: "Recipes & Nutrition", path: "/recipe" },
     { title: "How it work", path: "/work" },
     { title: "From the Vet", path: "/vet" },
     { title: "About Us", path: "/about" },

@@ -1,4 +1,5 @@
 
+import PropTypes from "prop-types";
 import bgDogImag from "../../assets/images/bgDogFrame.jpg"
 
 const CommonBanner = ({title, description}) => {
@@ -28,4 +29,8 @@ const CommonBanner = ({title, description}) => {
     );
 };
 
+CommonBanner.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
 export default CommonBanner;

@@ -17,7 +17,8 @@ export default {
   			textGray: '#161C24',
   			textGraySm: '#454F5B',
   			bgBlack: '#27334B',
-  			offBg: '#124C5F'
+  			offBg: '#124C5F',
+			textColor: '#212121',
   		},
   		container: {
   			center: true,

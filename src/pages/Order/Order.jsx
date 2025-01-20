@@ -1,7 +1,4 @@
-import Card from "@/components/common/Card";
-import img1 from "../../assets/images/cardImg1.png";
-import img2 from "../../assets/images/cardImg2.png";
-import img3 from "../../assets/images/cardImg3.png";
+
 import CommonWrapper from "@/components/common/CommonWrapper";
 import OrderCard from "@/components/Orders/OrderCard";
 

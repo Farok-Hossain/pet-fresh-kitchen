@@ -1,4 +1,6 @@
 
+import PropTypes from "prop-types";
+
 const CommonWrapper = ({ children, version = "", noContainer }) => {
     return (
       <div className={`${noContainer ? `` : `container`}`}>
@@ -9,5 +11,11 @@ const CommonWrapper = ({ children, version = "", noContainer }) => {
         </div>
       </div>
     );
+  };
+
+  CommonWrapper.propTypes = {
+    children: PropTypes.any,
+    version: PropTypes.any,
+    noContainer: PropTypes.any
   };
   export default CommonWrapper;

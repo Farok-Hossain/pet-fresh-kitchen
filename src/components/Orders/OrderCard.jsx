@@ -3,7 +3,7 @@ import img2 from "../../assets/images/cardImg2.png";
 import img3 from "../../assets/images/cardImg3.png";
 import Card from "../common/Card";
 
-const OrderCard = ({heading}) => {
+const OrderCard = () => {
   const foodItems = [
     {
       id: 1,

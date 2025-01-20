@@ -1,3 +1,5 @@
+;
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export const CommonButton = ({ className, text, type, linkUrl = "/", icon, icon2 }) => {
@@ -12,4 +14,13 @@ export const CommonButton = ({ className, text, type, linkUrl = "/", icon, icon2
       </button>
     </Link>
   );
+};
+
+CommonButton.propTypes = {
+  className: PropTypes.any,
+  text: PropTypes.string,
+  type: PropTypes.string,
+  linkUrl: PropTypes.any,
+  icon: PropTypes.any,
+  icon2: PropTypes.any
 };
