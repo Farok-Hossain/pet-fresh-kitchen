@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { CommonButton } from "../../components/common/CommonButton";
-import CardIcons from "../../assets/Icons/CardIcons";
+import ProfileIcon from "@/assets/Icons/ProfileIcon";
+import DropDownIcon from "@/assets/Icons/DropDownIcon";
 
 const Navbar = () => {
   const navItems = [
@@ -10,10 +11,11 @@ const Navbar = () => {
     { title: "How it work", path: "/work" },
     { title: "From the Vet", path: "/vet" },
     { title: "About Us", path: "/about" },
-    { title: "Order Now", path: "/order" },
+    { title: "Order Now", path: "/orders" },
   ];
   return (
-    <div className="container flex justify-between items-center py-[10px]">
+    <div className="w-full bg-white sticky top-0 ">
+      <div className="container flex justify-between items-center py-[10px] ">
       {/* image  */}
       <div>
         <img src={logo} alt="logoImg" />
@@ -37,9 +39,10 @@ const Navbar = () => {
 
       {/* button  */}
       <div>
-        {/* <CardIcons/> */}
-        <CommonButton className="rounded-[40px]" text="Account" />
+        <CommonButton icon={<ProfileIcon />} className="rounded-[40px]" text="Account" icon2={<DropDownIcon />}>
+        </CommonButton>
       </div>
+    </div>
     </div>
   );
 };

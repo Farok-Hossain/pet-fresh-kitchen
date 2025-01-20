@@ -8,34 +8,34 @@ import {
 const FaqArea = () => {
     const faqs = [
         {
-          question: "What is your return policy?",
+          question: "Q. What type of dog food is best for my pet?",
           answer:
-            "We offer a 30-day return policy. Items must be in their original condition with all tags attached. Please visit our returns page for more details.",
+            "Yes, start with a free 7 day trial of advanced data rooms and explore the platform’s features and benefits. After that, you can sign up on your own.",
         },
         {
-          question: "How can I track my order?",
+          question: "Q. How can I choose the right food for my dog based on their age, breed, and health needs?",
           answer:
-            "You can track your order using the tracking link provided in your confirmation email or by visiting our 'Track My Order' page and entering your order ID.",
+            "Yes, start with a free 7 day trial of advanced data rooms and explore the platform’s features and benefits. After that, you can sign up on your own.",
         },
         {
-          question: "Do you offer international shipping?",
+          question: "Q. How do wet and dry dog food compare, and which one should I choose for my pet?",
           answer:
-            "Yes, we ship internationally to select countries. Shipping fees and delivery times vary based on your location. Please check our shipping policy for details.",
+            "Yes, start with a free 7 day trial of advanced data rooms and explore the platform’s features and benefits. After that, you can sign up on your own.",
         },
         {
-          question: "What payment methods do you accept?",
+          question: "Q. Are supplements necessary for my dog, and how do I select the right ones",
           answer:
-            "We accept all major credit cards, PayPal, Apple Pay, Google Pay, and other secure payment options.",
+            "Yes, start with a free 7 day trial of advanced data rooms and explore the platform’s features and benefits. After that, you can sign up on your own.",
         },
         {
-          question: "How do I contact customer support?",
+          question: "Q. What is your return policy for pet food?",
           answer:
-            "You can contact our customer support team via email at support@example.com or call us at +123-456-7890 during business hours.",
+            "Yes, start with a free 7 day trial of advanced data rooms and explore the platform’s features and benefits. After that, you can sign up on your own.",
         },
         {
-          question: "Can I modify or cancel my order after placing it?",
+          question: "Q. How can I track my order?",
           answer:
-            "Orders can be modified or canceled within 1 hour of placing them. Please contact our support team immediately for assistance.",
+            "Yes, start with a free 7 day trial of advanced data rooms and explore the platform’s features and benefits. After that, you can sign up on your own.",
         },
 
     ]

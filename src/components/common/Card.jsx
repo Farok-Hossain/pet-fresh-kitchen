@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import OfferIcon from "../../assets/Icons/OfferIcon";
 
-const Card = ({ img, title, price, offer }) => {
+const Card = ({ img, title, price, offer, icon }) => {
   return (
     <div className="relative">
       <div className=" absolute right-[16px] top-[-7px] flex justify-end">
@@ -29,6 +30,13 @@ const Card = ({ img, title, price, offer }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  img: PropTypes.any,
+  title: PropTypes.string,
+  price: PropTypes.number,
+  offer: PropTypes.number,
 };
 
 export default Card;

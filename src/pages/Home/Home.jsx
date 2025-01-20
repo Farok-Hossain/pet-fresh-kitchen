@@ -7,7 +7,6 @@ import SampleSection from "../../components/home/SampleSection";
 import ServeMeal from "../../components/home/ServeMeal";
 import Testimonial from "../../components/home/Testimonial";
 import WhyChooseUs from "../../components/home/WhyChooseUs";
-import Footer from "../../shared/footer/Footer";
 
 
 const Home = () => {
@@ -22,7 +21,6 @@ const Home = () => {
             <Testimonial />
             <FaqArea />
             <ContactUs />
-            <Footer />
         </div>
     );
 };
