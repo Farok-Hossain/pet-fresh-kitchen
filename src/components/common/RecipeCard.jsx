@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const RecipeCard = ({ img, title, description }) => {
   return (
     <div>
@@ -11,9 +13,13 @@ const RecipeCard = ({ img, title, description }) => {
         <h3 className="text-xl text-textColor leading-[30px] ml-[30px] mb-3">
           {description}
         </h3>
-        <div className="border border-primaryOrange rounded-[6px] text-center mx-5">
-            <button className="py-3 text-center text-[16px text-primaryOrange ">View details</button>
-        </div>
+        <Link to="/details">
+          <div className="border border-primaryOrange rounded-[6px] text-center mx-5">
+            <button className="py-3 text-center text-[16px text-primaryOrange ">
+              View details
+            </button>
+          </div>
+        </Link>
       </div>
     </div>
   );

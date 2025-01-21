@@ -1,36 +1,67 @@
-
 import PropTypes from "prop-types";
-import bgDogImag from "../../assets/images/bgDogFrame.jpg"
 
-const CommonBanner = ({title, description}) => {
-    return (
-        <div className="flex justify-center items-center" 
-                               style={{ 
-                                   backgroundImage: `url(${bgDogImag})`, 
-                                   height: "720px", 
-                                   backgroundSize: 'cover', 
-                                   backgroundPosition: 'center', 
-                                   backgroundRepeat: 'no-repeat' 
-                               }}
-                           >
-                               {/* Content goes here */}
-                             <div className=" flex justify-between items-center">
-                             <div className="flex flex-col place-items-center justify-center">
-                                   <h2 className=" text-[64px] text-center text-white leading-[80px] font-semibold max-w-[800px] mb-5 ">{title}</h2>
-                                   <p className="text-lg text-center font-normal leading-7 text-white max-w-[745px] mb-8">{description}</p>
-                               </div>
-                   
-                               {/* image here  */}
-                               <div>
-                                   {/* <img src={dogFood1} alt="" /> */}
-                               </div>
-                             </div>
-                           </div>
-    );
+const CommonBanner = ({
+  title,
+  description,
+  perfectMeal,
+  girlWithDog,
+  buttonText,
+}) => {
+  return (
+    <div
+      className="relative bg-[#F7830D] text-white flex items-center justify-center py-[200px] overflow-hidden w-full"
+      style={{
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Left Image */}
+      {perfectMeal && (
+        <div className="absolute top-0 left-0 h-full">
+          <img
+            src={perfectMeal}
+            alt="Perfect Meal"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+
+      {/* Title and Description */}
+      <div className="relative z-10 text-center px-4">
+        <h2 className="max-w-[924px] mx-auto text-[32px] lg:text-[48px] xl:text-[64px] leading-[80px] font-semibold mb-4">
+          {title}
+        </h2>
+        <p className="text-lg lg:text-xl leading-relaxed max-w-[798px] mx-auto text-center">
+          {description}
+        </p>
+        {buttonText && (
+          <button className="bg-white text-primaryOrange px-8 py-[14px] rounded mt-8 ">
+            {buttonText}
+          </button>
+        )}
+      </div>
+
+      {/* Right Image */}
+      {girlWithDog && (
+        <div className="absolute top-0 right-0 h-full">
+          <img
+            src={girlWithDog}
+            alt="Girl with Dog"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+    </div>
+  );
 };
 
 CommonBanner.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
+  perfectMeal: PropTypes.any,
+  girlWithDog: PropTypes.any,
+  buttonText: PropTypes.string,
 };
+
 export default CommonBanner;

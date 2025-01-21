@@ -14,7 +14,7 @@ const Navbar = () => {
     { title: "Order Now", path: "/orders" },
   ];
   return (
-    <div className="w-full bg-white sticky top-0 ">
+    <div className="w-full bg-white sticky top-0 z-50 ">
       <div className="container flex justify-between items-center py-[10px] ">
       {/* image  */}
       <div>

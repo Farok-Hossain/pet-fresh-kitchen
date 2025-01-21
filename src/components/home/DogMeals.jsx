@@ -5,7 +5,7 @@ import SectionTitle from "../common/SectionTitle";
 
 const DogMeals = () => {
   return (
-    <div className="relative">
+    <div className="relative mt-[100px] mb-[100px]">
       <div className="relative">
         <CurveIcon></CurveIcon>
         <div className="container flex items-center gap-[59px]">

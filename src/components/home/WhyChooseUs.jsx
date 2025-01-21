@@ -3,6 +3,7 @@ import BalancedIcon from "../../assets/Icons/BalancedIcon";
 import IngredientsIcon from "../../assets/Icons/IngredientsIcon";
 import DigestiveIcon from "../../assets/Icons/DigestiveIcon";
 import AdditivesIcon from "../../assets/Icons/AdditivesIcon";
+import PetFreshKitchen from "../common/PetFreshKitchen";
 
 const WhyChooseUs = () => {
 
@@ -39,15 +40,8 @@ const WhyChooseUs = () => {
       <div className="grid grid-cols-2 gap-x-32 gap-y-10">
         {
             chooseItems.map((item, index) => (
-                <div className="flex gap-5 mb-10 " key={index}>
-                    <div>
-                    <p>{item.icon}</p>
-                    </div>
-                    <div>
-                        <h3 className="max-w-[588px] h-12 text-textGray font-semibold text-[32px] mb-[15px]">{item.title}</h3>
-                        <p className="max-w-[588px] max-h-[84px] text-textGraySm font-normal leading-7 text-[22px]">{item.description}</p>
-                    </div>
-                </div>
+              <PetFreshKitchen key={index} icon={item.icon} title={item.title} description={item.description}>
+              </PetFreshKitchen>
             ) )
         }
       </div>
