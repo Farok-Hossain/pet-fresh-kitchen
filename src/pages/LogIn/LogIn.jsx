@@ -1,12 +1,14 @@
 import loginBg from "../../assets/images/loginBg.jpg";
 import logo from "../../assets/images/logo.png"
+import { Checkbox } from "@/components/ui/checkbox"
+
 
 const Login = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: `url(${loginBg})` }}>
       <div className="absolute inset-0 bg-black opacity-70"></div>
       <div className="bg-white w-[872px] h-[782px]  rounded-lg shadow-lg p-8  relative z-10">
-        <div>
+        <div className="flex justify-center">
             <img src={logo} alt="" />
         </div>
         <h2 className="text-[40px] font-semibold text-textGray text-center leading-[53px]">Sign In</h2>
@@ -32,12 +34,25 @@ const Login = () => {
               className="w-full h-[52px] border rounded-md pl-6 mt-3"
             />
           </div>
+
+          <div className="flex justify-between">
+          <div className="flex gap-[11px] items-center mt-[10px]">
+          <Checkbox  />
+          <h3 className="text-[#5A5C5F]">Remember me</h3>
+          </div>
+          <div className="mt-[10px]">
+            <h3 className="text-[16px] text-[#5A5C5F]">Forgot password ?</h3>
+          </div>
+          </div>
+
           <button
             type="submit"
             className="w-full bg-primaryOrange text-white text-[18px] font-semibold rounded-md mt-10 py-[15px]"
           >
             Sign In
           </button>
+
+          <h3 className="text-xl text-center mt-10 mb-[74px] text-[#5A5C5F]">Don’t have an account? <span className="text-primaryOrange">Sign Up</span></h3>
         </form>
       </div>
     </div>
