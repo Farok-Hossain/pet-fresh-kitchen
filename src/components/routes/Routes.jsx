@@ -7,43 +7,71 @@ import Recipes from "@/pages/RecipeNutrition/Recipes";
 import RecipeDetails from "@/pages/RecipeDetails/RecipeDetailsPage";
 import Vet from "@/pages/Vet/Vet";
 import Work from "@/pages/Work/Work";
+import Error from "@/pages/Error/Error";
+import SidebarLayout from "../layout/SidebarLayout";
+import Profile from "@/pages/SidebarPages/Profile";
+import OrderHistory from "@/pages/SidebarPages/OrderHistory";
+import SignIn from "@/pages/SignIn/SignIn";
+import LogIn from "@/pages/LogIn/LogIn";
 
 export const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <MainLayout></MainLayout>,
+    errorElement: <Error />,
+    children: [
+      {
         path: "/",
-        element: <MainLayout></MainLayout>,
-        children: [
-            {
-                path: "/",
-                element: <Home></Home>
-            },
-            {
-                path:"/recipe",
-                element: <Recipes />
-            },
-            {
-                path: "/orders",
-                element: <Order />
-            },
-            
-            {
-                path: "/about",
-                element: <About />
-            }, 
-            {
-                path:"/details",
-                element: <RecipeDetails />
-            }, 
-            {
-                path:"/vet",
-                element: <Vet />
-            },
-            {
-                path:"/work",
-                element: <Work />
-            }
+        element: <Home></Home>,
+      },
+      {
+        path: "/recipe",
+        element: <Recipes />,
+      },
+      {
+        path: "/orders",
+        element: <Order />,
+      },
 
-            
-        ]
-    }
-])
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/details",
+        element: <RecipeDetails />,
+      },
+      {
+        path: "/vet",
+        element: <Vet />,
+      },
+      {
+        path: "/work",
+        element: <Work />,
+      },
+    ],
+  },
+
+  {
+    path: "/sidebar",
+    element: <SidebarLayout></SidebarLayout>,
+    children: [
+      {
+        path: "/sidebar",
+        element: <Profile />,
+      },
+      {
+        path: "history",
+        element: <OrderHistory />
+      }
+    ],
+  },
+  {
+    path:"/signin",
+    element: <SignIn />
+  },
+  {
+    path: "/login",
+    element: <LogIn />
+  }
+]);

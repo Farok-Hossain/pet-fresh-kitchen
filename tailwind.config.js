@@ -11,6 +11,7 @@ export default {
   		colors: {
   			primaryGreen: '#006850',
   			primaryOrange: '#F7830D',
+			secondaryOrange: '#F7830D1A',
   			textPrimary: '#011510',
   			textSecondary: '#080808',
   			textBlack: '#2E2E2E',

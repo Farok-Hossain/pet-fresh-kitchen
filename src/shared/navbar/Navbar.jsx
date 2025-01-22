@@ -39,7 +39,7 @@ const Navbar = () => {
 
       {/* button  */}
       <div>
-        <CommonButton icon={<ProfileIcon />} className="rounded-[40px]" text="Account" icon2={<DropDownIcon />}>
+        <CommonButton linkUrl="/sidebar" icon={<ProfileIcon />} className="rounded-[40px]" text="Account" icon2={<DropDownIcon />}>
         </CommonButton>
       </div>
     </div>
