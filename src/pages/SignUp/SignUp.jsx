@@ -90,7 +90,7 @@ const SignUp = () => {
               <input
                 id="petName"
                 placeholder="Tome"
-                className=" px-6 py-[11px] border-[1px] text-[#666666] focus:outline-none rounded-xl text-[16px] "
+                className=" px-6 py-[11px] border-[1px] text-[#666666] focus:outline-none rounded-md text-[16px] "
                 type="text"
                 {...register("petName")}
               />
@@ -108,7 +108,7 @@ const SignUp = () => {
               </label>
               <input
                 id="date"
-                className=" px-6 py-[11px] border-[1px] text-[#666666] focus:outline-none rounded-xl text-[16px] "
+                className=" px-6 py-[11px] border-[1px] text-[#666666] focus:outline-none rounded-md text-[16px] "
                 type="date"
                 {...register("date")}
               />

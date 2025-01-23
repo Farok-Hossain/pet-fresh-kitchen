@@ -13,6 +13,7 @@ import Profile from "@/pages/SidebarPages/Profile";
 import OrderHistory from "@/pages/SidebarPages/OrderHistory";
 import SignIn from "@/pages/SignIn/SignIn";
 import SignUp from "@/pages/SignUp/SignUp";
+import ProductDetails from "@/pages/ProductDetails/ProductDetails";
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
         path: "/work",
         element: <Work />,
       },
+      {
+        path:"/productdetails",
+        element: <ProductDetails />
+      }
     ],
   },
 
