@@ -12,7 +12,7 @@ import SidebarLayout from "../layout/SidebarLayout";
 import Profile from "@/pages/SidebarPages/Profile";
 import OrderHistory from "@/pages/SidebarPages/OrderHistory";
 import SignIn from "@/pages/SignIn/SignIn";
-import LogIn from "@/pages/LogIn/LogIn";
+import SignUp from "@/pages/SignUp/SignUp";
 
 export const router = createBrowserRouter([
   {
@@ -71,7 +71,7 @@ export const router = createBrowserRouter([
     element: <SignIn />
   },
   {
-    path: "/login",
-    element: <LogIn />
+    path: "/signup",
+    element: <SignUp />
   }
 ]);
