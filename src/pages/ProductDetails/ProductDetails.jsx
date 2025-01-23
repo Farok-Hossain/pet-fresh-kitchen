@@ -121,6 +121,7 @@ const ProductDetails = () => {
         weightData={weightData}
         dogType={dogType}
         clickedButton={clickedButton}
+        category="Vegetarian"
       />
     </div>
   );

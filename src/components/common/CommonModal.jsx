@@ -13,6 +13,8 @@ const CommonModal = ({
   weightData,
   clickedButton,
   dogType,
+  category,
+  button
 }) => {
   const [count, setCount] = useState(1);
 
@@ -29,7 +31,7 @@ const CommonModal = ({
       onClick={handleOutsideClick}
       className="fixed inset-0 bg-[#212121CC] flex justify-center items-center z-50"
     >
-      <div className="relative bg-white p-6 rounded-lg shadow-lg min-w-[1260px]">
+      <div className="relative bg-white py-[150px] rounded-lg shadow-lg min-w-[1260px]">
         <div className="absolute right-4 top-0">
           <button
             onClick={onClose}
@@ -70,7 +72,7 @@ const CommonModal = ({
               <div className="flex text-[18px] font-medium text-textGraySm gap-[10px]">
                 {dogType.map((item) => (
                   <div
-                    className="flex px-[18px] py-[8px] mt-[10px] gap-[10px]"
+                    className="flex py-[8px] mt-[10px] gap-[10px]"
                     key={item.id}
                   >
                     <Checkbox className="rounded-full h-7 w-7" />
@@ -78,6 +80,9 @@ const CommonModal = ({
                   </div>
                 ))}
               </div>
+            </div>
+            <div>
+                <h3 className="text-textGray text-[16px] font-medium">Category: <span className="text-[#858585] font-normal">{category}</span></h3>
             </div>
 
             <div className="flex gap-[14px]">
@@ -93,6 +98,13 @@ const CommonModal = ({
                   {clickedButton === "buy" && (
                     <button className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
                       Buy Now
+                    </button>
+                  )}
+                </div>
+                <div className="flex">
+                  {clickedButton === "sample" && (
+                    <button className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
+                      Get Free Sample
                     </button>
                   )}
                 </div>
@@ -126,6 +138,8 @@ CommonModal.propTypes = {
   weightData: PropTypes.array,
   clickedButton: PropTypes.any,
   dogType: PropTypes.array,
+  category: PropTypes.string,
+  button: PropTypes.any,
 };
 
 export default CommonModal;
