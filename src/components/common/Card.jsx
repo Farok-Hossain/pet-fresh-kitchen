@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import OfferIcon from "../../assets/Icons/OfferIcon";
+import { Link } from "react-router-dom";
 
 const Card = ({ img, title, price, offer }) => {
   return (
@@ -23,9 +24,11 @@ const Card = ({ img, title, price, offer }) => {
         </p>
 
         <div className="mt-[7px] mb-7 flex justify-center">
+          <Link to="/productdetails">
           <button className="border border-[#F7830D] py-[7px] px-5 rounded-3xl text-sm font-semibold text-[#124C5F]">
             Product details
           </button>
+          </Link>
         </div>
       </div>
     </div>

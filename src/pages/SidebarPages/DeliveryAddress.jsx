@@ -53,31 +53,29 @@ const DeliveryAddress = () => {
             <div className="flex mt-4 gap-[15px]">
                 
               <div>
-                <CommonSelectField options={country} label="Country / Region" />
+                <CommonSelectField width="w-[302px]" options={country} label="Country / Region" />
               </div>
 
               <div>
-                <CommonSelectField options={states} label="States" />
+                <CommonSelectField width="w-[302px]" options={states} label="States" />
               </div>
 
-              <div>
                 {/* Street Address */}
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <label
                 htmlFor="Zip Code"
-                className="max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px]"
+                className=" text-textGray text-[14px] font-normal leading-[21px] mb-[6px]"
               >
                 Zip Code
               </label>
               <input
                 id="address"
                 placeholder="1425 park"
-                className="w-[302px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px]"
+                className=" w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px]"
                 {...register("address")}
               />
               {errors.name && <p className="error">{errors.address.message}</p>}
             </div>
-              </div>
               
             </div>
 
