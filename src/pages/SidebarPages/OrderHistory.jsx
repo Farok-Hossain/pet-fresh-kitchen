@@ -1,4 +1,4 @@
-import CommonPagination from "@/components/common/CommonPagination";
+// import CommonPagination from "@/components/common/CommonPagination";
 
 const OrderHistory = () => {
   const data = [

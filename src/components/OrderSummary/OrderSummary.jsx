@@ -1,4 +1,6 @@
 import productImg from "../../assets/images/productImg.png";
+import { Label } from "@/components/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 const OrderSummary = () => {
   return (
@@ -38,12 +40,17 @@ const OrderSummary = () => {
       </div>
 
       <h3 className="text-xl font-medium mt-6 mb-4">Payment Method</h3>
-      <div>
-        <h3 className="text-[14px] text-[#4D4D4D]">Cash on Delivery</h3>
-      </div>
-      <div className="mt-[10px] mb-6">
-        <h3 className="text-[14px] text-[#4D4D4D]">Stripe</h3>
-      </div>
+      <RadioGroup defaultValue="option-one">
+  <div className="flex items-center space-x-2">
+    <RadioGroupItem value="option-one" id="option-one" />
+    <Label htmlFor="option-one" className="text-[14px] text-[#4D4D4D]">Cash on Delivery</Label>
+  </div>
+  <div className="flex items-center space-x-2 mb-6">
+    <RadioGroupItem value="option-two" id="option-two" />
+    <Label htmlFor="option-two" className="text-[14px] text-[#4D4D4D]">Stripe</Label>
+  </div>
+</RadioGroup>
+
       <button className="bg-primaryOrange text-white py-4 w-full  font-bold rounded-[43px]">Place Order</button>
     </div>
   );

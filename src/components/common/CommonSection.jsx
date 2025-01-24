@@ -5,11 +5,21 @@ const CommonSection = ({
   reverse,
   title,
   description,
-  extraText,
-  extraText2,
-  bonousText,
+  boldList1,
+  boldList2,
+  boldList3,
   img,
 }) => {
+  const renderListItem = (item) => {
+    if (!item) return null;
+    return (
+      <li className="text-textGray text-2xl font-normal mb-2">
+        {item.normal && <span>{item.normal} </span>}
+        {item.bold && <span className="font-bold">{item.bold}</span>}
+      </li>
+    );
+  };
+
   return (
     <CommonWrapper>
       <div
@@ -22,15 +32,13 @@ const CommonSection = ({
             {title}
           </h3>
           <p className="text-textGray text-2xl font-normal">{description}</p>
-          <li className="text-textGray text-2xl font-normal mb-8">
-            {extraText}
-          </li>
-          <li className="text-textGray text-2xl font-normal mb-8">
-            {extraText2}
-          </li>
-          <p className="text-textGray text-2xl font-normal">{bonousText}</p>
+          <ul className="mt-4">
+            {renderListItem(boldList1)}
+            {renderListItem(boldList2)}
+            {renderListItem(boldList3)}
+          </ul>
         </div>
-        {/* image  */}
+        {/* image */}
         <div className="min-w-[642px]  min-h-[452px] rounded-[20px]">
           <img className="" src={img} alt="" />
         </div>
@@ -43,9 +51,18 @@ CommonSection.propTypes = {
   title: PropTypes.string,
   reverse: PropTypes.any,
   description: PropTypes.string,
-  extraText: PropTypes.string,
-  extraText2: PropTypes.string,
-  bonousText: PropTypes.string,
+  boldList1: PropTypes.shape({
+    normal: PropTypes.string,
+    bold: PropTypes.string,
+  }),
+  boldList2: PropTypes.shape({
+    normal: PropTypes.string,
+    bold: PropTypes.string,
+  }),
+  boldList3: PropTypes.shape({
+    normal: PropTypes.string,
+    bold: PropTypes.string,
+  }),
   img: PropTypes.any,
 };
 

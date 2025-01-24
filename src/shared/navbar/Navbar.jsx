@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.png";
 import { CommonButton } from "../../components/common/CommonButton";
 import ProfileIcon from "@/assets/Icons/ProfileIcon";
 import DropDownIcon from "@/assets/Icons/DropDownIcon";
+import CardIcons from "@/assets/Icons/CardIcons";
 
 const Navbar = () => {
   const navItems = [
@@ -27,7 +28,7 @@ const Navbar = () => {
           <div key={index}>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "font-bold text-primaryOrange text-xl" : "text-textBlack text-xl"
+                isActive ? "font-semibold text-primaryOrange text-xl" : "text-textBlack text-xl"
               }
               to={item.path}
             >
@@ -37,11 +38,15 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* button  */}
+       <div className="flex gap-6 items-center">
+       <CardIcons />
+       {/* button  */}
       <div>
         <CommonButton linkUrl="/sidebar" icon={<ProfileIcon />} className="rounded-[40px] text-white" text="Account" icon2={<DropDownIcon />}>
         </CommonButton>
       </div>
+       </div>
+      
     </div>
     </div>
   );
