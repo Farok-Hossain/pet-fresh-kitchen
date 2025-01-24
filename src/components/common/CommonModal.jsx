@@ -4,6 +4,7 @@ import CrossIcon from "@/assets/Icons/CrossIcon";
 import { useState } from "react";
 import MinusIcon from "@/assets/Icons/MinusIcon";
 import PlusIcon from "@/assets/Icons/PlusIcon";
+import { Link } from "react-router-dom";
 
 const CommonModal = ({
   isOpen,
@@ -14,7 +15,7 @@ const CommonModal = ({
   clickedButton,
   dogType,
   category,
-  button
+  button,
 }) => {
   const [count, setCount] = useState(1);
 
@@ -82,46 +83,69 @@ const CommonModal = ({
               </div>
             </div>
             <div>
-                <h3 className="text-textGray text-[16px] font-medium">Category: <span className="text-[#858585] font-normal">{category}</span></h3>
+              <h3 className="text-textGray text-[16px] font-medium">
+                Category:{" "}
+                <span className="text-[#858585] font-normal">{category}</span>
+              </h3>
             </div>
 
             <div className="flex gap-[14px]">
               <div>
                 <div className="flex">
                   {clickedButton === "cart" && (
+                   <Link to="/addcart">
                     <button className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
                       Add to Cart
-                    </button>
+                    </button></Link>
                   )}
                 </div>
                 <div className="flex">
                   {clickedButton === "buy" && (
+                    <Link to="/checkout">
                     <button className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
                       Buy Now
                     </button>
+                    </Link>
                   )}
                 </div>
                 <div className="flex">
                   {clickedButton === "sample" && (
-                    <button className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
+                    <Link to="/orders">
+                    <button  className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
                       Get Free Sample
-                    </button>
+                    </button></Link>
                   )}
                 </div>
               </div>
-              <div className="border-[1px] rounded-[10px] border-[#E2E2E2] flex px-3">
-                <button className="" onClick={() => {if(count > 0) {setCount((count) => (count - 1))}}}>
-                  <div className="bg-primaryOrange text-white w-12 h-12 rounded-full flex justify-center items-center">
-                    <MinusIcon />
+
+              {/* Count section  */}
+              {clickedButton !== "sample" && (
+                <div className="border-[1px] rounded-[10px] border-[#E2E2E2] flex px-3">
+                  <button
+                    className=""
+                    onClick={() => {
+                      if (count > 0) {
+                        setCount((count) => count - 1);
+                      }
+                    }}
+                  >
+                    <div className="bg-primaryOrange text-white w-12 h-12 rounded-full flex justify-center items-center">
+                      <MinusIcon />
+                    </div>
+                  </button>
+                  <div className="px-[35px] flex justify-center items-center">
+                    {count}
                   </div>
-                </button>
-                <div className="px-[35px] flex justify-center items-center">{count}</div>
-                <button className="" onClick={() => setCount((count) => count + 1)}>
-                  <div className="bg-primaryOrange text-white w-12 h-12 rounded-full flex justify-center items-center">
-                    <PlusIcon />
-                  </div>
-                </button>
-              </div>
+                  <button
+                    className=""
+                    onClick={() => setCount((count) => count + 1)}
+                  >
+                    <div className="bg-primaryOrange text-white w-12 h-12 rounded-full flex justify-center items-center">
+                      <PlusIcon />
+                    </div>
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>

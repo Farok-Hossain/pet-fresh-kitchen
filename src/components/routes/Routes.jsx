@@ -14,6 +14,8 @@ import OrderHistory from "@/pages/SidebarPages/OrderHistory";
 import SignIn from "@/pages/SignIn/SignIn";
 import SignUp from "@/pages/SignUp/SignUp";
 import ProductDetails from "@/pages/ProductDetails/ProductDetails";
+import AddToCart from "@/pages/AddToCart/AddToCart";
+import Checkout from "@/pages/Checkout/Checkout";
 
 export const router = createBrowserRouter([
   {
@@ -53,6 +55,14 @@ export const router = createBrowserRouter([
       {
         path:"/productdetails",
         element: <ProductDetails />
+      },
+      {
+        path: "/addcart",
+        element: <AddToCart />
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />
       }
     ],
   },
