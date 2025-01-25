@@ -54,7 +54,9 @@ const ChooseKitchen = () => {
             <CommonButton
               className="rounded text-white mb-[52px]"
               text="Order Now"
+              linkUrl="/orders"
             ></CommonButton>
+            
           </div>
         ))}
       </div>

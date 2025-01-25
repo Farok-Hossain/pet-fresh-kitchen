@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import { CommonButton } from "../common/CommonButton";
 import contactImg from "../../assets/images/contactImg.png";
 
 const ContactForm = () => {
@@ -15,8 +14,8 @@ const ContactForm = () => {
     return (
         <div>
               {/* contact form  */}
-      <div className="flex items-center justify-between mt-[60px]">
-        <div className="min-w-[693px]">
+      <div className="flex flex-col xl:flex-row items-center justify-between mt-[60px]">
+        <div className="xl:min-w-[693px]">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="form-container space-y-5"
@@ -85,7 +84,7 @@ const ContactForm = () => {
               <textarea
                 id="message"
                 placeholder="Your Message"
-                className="border-[1px] text-[#041F29] px-[30px] py-[17px] focus:outline-none  rounded-xl text-2xl h-[198px]"
+                className="border-[1px] text-[#041F29] px-[30px] py-[17px] focus:outline-none  rounded-xl text-2xl xl:h-[198px]"
                 {...register("message")}
               />
               {errors.message && (
@@ -94,15 +93,13 @@ const ContactForm = () => {
             </div>
 
             {/* Submit Button */}
-            <CommonButton
-              className="w-full rounded-md py-[17px] text-white mt-3"
-              text="Sent"
-            ></CommonButton>
+            <button className="bg-primaryOrange w-full rounded-md py-[17px] text-white flex justify-center mt-3 ">Sent</button>
+
           </form>
         </div>
 
         {/* img  */}
-        <div className="min-w-[530px] h-[761px]">
+        <div className="xl:min-w-[530px] xl:h-[761px]">
           <img className="" src={contactImg} alt="" />
         </div>
       </div>

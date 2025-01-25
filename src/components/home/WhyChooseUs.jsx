@@ -15,18 +15,18 @@ const WhyChooseUs = () => {
     ]
   return (
     <CommonWrapper version="lg">
-      <div className="flex items-center gap-[57px] mb-[100px]">
+      <div className="xl:flex items-center gap-[57px] mb-[100px]">
         <div className="">
-          <p className="w-[215px] h-[5px] bg-bgBlack rounded-md"> </p>
+          <p className="xl:w-[215px] h-[5px] bg-bgBlack rounded-md"> </p>
         </div>
         <div>
-          <h2 className="text-[56px] font-semibold max-w-[456px] h-32 mb-[18px] leading-[64px]">
+          <h2 className="text-center xl:text-left text-3xl xl:text-[56px] font-semibold xl:max-w-[456px]  xl:mb-[18px] xl:leading-[64px]">
             Welcome To Pet{" "}
             <span className="text-primaryOrange">Fresh Kitchen</span>
           </h2>
           <div className="flex gap-8">
-            <div className="w-[1px] h-[84px] bg-primaryOrange"></div>
-            <p className="text-textGraySm max-w-[904px] max-h-[84px] text-[18px]">
+            <div className="w-[1px] xl:h-[84px] bg-primaryOrange"></div>
+            <p className="text-textGraySm xl:max-w-[904px]  xl:text-[18px] text-center xl:text-left">
               Welcome to Pet Fresh Kitchen, where we provide your dog with
               balanced nutrition, premium ingredients, digestive support, and no
               additives, ensuring a wholesome, natural meal that promotes
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
       </div>
       
       {/* chooseItems  */}
-      <div className="grid grid-cols-2 gap-x-32 gap-y-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-32 gap-y-10">
         {
             chooseItems.map((item, index) => (
               <PetFreshKitchen key={index} icon={item.icon} title={item.title} description={item.description}>

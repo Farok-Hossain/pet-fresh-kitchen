@@ -4,7 +4,7 @@ import footerLogo from "../../assets/images/Footer.jpg";
 const Footer = () => {
   return (
     <div
-      className="flex items-center "
+      className="hidden  xl:flex items-center "
       style={{
         backgroundImage: `url(${footerLogo})`,
         backgroundSize: "cover",

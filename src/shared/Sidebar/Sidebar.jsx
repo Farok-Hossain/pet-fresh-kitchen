@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   const sidebarItems = [
     { icon: <ProfileIcon2 />, title: "Profile", path: "/sidebar" },
-    { icon: <HistoryIcon />, title: "Order History", path: "history" },
+    { icon: <HistoryIcon />, title: "Order History", path: "/history" },
     {
       icon: <LogoutIcon />,
       title: "Log-out",

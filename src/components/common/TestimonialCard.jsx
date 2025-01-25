@@ -4,7 +4,7 @@ import YellowCard from "../../assets/Icons/YellowCard";
 
 const TestimonialCard = ({ name, image, review, reviewTitle }) => {
   return (
-    <div className="flex justify-center items-center w-full h-[400px] relative">
+    <div className="flex flex-col xl:flex-row justify-center items-center w-full xl:h-[400px] relative">
       {/* Yellow Card (Background Layer) */}
       <div className="absolute top-0 left-0 w-full h-full z-[1]">
         <YellowCard />
@@ -29,7 +29,7 @@ const TestimonialCard = ({ name, image, review, reviewTitle }) => {
         <h5 className="text-[#CFCFCF] text-xs font-normal leading-4">
           {reviewTitle}
         </h5>
-        <p className="text-[#CFCFCF] font-normal text-xs max-w-[286px] mt-2">
+        <p className="text-[#CFCFCF] font-normal text-xs xl:max-w-[286px] mt-2">
           {review}
         </p>
       </div>

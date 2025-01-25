@@ -1,20 +1,29 @@
 import { CommonButton } from "../common/CommonButton";
 import CommonWrapper from "../common/CommonWrapper";
 import bgDogImag from "../../assets/images/bgDogFrame.jpg"
+import dogFood1 from "../../assets/images/dogfood1.png"
+import dogFood2 from "../../assets/images/dogFood2.png"
 
 
 const SampleSection = () => {
     return (
         <CommonWrapper version="lg" noContainer>
-            <div className="flex justify-center items-center" 
+            <div className=" relative flex justify-center items-center py-40" 
                         style={{ 
                             backgroundImage: `url(${bgDogImag})`, 
-                            height: "720px", 
+                            
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center', 
                             backgroundRepeat: 'no-repeat' 
                         }}
                     >
+                        {/* image here  */}
+                        <div className=" absolute top-0 left-0 h-full">
+                            <img src={dogFood1} alt="dogFood"
+                            className="w-full h-full object-cover"
+                            />
+                        </div>
+
                         {/* Content goes here */}
                       <div className=" flex justify-between items-center">
                       <div className="flex flex-col place-items-center justify-center">
@@ -26,8 +35,10 @@ const SampleSection = () => {
                         </div>
             
                         {/* image here  */}
-                        <div>
-                            {/* <img src={dogFood1} alt="" /> */}
+                        <div className=" absolute top-0 right-0 h-full">
+                            <img src={dogFood2} alt="dogFood"
+                            className="w-full h-full object-cover"
+                            />
                         </div>
                       </div>
                     </div>

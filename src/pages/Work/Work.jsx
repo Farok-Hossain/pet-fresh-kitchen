@@ -27,42 +27,41 @@ const Work = () => {
       <div>
         <CommonSection
           title="1. Share Your Pet’s Details"
+          listItem="Breed, age, weight, and activity level"
+          listItem2="Any specific dietary preferences or health conditions"
           description="Every pet deserves a meal plan tailored to their unique needs. Tell us about your dog:"
+          description2="We use this information to recommend the best plan for your pup’s health and happiness."
           img={dogImg1}
         />
       </div>
       <div>
         <CommonSection
           title="2. Choose Your Plan"
+          listItem="Breed, age, weight, and activity level"
+          listItem2="Any specific dietary preferences or health conditions"
           description="Every pet deserves a meal plan tailored to their unique needs. Tell us about your dog:"
+          description2="We use this information to recommend the best plan for your pup’s health and happiness."
           img={dogImg2}
-          boldList1={{ normal: "Real meats,", bold: "fresh vegetables, and wholesome grains" }}
-          boldList2={{
-            normal: "Small-Batch Cooking:",
-            bold: "Every meal is freshly prepared to ensure optimal taste and nutrition.",
-          }}
-          boldList3={{
-            normal: "Eco-Friendly Packaging:",
-            bold: "Meals are packed in recyclable containers to keep food fresh while protecting the environment.",
-          }}
           reverse
         />
       </div>
       <div>
         <CommonSection
           title="3. Freshly Cooked, Delivered to Your Door"
-          description="Your pet's meals arrive fresh and ready to serve."
+          listItem="Breed, age, weight, and activity level"
+          listItem2="Any specific dietary preferences or health conditions"
+          description="Every pet deserves a meal plan tailored to their unique needs. Tell us about your dog:"
+          description2="We use this information to recommend the best plan for your pup’s health and happiness."
           img={dogImg3}
-          boldList1={{
-            normal: "Convenience:",
-            bold: "Meals are portioned and delivered straight to your door.",
-          }}
         />
       </div>
       <div>
         <CommonSection
           title="4. Serve with Ease & Watch Them Thrive"
-          description="Your furry friend will love the taste, and you’ll love the peace of mind."
+          listItem="Breed, age, weight, and activity level"
+          listItem2="Any specific dietary preferences or health conditions"
+          description="Every pet deserves a meal plan tailored to their unique needs. Tell us about your dog:"
+          description2="We use this information to recommend the best plan for your pup’s health and happiness."
           img={dogImg4}
           reverse
         />
@@ -70,7 +69,10 @@ const Work = () => {
       <div>
         <CommonSection
           title="5. Stress-Free Subscriptions"
-          description="Stay on schedule with flexible subscription options."
+          listItem="Breed, age, weight, and activity level"
+          listItem2="Any specific dietary preferences or health conditions"
+          description="Every pet deserves a meal plan tailored to their unique needs. Tell us about your dog:"
+          description2="We use this information to recommend the best plan for your pup’s health and happiness."
           img={dogImg5}
         />
       </div>
@@ -81,4 +83,3 @@ const Work = () => {
 };
 
 export default Work;
-

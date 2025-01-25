@@ -5,6 +5,9 @@ const CommonSection = ({
   reverse,
   title,
   description,
+  description2,
+  listItem,
+  listItem2,
   boldList1,
   boldList2,
   boldList3,
@@ -32,6 +35,9 @@ const CommonSection = ({
             {title}
           </h3>
           <p className="text-textGray text-2xl font-normal">{description}</p>
+          <li className="text-textGray text-2xl font-normal mb-7">{listItem}</li>
+          <li className="text-textGray text-2xl font-normal mb-7">{listItem2}</li>
+          <h3 className="text-textGray text-2xl font-normal">{description2}</h3>
           <ul className="mt-4">
             {renderListItem(boldList1)}
             {renderListItem(boldList2)}

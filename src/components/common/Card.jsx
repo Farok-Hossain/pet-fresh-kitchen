@@ -14,7 +14,7 @@ const Card = ({ img, title, price, offer }) => {
         </div>
       </div>
 
-      <div className=" h-[300px] w-[276px]">
+      <div className=" w-[272px]">
         <img src={img} alt="" />
       </div>
       <div className="border border-[#E2E2E2] rounded-b-md ">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const VetOrder = () => {
@@ -14,7 +15,8 @@ const VetOrder = () => {
       <p className="text-xl leading-[30px] mt-[10px] mb-[10px]">With love and care</p>
       <p className="text-xl leading[30px] mb-8">Your Veterinarian Partner
       Pet Fresh Kitchen</p>
-      <button className="bg-white text-primaryOrange px-8 py-[14px] rounded mt-8 ">Contact Us</button>
+      <Link to="/">
+      <button className="bg-white text-primaryOrange px-8 py-[14px] rounded mt-8 ">Contact Us</button></Link>
       </div>
     </div>
 
