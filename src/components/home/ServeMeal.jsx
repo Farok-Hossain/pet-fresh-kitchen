@@ -7,7 +7,7 @@ const ServeMeal = () => {
     return (
         <div className="container flex flex-col xl:flex-row items-center gap-[101px]">
             <div>
-                <img className="w-[563.5px] h-[528px]" src={dog} alt="" />
+                <img className="xl:w-[563.5px] xl:h-[528px]" src={dog} alt="" />
             </div>
             <div className="">
                 <SectionTitle className="xl:w-[785px] text-start mb-[38.7px]" title="Serve as a meal or mix for added nutrition boost."></SectionTitle>

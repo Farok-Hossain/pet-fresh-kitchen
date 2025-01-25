@@ -15,17 +15,17 @@ const WhyChooseUs = () => {
     ]
   return (
     <CommonWrapper version="lg">
-      <div className="xl:flex items-center gap-[57px] mb-[100px]">
+      <div className="xl:flex items-center xl:gap-[57px] mb-10 xl:mb-[100px]">
         <div className="">
-          <p className="xl:w-[215px] h-[5px] bg-bgBlack rounded-md"> </p>
+          <p className="xl:w-[215px] h-[5px] hidden xl:block bg-bgBlack rounded-md"> </p>
         </div>
         <div>
-          <h2 className="text-center xl:text-left text-3xl xl:text-[56px] font-semibold xl:max-w-[456px]  xl:mb-[18px] xl:leading-[64px]">
+          <h2 className="text-center xl:text-left text-2xl xl:text-[56px] font-semibold xl:max-w-[456px] mt-2 mb-4  xl:mb-[18px] xl:leading-[64px]">
             Welcome To Pet{" "}
             <span className="text-primaryOrange">Fresh Kitchen</span>
           </h2>
-          <div className="flex gap-8">
-            <div className="w-[1px] xl:h-[84px] bg-primaryOrange"></div>
+          <div className="flex xl:gap-8">
+            <div className="w-[1px] xl:h-[84px] hidden xl:block bg-primaryOrange"></div>
             <p className="text-textGraySm xl:max-w-[904px]  xl:text-[18px] text-center xl:text-left">
               Welcome to Pet Fresh Kitchen, where we provide your dog with
               balanced nutrition, premium ingredients, digestive support, and no
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
       </div>
       
       {/* chooseItems  */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-32 gap-y-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-x-32 gap-y-10">
         {
             chooseItems.map((item, index) => (
               <PetFreshKitchen key={index} icon={item.icon} title={item.title} description={item.description}>

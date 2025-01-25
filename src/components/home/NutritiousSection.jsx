@@ -47,14 +47,14 @@ const NutritiousSection = () => {
     <div className="container">
       <div>
         <SectionTitle className="text-center" title="Nutritious & Delicious Meals" />
-        <p className="max-w-[913px] h-14 font-normal leading-7 mx-auto text-center text-textGraySm">
+        <p className="xl:max-w-[913px] mb-5 font-normal xl:leading-7 mx-auto text-center text-textGraySm">
           Providing your dog with the perfect balance of nutrition and taste,
           ensuring they stay healthy, happy, and full of energy every day for an
           active and fulfilling lifestyle.
         </p>
       </div>
        
-      <div className="grid grid-cols-1 xl:grid-cols-5 gap-[15px] mt-12">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-8 xl:gap-[15px] xl:mt-12">
         {foodItems.map((item, index) => (
         
             <Card

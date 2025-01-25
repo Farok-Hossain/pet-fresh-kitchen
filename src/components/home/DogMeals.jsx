@@ -9,11 +9,11 @@ const DogMeals = () => {
       <div className="relative">
         <CurveIcon></CurveIcon>
         <div className="container flex flex-col xl:flex-row items-center xl:gap-[59px]">
-        <div className=" relative flex items-center mt-[14px] text-center justify-center z-50">
+        <div className=" relative flex items-center mt-[14px] text-center justify-center z-40">
           <img className="xl:max-w-[637px]" src={dog2} alt="" />
         </div>
 
-        <div className="relative z-50">
+        <div className="relative z-40">
           <div>
             <SectionTitle
               className="xl:w-[785px] text-white text-start mb-[38.7px]"
