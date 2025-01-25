@@ -57,9 +57,10 @@ const Testimonial = () => {
   return (
     <CommonWrapper>
       <div>
-        <h2 className="xl:text-[34px] font-semibold xl:leading-[48px] text-center xl:text-start mb-4 xl:mb-[60px]">
+        <h2 className="xl:text-[34px] text-lg font-semibold xl:leading-[48px] text-center xl:text-start mb-4 xl:mb-[60px]">
           What our customers are saying
         </h2>
+        <div className="hidden xl:block">
         <Swiper
           spaceBetween={50}
           slidesPerView={3}
@@ -80,6 +81,30 @@ const Testimonial = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
+
+        <div className="xl:hidden">
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <TestimonialCard
+                image={item.img}
+                name={item.name}
+                reviewTitle={item.reviewTitle}
+                review={item.review}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        </div>
       </div>
     </CommonWrapper>
   );

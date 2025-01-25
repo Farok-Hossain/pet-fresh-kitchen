@@ -24,14 +24,14 @@ const ContactForm = () => {
             <div className="flex flex-col">
               <label
                 htmlFor="name"
-                className="text-[#041F29] text-[28px] font-medium leading-9 mb-3"
+                className="text-[#041F29] xl:text-[28px] text-[16px] font-medium xl:leading-9 xl:mb-3 mb-2"
               >
                 Name
               </label>
               <input
                 id="name"
                 placeholder="Alzari Josef"
-                className="border-[1px] text-[#041F29] focus:outline-none rounded-xl text-2xl px-[30px] py-[17px]"
+                className="border-[1px] text-[#041F29] focus:outline-none rounded-xl xl:text-2xl text-[16px] xl:px-[30px] px-4 xl:py-[17px] py-2"
                 {...register("name")}
               />
               {errors.name && <p className="error">{errors.name.message}</p>}
@@ -40,7 +40,7 @@ const ContactForm = () => {
             {/* Email Field */}
             <div className="flex flex-col">
               <label
-                className="text-[#041F29] text-[28px] mb-3 font-medium leading-9"
+                className="text-[#041F29] xl:text-[28px] text-[16px] font-medium xl:leading-9 xl:mb-3 mb-2"
                 htmlFor="email"
               >
                 Email Address
@@ -48,7 +48,7 @@ const ContactForm = () => {
               <input
                 id="email"
                 placeholder="alzarijosef@gmail.com"
-                className="border-[1px] text-[#041F29] focus:outline-none rounded-xl text-2xl px-[30px] py-[17px]"
+                className="border-[1px] text-[#041F29] focus:outline-none rounded-xl xl:text-2xl text-[16px] xl:px-[30px] px-4 xl:py-[17px] py-2"
                 type="email"
                 {...register("email")}
               />
@@ -58,7 +58,7 @@ const ContactForm = () => {
             {/* Phone Number Field */}
             <div className="flex flex-col">
               <label
-                className="text-[#041F29] text-[28px] mb-3 font-medium leading-9"
+                className="text-[#041F29] xl:text-[28px] text-[16px] font-medium xl:leading-9 xl:mb-3 mb-2"
                 htmlFor="phone"
               >
                 Number
@@ -66,7 +66,7 @@ const ContactForm = () => {
               <input
                 id="phone"
                 placeholder="+880151255674"
-                className="border-[1px] text-[#041F29] focus:outline-none rounded-xl text-2xl px-[30px] py-[17px]"
+                className="border-[1px] text-[#041F29] focus:outline-none rounded-xl xl:text-2xl text-[16px] xl:px-[30px] px-4 xl:py-[17px] py-2"
                 type="tel"
                 {...register("phone")}
               />
@@ -76,7 +76,7 @@ const ContactForm = () => {
             {/* Text Area Field */}
             <div className="flex flex-col">
               <label
-                className="text-[#041F29] text-[28px] mb-3 font-medium leading-9"
+                className="text-[#041F29] xl:text-[28px] text-[16px] font-medium xl:leading-9 xl:mb-3 mb-2"
                 htmlFor="message"
               >
                 Message
@@ -84,7 +84,7 @@ const ContactForm = () => {
               <textarea
                 id="message"
                 placeholder="Your Message"
-                className="border-[1px] text-[#041F29] px-[30px] py-[17px] focus:outline-none  rounded-xl text-2xl xl:h-[198px]"
+                className="border-[1px] text-[#041F29] xl:px-[30px] pl-4 pr-[152px] xl:py-[17px] py-2 focus:outline-none  rounded-xl xl:text-2xl text-[16px] xl:h-[198px]"
                 {...register("message")}
               />
               {errors.message && (
@@ -93,13 +93,13 @@ const ContactForm = () => {
             </div>
 
             {/* Submit Button */}
-            <button className="bg-primaryOrange w-full rounded-md py-[17px] text-white flex justify-center mt-3 ">Sent</button>
+            <button className="bg-primaryOrange w-full rounded-md xl:py-[17px] py-2 text-white flex justify-center mt-3 ">Sent</button>
 
           </form>
         </div>
 
         {/* img  */}
-        <div className="xl:min-w-[530px] xl:h-[761px]">
+        <div className="xl:min-w-[530px] xl:h-[761px] mt-5 xl:mt-0">
           <img className="" src={contactImg} alt="" />
         </div>
       </div>

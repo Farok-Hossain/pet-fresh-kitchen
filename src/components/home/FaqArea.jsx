@@ -42,11 +42,11 @@ const FaqArea = () => {
   return (
     <div className="container">
       <div>
-        <div className="text-center mb-20">
-          <h3 className="text-[#212B36] xl:text-5xl font-semibold leading-[70px] mb-[10px]">
+        <div className="text-center xl:mb-20 mb-5">
+          <h3 className="text-[#212B36] xl:text-5xl text-lg font-semibold xl:leading-[70px] mb-[10px]">
             Frequently Asked Questions
           </h3>
-          <p className="text-xl leading-[30px] xl:max-w-[960px] mx-auto">
+          <p className="xl:text-xl xl:leading-[30px] xl:max-w-[960px] mx-auto">
             Find answers to commonly asked questions about our products,
             services, and policies in our comprehensive FAQ section.
           </p>
