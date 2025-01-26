@@ -35,12 +35,12 @@ const FreshFood = () => {
   return (
     <CommonWrapper>
       <div>
-        <h3 className="text-5xl text-center font-semibold leading-[64px] text-textGray mb-[60px]">
+        <h3 className="xl:text-5xl text-xl text-center font-semibold  xl:leading-[64px] text-textGray xl:mb-[60px] mb-5">
           Why Fresh Food Metters
         </h3>
       </div>
       {/* chooseItems  */}
-      <div className="grid grid-cols-2 gap-x-32 gap-y-10">
+      <div className="grid xl:grid-cols-2 gap-x-32 xl:gap-y-10 gap-y-7">
         {chooseItems.map((item, index) => (
           <PetFreshKitchen
             key={index}

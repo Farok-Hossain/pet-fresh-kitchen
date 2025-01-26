@@ -29,10 +29,10 @@ const CommonBanner = ({
 
       {/* Title and Description */}
       <div className="relative z-10 text-center px-4">
-        <h2 className="xl:max-w-[924px] mx-auto  lg:text-[48px] xl:text-[64px] text-2xl xl:leading-[80px] leading-8 font-semibold xl:mb-4">
+        <h2 className="xl:max-w-[924px] mx-auto xl:text-[64px] text-2xl xl:leading-[80px] leading-8 font-semibold xl:mb-4">
           {title}
         </h2>
-        <p className="lg:text-xl xl:leading-[30px] xl:max-w-[798px] mx-auto text-center mt-4">
+        <p className="lg:text-xl xl:leading-[30px] xl:max-w-[798px] mx-auto text-center xl:mt-4">
           {description}
         </p>
         {buttonText && (
