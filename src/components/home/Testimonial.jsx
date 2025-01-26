@@ -57,7 +57,7 @@ const Testimonial = () => {
   return (
     <CommonWrapper>
       <div>
-        <h2 className="xl:text-[34px] text-lg font-semibold xl:leading-[48px] text-center xl:text-start mb-4 xl:mb-[60px]">
+        <h2 className="xl:text-[34px] text-lg xl:font-semibold font-medium xl:leading-[48px] text-center xl:text-start mb-4 xl:mb-[60px]">
           What our customers are saying
         </h2>
         <div className="hidden xl:block">

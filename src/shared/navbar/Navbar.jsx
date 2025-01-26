@@ -48,7 +48,9 @@ const Navbar = () => {
 
         {/* Account Button with Hover */}
         <div className="flex gap-6 items-center">
+        <Link to="/productdetails">
         <CardIcons />
+        </Link>
         
         <div
           className="relative flex gap-6 items-center"

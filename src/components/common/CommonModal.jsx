@@ -111,7 +111,7 @@ const CommonModal = ({
                 <div className="flex">
                   {clickedButton === "sample" && (
                     <Link to="/orders">
-                    <button  className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
+                    <button  className="bg-primaryOrange rounded-[10px] px-20 py-5 xl:text-2xl text-xl font-bold text-white">
                       Get Free Sample
                     </button></Link>
                   )}

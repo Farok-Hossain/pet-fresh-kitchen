@@ -7,7 +7,7 @@ const PetFreshKitchen = ({ icon, title, description }) => {
         <p>{icon}</p>
       </div>
       <div>
-        <h3 className="xl:max-w-[588px] text-center xl:text-start xl:h-12 text-textGray font-semibold text-xl xl:text-[32px] mb-[15px]">
+        <h3 className="xl:max-w-[588px] text-center xl:text-start xl:h-12 text-textGray xl:font-semibold font-medium text-xl xl:text-[32px] mb-[15px]">
           {title}
         </h3>
         <p className="xl:max-w-[588px] text-center xl:text-start  xl:max-h-[84px] text-textGraySm font-normal leading-7 xl:text-[22px]">
