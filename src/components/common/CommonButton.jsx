@@ -47,7 +47,7 @@ export const CommonButton = ({ className, text, type, linkUrl, icon, icon2 }) =>
         className={`bg-primaryOrange ${className} xl:text-xl py-[10px] px-4 xl:px-6 flex items-center gap-[10px]`}
       >
         {icon && <span>{icon}</span>}
-        <span>{text}</span>   {icon2 && <span>{icon2}</span>}
+        <span className="">{text}</span>   {icon2 && <span>{icon2}</span>}
       </button>
       <CommonModal
               isOpen={isModalOpen}

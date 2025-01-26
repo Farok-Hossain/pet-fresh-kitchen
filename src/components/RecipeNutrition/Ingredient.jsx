@@ -56,7 +56,7 @@ const Ingredient = () => {
     <CommonWrapper>
       <div>
         <SectionTitle className="text-center" title="Our Ingredients" />
-        <p className="max-w-[960px] mx-auto text-center text-textColor text-xl font-normal leading-[30px]">
+        <p className=" xl:max-w-[960px] mx-auto text-center text-textColor xl:text-xl font-normal xl:leading-[30px]">
           We encourage label readers because it’s essential to understand what
           you&apos;re feeding your dog. However, knowing the ingredients
           isn&apos;t the same as understanding their nutritional value and how
@@ -65,7 +65,7 @@ const Ingredient = () => {
         </p>
       </div>
 
-     <div className="grid grid-cols-3 gap-[30px] mt-[60px]">
+     <div className="grid xl:grid-cols-3 grid-cols-1 gap-[30px] xl:pt-[60px] pt-6 ">
      {ingredientItems.map((item, index) => (
         <IngredientCard
           key={index}

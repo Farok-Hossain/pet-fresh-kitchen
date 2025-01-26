@@ -6,7 +6,7 @@ const ChoosePet = () => {
   return (
     <CommonWrapper>
       <div>
-        <div className="flex gap-[100px] items-center">
+        <div className="flex xl:flex-row flex-col-reverse gap-[100px] items-center">
           {/* Image Section */}
           <div className="max-w-[587px]">
             <img src={dog} alt="dog" />

@@ -14,7 +14,7 @@ const Navbar = () => {
   const navItems = [
     { title: "Home", path: "/" },
     { title: "Recipes & Nutrition", path: "/recipe" },
-    { title: "How it work", path: "/work" },
+    { title: "How it Works", path: "/work" },
     { title: "From the Vet", path: "/vet" },
     { title: "About Us", path: "/about" },
     { title: "Order Now", path: "/orders" },

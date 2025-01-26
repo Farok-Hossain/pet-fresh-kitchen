@@ -9,7 +9,7 @@ const CommonBanner = ({
 }) => {
   return (
     <div
-      className="relative bg-[#F7830D] text-white flex items-center justify-center py-[200px] overflow-hidden w-full"
+      className="relative bg-[#F7830D] text-white flex items-center justify-center xl:py-[200px] py-[30px] overflow-hidden w-full"
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -18,7 +18,7 @@ const CommonBanner = ({
     >
       {/* Left Image */}
       {perfectMeal && (
-        <div className="absolute top-0 left-0 h-full">
+        <div className="absolute top-0 hidden xl:block left-0 h-full">
           <img
             src={perfectMeal}
             alt="Perfect Meal"
@@ -29,10 +29,10 @@ const CommonBanner = ({
 
       {/* Title and Description */}
       <div className="relative z-10 text-center px-4">
-        <h2 className="max-w-[924px] mx-auto text-[32px] lg:text-[48px] xl:text-[64px] leading-[80px] font-semibold mb-4">
+        <h2 className="xl:max-w-[924px] mx-auto  lg:text-[48px] xl:text-[64px] text-2xl xl:leading-[80px] leading-8 font-semibold xl:mb-4">
           {title}
         </h2>
-        <p className="text-lg lg:text-xl leading-relaxed max-w-[798px] mx-auto text-center">
+        <p className="lg:text-xl xl:leading-[30px] xl:max-w-[798px] mx-auto text-center mt-4">
           {description}
         </p>
         {buttonText && (
@@ -44,7 +44,7 @@ const CommonBanner = ({
 
       {/* Right Image */}
       {girlWithDog && (
-        <div className="absolute top-0 right-0 h-full">
+        <div className="absolute hidden xl:block  top-0 right-0 h-full">
           <img
             src={girlWithDog}
             alt="Girl with Dog"
