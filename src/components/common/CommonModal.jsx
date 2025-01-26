@@ -32,7 +32,7 @@ const CommonModal = ({
       onClick={handleOutsideClick}
       className="fixed inset-0 bg-[#212121CC] flex justify-center items-center z-50"
     >
-      <div className="relative bg-white py-[150px] rounded-lg shadow-lg min-w-[1260px]">
+      <div className="relative bg-white py-12 xl:py-[150px] rounded-lg shadow-lg xl:min-w-[1260px]">
         <div className="absolute right-4 top-0">
           <button
             onClick={onClose}
@@ -41,23 +41,23 @@ const CommonModal = ({
             <CrossIcon />
           </button>
         </div>
-        <div className="flex gap-[60px] px-[109px] py[150px]">
-          <div className="w-[385px] min-h-[485px] border-[1px] rounded-[10px] border-[#E2E2E2]">
-            <img src={img} alt="" className="px-[21px] py-[81px]" />
+        <div className="flex xl:flex-row flex-col xl:gap-[60px] xl:px-[109px] xl:py[150px]">
+          <div className="flex justify-center items-center w-[150px] xl:w-[385px] xl:min-h-[485px] border-[1px] rounded-[10px] border-[#E2E2E2]">
+            <img src={img} alt="" className="xl:px-[21px] px-[10px] py-[20px] xl:py-[81px]" />
           </div>
 
           <div className="space-y-5">
-            <h3 className="text-textGray text-5xl font-semibold leading-[70px]">
+            <h3 className="text-textGray xl:text-5xl text-xl text-center font-semibold xl:leading-[70px]">
               {title}
             </h3>
-            <h4 className="text-[#212121E6] text-4xl font-medium">$132.93</h4>
+            <h4 className="text-[#212121E6] text-4xl font-medium">$132.92</h4>
             <h5 className="text-[#212121B3] text-2xl font-medium">
               Net Weight
             </h5>
-            <div className="flex font-medium text-textGraySm gap-[10px]">
+            <div className="flex xl:flex-row font-medium text-textGraySm gap-[10px]">
               {weightData.map((item) => (
                 <div
-                  className="flex gap-[10px] mt-[10px] text-lg"
+                  className="flex gap-[10px] mt-[10px] text-[5px] xl:text-lg"
                   key={item.id}
                 >
                   <Checkbox className="rounded-full h-7 w-7" />
@@ -70,7 +70,7 @@ const CommonModal = ({
               <h4 className="text-[#212121B3] text-2xl font-medium ">
                 Dog Type
               </h4>
-              <div className="flex text-[18px] font-medium text-textGraySm gap-[10px]">
+              <div className="flex xl:flex-row text-[18px] font-medium text-textGraySm gap-[10px]">
                 {dogType.map((item) => (
                   <div
                     className="flex py-[8px] mt-[10px] gap-[10px]"
@@ -89,12 +89,12 @@ const CommonModal = ({
               </h3>
             </div>
 
-            <div className="flex gap-[14px]">
+            <div className="flex xl:flex-row flex-col gap-[14px]">
               <div>
                 <div className="flex">
                   {clickedButton === "cart" && (
                    <Link to="/addcart">
-                    <button className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
+                    <button className="bg-primaryOrange rounded-[10px] xl:px-20 py-5 text-2xl font-bold text-white">
                       Add to Cart
                     </button></Link>
                   )}
@@ -120,7 +120,7 @@ const CommonModal = ({
 
               {/* Count section  */}
               {clickedButton !== "sample" && (
-                <div className="border-[1px] rounded-[10px] border-[#E2E2E2] flex px-3">
+                <div className="border-[1px]  rounded-[10px] border-[#E2E2E2] flex  px-3">
                   <button
                     className=""
                     onClick={() => {
