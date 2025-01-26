@@ -30,30 +30,30 @@ const ProductDetails = () => {
   ];
 
   return (
-    <div className="container gap-[50px] flex py-[200px]">
-      <div className="min-w-[518px] min-h-[653px] border-[1px] rounded-[10px] border-[#E2E2E2]">
-        <img src={productImg} alt="" className="px-[41px] py-[122px]" />
+    <div className="container xl:gap-[50px] flex xl:flex-row flex-col xl:py-[200px] py-10">
+      <div className="xl:min-w-[518px] xl:min-h-[653px] border-[1px] rounded-[10px] border-[#E2E2E2]">
+        <img src={productImg} alt="" className="px-[41px] xl:py-[122px] py-10" />
       </div>
-      <div className="pt-[10px] pl-[10px]">
+      <div className="pt-[10px] xl:pl-[10px]">
         <div className="space-y-5">
           <div>
-            <h3 className="text-textGray text-5xl font-semibold leading-[70px]">
+            <h3 className="text-textGray xl:text-5xl text-2xl font-semibold xl:leading-[70px] text-center xl:text-start pt-5">
               Instinct Raw Meals
             </h3>
           </div>
 
           <div>
-            <h4 className="text-[#212121E6] text-4xl font-medium">$132.93</h4>
+            <h4 className="text-[#212121E6] xl:text-4xl text-xl text-center xl:text-start font-medium">$132.93</h4>
           </div>
 
           <div>
-            <h5 className="text-[#212121B3] text-2xl font-medium">
+            <h5 className="text-[#212121B3] xl:text-2xl text-center xl:text-start font-medium">
               Net Weight
             </h5>
-            <div className="flex text-[18px] font-medium text-textGraySm gap-[10px]">
+            <div className="flex flex-wrap justify-center xl:justify-start xl:text-[18px] text-[14px] font-medium text-textGraySm gap-[10px]">
               {weightData.map((item) => (
                 <div
-                  className="border-[1px] rounded-[10px] px-[18px] py-[8px] border-[#124C5F] mt-[10px]"
+                  className="border-[1px] rounded-[10px] xl:px-[18px] px-2 py-1 xl:py-[8px] border-[#124C5F] mt-[10px]"
                   key={item.id}
                 >
                   {item.weight}
@@ -63,11 +63,11 @@ const ProductDetails = () => {
           </div>
 
           <div>
-            <h4 className="text-[#212121B3] text-2xl font-medium ">Dog Type</h4>
-            <div className="flex text-[18px] font-medium text-textGraySm gap-[10px]">
+            <h4 className="text-[#212121B3] xl:text-2xl text-center xl:text-start font-medium ">Dog Type</h4>
+            <div className="flex xl:text-[18px] justify-center xl:justify-start text-[14px] font-medium text-textGraySm gap-[10px]">
               {dogType.map((item) => (
                 <div
-                  className="border-[1px] rounded-[10px] px-[18px] py-[8px] border-[#124C5F] mt-[10px]"
+                  className="border-[1px] rounded-[10px] xl:px-[18px] px-2 py-1 xl:py-[8px] border-[#124C5F] mt-[10px]"
                   key={item.id}
                 >
                   {item.type}
@@ -77,12 +77,12 @@ const ProductDetails = () => {
           </div>
 
           <div>
-            <h4 className="text-textGray text-2xl font-medium">
+            <h4 className="text-textGray xl:text-2xl text-xl text-center xl:text-start pt-3 font-medium">
               Product details
             </h4>
           </div>
           <div>
-            <p className="text-xl font-normal text-[#212121CC]">
+            <p className="xl:text-xl text-center xl:text-start font-normal text-[#212121CC]">
               Provide your dog with the healthiest, most nutritious meals
               through our premium Instinct Raw Meals. Tailored to enhance their
               overall well-being, these meals are made from responsibly sourced,
@@ -92,13 +92,13 @@ const ProductDetails = () => {
           </div>
         </div>
 
-        <div className="flex mt-[51px] gap-[30px]">
+        <div className="flex justify-center xl:justify-start  xl:mt-[51px] mt-5 xl:gap-[30px] gap-5">
           <button
             onClick={() => {
               setClickedButton("cart");
               setIsModalOpen(true);
             }}
-            className="border-[1px] border-[#124C5F] rounded-[10px] px-20 py-5 text-2xl font-bold text-textGray"
+            className="border-[1px] border-[#124C5F] rounded-[10px] xl:px-20 px-6 xl:py-5 py-3 xl:text-2xl font-bold text-textGray"
           >
             Add to Cart
           </button>
@@ -107,7 +107,7 @@ const ProductDetails = () => {
               setClickedButton("buy");
               setIsModalOpen(true);
             }}
-            className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white"
+            className="bg-primaryOrange rounded-[10px] xl:px-20 px-10 xl:py-5 py-3 xl:text-2xl font-bold text-white"
           >
             Buy Now
           </button>
