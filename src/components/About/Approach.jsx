@@ -7,31 +7,31 @@ const Approach = () => {
   return (
     <CommonWrapper>
       <div>
-        <div className="flex  gap-[100px]">
-          <div className="max-w-[587px]">
+        <div className="flex xl:flex-row flex-col  xl:gap-[100px]">
+          <div className="xl:max-w-[587px]">
             <img src={dog} alt="dog" />
           </div>
           <div>
-            <h3 className="text-[#212B36] text-5xl font-semibold mb-5">
+            <h3 className="text-[#212B36] xl:text-5xl text-center xl:text-start text-xl font-semibold mb-5">
               Why We Started
             </h3>
-            <p className="text-textColor text-xl font-normal leading-8 mb-5">
+            <p className="text-textColor xl:text-xl font-normal xl:leading-8 text-center xl:text-start mb-5">
               We believe that pets deserve the same high-quality nutrition as
               humans. Unfortunately, many pets are underserved when it comes to
               fresh and nutritious food. That’s why we started Pet Fresh
               Kitchen—to bring premium, vet-recommended nutrition to pet owners
               in a way that’s both convenient and affordable.
             </p>
-            <h4 className="text-[#212B36] text-4xl font-semibold mb-5">
+            <h4 className="text-[#212B36] xl:text-4xl text-xl text-center xl:text-start font-semibold xl:mb-5 mb-3">
               Our Approach
             </h4>
             <div className="flex gap-5">
-              <div className="bg-primaryOrange w-12 h-5 rounded-full flex justify-center items-center">
+              <div className="bg-primaryOrange xl:w-12 w-3 h-3 xl:h-5 mt-2 rounded-full flex justify-center items-center">
                 <TrickIcon />
               </div>
               <div>
-                <p className="text-textColor text-xl mb-5">
-                  <span className="font-semibold">
+                <p className="text-textColor xl:text-xl mb-5">
+                  <span className="font-medium">
                     Collaborations with Experts:
                   </span>{" "}
                   We work hand-in-hand with local veterinarians and pet
@@ -42,12 +42,12 @@ const Approach = () => {
             </div>
 
             <div className="flex gap-5">
-              <div className="bg-primaryOrange w-12 h-5 rounded-full flex justify-center items-center">
+              <div className="bg-primaryOrange xl:w-12 w-3 h-3 xl:h-5 mt-2 rounded-full flex justify-center items-center">
                 <TrickIcon />
               </div>
               <div>
-              <p className="text-textColor text-xl mb-5">
-                <span className="font-semibold">Licensed and Recommended:</span>{" "}
+              <p className="text-textColor xl:text-xl mb-5">
+                <span className="font-medium">Licensed and Recommended:</span>{" "}
                 Pet Fresh Kitchen is proud to be fully licensed, with
                 recommendations from leading pet care professionals and
                 organizations
@@ -56,12 +56,12 @@ const Approach = () => {
             </div>
 
             <div className="flex gap-5">
-              <div className="bg-primaryOrange w-12 h-5 rounded-full flex justify-center items-center">
+              <div className="bg-primaryOrange xl:w-12 w-3 h-3 xl:h-5 mt-2 rounded-full flex justify-center items-center">
                 <TrickIcon />
               </div>
               <div>
-              <p className="text-textColor text-xl mb-5">
-                <span className="font-semibold">
+              <p className="text-textColor xl:text-xl xl:mb-5">
+                <span className="font-medium">
                   Convenience and Affordability:
                 </span>{" "}
                 We make pet nutrition accessible to all through easy

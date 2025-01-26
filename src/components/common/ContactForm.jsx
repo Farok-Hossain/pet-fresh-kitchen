@@ -14,7 +14,7 @@ const ContactForm = () => {
     return (
         <div>
               {/* contact form  */}
-      <div className="flex flex-col xl:flex-row items-center justify-between mt-[60px]">
+      <div className="flex flex-col xl:flex-row items-center justify-between xl:mt-[60px] mt-[30px]">
         <div className="xl:min-w-[693px]">
           <form
             onSubmit={handleSubmit(onSubmit)}
