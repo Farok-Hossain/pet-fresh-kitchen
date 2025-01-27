@@ -74,18 +74,18 @@ const Sidebar = () => {
             className="bg-white rounded-lg shadow-lg p-8"
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
           >
-            <p className="text-[32px] text-[#2F2F2F] leading-[44px]">
+            <p className="xl:text-[32px] text-[#2F2F2F] xl:leading-[44px]">
               Are You Sure, You Want to Sign Out?
             </p>
             <div className="flex justify-center gap-4 mt-8">
               <button
-                className="px-[44px] py-1 rounded-3xl bg-primaryOrange text-2xl text-white"
+                className="xl:px-[44px] py-1 rounded-3xl bg-primaryOrange text-2xl text-white"
                 onClick={handleLogout}
               >
                 Yes
               </button>
               <button
-                className="px-[44px] py-1 rounded-3xl text-2xl bg-primaryOrange text-white"
+                className="xl:px-[44px] py-1 rounded-3xl xl:text-2xl bg-primaryOrange text-white"
                 onClick={handleCloseModal}
               >
                 No

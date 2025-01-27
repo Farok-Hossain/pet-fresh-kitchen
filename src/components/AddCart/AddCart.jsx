@@ -60,6 +60,7 @@ const AddCart = () => {
               </div>
 
               <div className="flex items-center xl:gap-10 border-[1px] xl:w-[782px] border-[#E2E2E2] rounded-[10px]">
+                <div className="flex xl:gap-10">
                 <div className="xl:py-[10px] px-1 xl:pl-10 py-1">
                   <img src={rawMeals} alt="" />
                 </div>
@@ -73,6 +74,7 @@ const AddCart = () => {
                   <h5 className="xl:text-xl xl:mb-5 font-medium text-[#212121B2]">
                     Dog Type: {item.dogType}
                   </h5>
+                </div>
                 </div>
 
                 <div className="flex xl:flex-row flex-col gap-5 items-center pr-7">

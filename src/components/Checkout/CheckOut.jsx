@@ -6,7 +6,7 @@ import OrderSummary from "../OrderSummary/OrderSummary";
 const CheckOut = () => {
  
   return (
-    <div className="mb-[200px] flex gap-8 mt-[70px]">
+    <div className="xl:mb-[200px] flex flex-col xl:flex-row gap-8 xl:mt-[70px] py-5">
       <BillingInformation />
       <OrderSummary />
     </div>

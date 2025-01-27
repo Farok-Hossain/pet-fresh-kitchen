@@ -33,25 +33,25 @@ const SignUp = () => {
 
   return (
     <div
-      className="h-screen flex items-center justify-center bg-cover bg-center relative"
+      className="h-screen px-5 flex items-center justify-center bg-cover bg-center relative"
       style={{ backgroundImage: `url(${loginBg})` }}
     >
       <div className="absolute inset-0 bg-black opacity-70"></div>
-      <div className="bg-white min-w-[872px] pt-[50px] pb-[48px] rounded-lg shadow-lg px-[100px]  relative z-10">
-        <div className="flex justify-center ">
+      <div className="bg-white xl:min-w-[872px] px-5  xl:pt-[50px] pt-3 xl:pb-10 pb-3  rounded-lg shadow-lg xl:px-[100px]  relative z-10">
+        <div className="flex justify-center px-[120px] ">
           <img src={logo} alt="" />
         </div>
-        <h2 className="text-[40px] font-semibold text-textGray text-center leading-[53px]">
+        <h2 className="xl:text-[40px] text-2xl font-semibold text-textGray text-center xl:leading-[53px]">
           Sign Up
         </h2>
-        <p className="text-center font-normal text-[18px] text-[#5A5C5F] mt-5">
+        <p className="text-center font-normal xl:text-[18px] text-[15px] text-[#5A5C5F] xl:mt-5 mt-1">
           Lets have these fields
         </p>
-        <form className=" mt-[50px]">
+        <form className=" xl:mt-[50px] mt-2">
           <div>
             <label
               htmlFor="name"
-              className="text-textGray text-[18px] font-medium leading-6 mb-3"
+              className="text-textGray xl:text-[18px] font-medium leading-6 mb-3"
             >
               First Name
             </label>
@@ -59,14 +59,14 @@ const SignUp = () => {
               type="name"
               id="name"
               placeholder="First Name "
-              className="w-full px-6 py-[11px] border rounded-md pl-6 mt-3 focus:outline-none"
+              className="w-full xl:px-6 text-[14px]  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
             />
           </div>
 
-          <div className="mt-5">
+          <div className="xl:mt-5 mt-2">
             <label
               htmlFor="email"
-              className="text-textGray text-[18px] font-medium leading-6 mb-3"
+              className="text-textGray xl:text-[18px] font-medium leading-6 mb-3"
             >
               Email Address
             </label>
@@ -74,23 +74,23 @@ const SignUp = () => {
               type="email"
               id="email"
               placeholder="abcd@gmail.com"
-              className="w-full px-6 py-[11px] border rounded-md pl-6 mt-3 focus:outline-none"
+              className="w-full xl:px-6  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
             />
           </div>
 
           {/* Pet Name and Date */}
-          <div className="flex gap-[26px] mt-5 ">
+          <div className="flex xl:gap-[26px] gap-2 xl:mt-5 mt-2 ">
             <div className="w-full flex flex-col">
               <label
                 htmlFor="petName"
-                className="text-textGray text-[18px] font-medium leading-6 mb-3"
+                className="text-textGray xl:text-[18px] font-medium leading-6 xl:mb-3"
               >
                 Pet Name
               </label>
               <input
                 id="petName"
                 placeholder="Tome"
-                className=" px-6 py-[11px] border-[1px] text-[#666666] focus:outline-none rounded-md text-[16px] "
+                className=" w-full xl:px-6  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none "
                 type="text"
                 {...register("petName")}
               />
@@ -102,13 +102,13 @@ const SignUp = () => {
             <div className="w-full flex flex-col">
               <label
                 htmlFor="date"
-                className="text-textGray text-[18px] font-medium leading-6 mb-3"
+                className="text-textGray xl:text-[18px] font-medium leading-6 xl:mb-3"
               >
                 Date
               </label>
               <input
                 id="date"
-                className=" px-6 py-[11px] border-[1px] text-[#666666] focus:outline-none rounded-md text-[16px] "
+                className=" w-full xl:px-6 px-3  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none "
                 type="date"
                 {...register("date")}
               />
@@ -117,11 +117,11 @@ const SignUp = () => {
           </div>
 
           {/* Password */}
-          <div className="flex gap-[26px] mt-5">
+          <div className="flex xl:flex-row flex-col xl:gap-[26px] xl:mt-5 mt-2">
             <div className="w-full flex flex-col">
               <label
                 htmlFor="password"
-                className="text-textGray text-[18px] font-medium leading-6 mb-3"
+                className="text-textGray xl:text-[18px] font-medium leading-6 xl:mb-3 mb-1"
               >
                 Password
               </label>
@@ -130,13 +130,13 @@ const SignUp = () => {
               <input
                 id="password"
                 placeholder="********"
-                className="pl-6  py-[11px]  text-[#666666] focus:outline-none  text-[16px] "
+                className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]   text-[#666666] focus:outline-none  xl:text-[16px] "
                 type="password"
                 {...register("password")}
               />
               <button type="button" 
                 onClick={togglePasswordVisibility}
-                className=" text-gray-500 pr-6"
+                className=" text-gray-500 xl:pr-6 pr-3"
               >{showPassword? (
                 <ShowEyeIcon className="" />
               ): (
@@ -149,10 +149,10 @@ const SignUp = () => {
             </div>
 
             {/* confirm password  */}
-            <div className="w-full flex flex-col">
+            <div className="w-full flex flex-col mt-2">
               <label
                 htmlFor="password"
-                className="text-textGray text-[18px] font-medium leading-6 mb-3"
+                className="text-textGray xl:text-[18px] font-medium leading-6 xl:mb-3 mb-1"
               >
                 Confirm Password
               </label>
@@ -161,13 +161,13 @@ const SignUp = () => {
               <input
                 id="password"
                 placeholder="********"
-                className="pl-6  py-[11px]  text-[#666666] focus:outline-none  text-[16px] "
+                className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]  text-[#666666] focus:outline-none  xl:text-[16px] "
                 type="password"
                 {...register("password")}
               />
               <button type="button" 
                 onClick={toggleConfirmPasswordVisibility}
-                className=" text-gray-500 pr-6"
+                className=" text-gray-500 xl:pr-6 pr-3"
               >{showConfirmPassword? (
                 <ShowEyeIcon className="" />
               ): (
@@ -183,7 +183,7 @@ const SignUp = () => {
 
           <div className="flex gap-[11px] items-center mt-[10px]">
             <Checkbox />
-            <h3 className="text-[#5A5C5F] text-[16px]">
+            <h3 className="text-[#5A5C5F] xl:text-[16px] text-[14px]">
               I hereby confirm and accept the{" "}
               <span className="text-[#037FFF]">Terms and Conditions</span> and{" "}
               <span className="text-[#037FFF]">Privacy Policy</span>.{" "}
@@ -193,13 +193,13 @@ const SignUp = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className=" bg-primaryOrange px-[100px] text-white text-[18px] font-semibold rounded-md mt-10 py-[18px]"
+              className=" bg-primaryOrange xl:px-[100px] text-white xl:text-[18px] font-semibold rounded-md xl:mt-10 mt-2 xl:py-[11px] py-[6px] px-7"
             >
               Sign Up
             </button>
           </div>
 
-          <h3 className="text-xl text-center mt-5 text-[#5A5C5F]">
+          <h3 className="xl:text-xl text-center xl:mt-5 mt-1 text-[#5A5C5F]">
             Already have an account?{" "}
             <Link to="/signin">
               <span className="text-primaryOrange">Log In</span>

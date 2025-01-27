@@ -4,8 +4,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 const OrderSummary = () => {
   return (
-    <div className="border-[1px] border-[#E6E6E6] rounded-lg w-[424px] h-auto max-h-[535px] px-6 py-6">
-      <h3 className="text-xl font-medium leading-[30px] text-textGray">
+    <div className="border-[1px] border-[#E6E6E6] rounded-lg xl:w-[424px] h-auto xl:max-h-[535px] px-6 py-6">
+      <h3 className="text-xl text-center xl:text-start font-medium leading-[30px] text-textGray">
         Order Summary
       </h3>
       <div className="flex justify-between items-center mt-3">
@@ -39,7 +39,7 @@ const OrderSummary = () => {
         <h5 className="text-[14px] text-[#1A1A1A] font-medium">$75</h5>
       </div>
 
-      <h3 className="text-xl font-medium mt-6 mb-4">Payment Method</h3>
+      <h3 className="text-xl text-center xl:text-start font-medium mt-6 mb-4">Payment Method</h3>
       <RadioGroup defaultValue="option-one">
   <div className="flex items-center space-x-2">
     <RadioGroupItem value="option-one" id="option-one" />
@@ -51,7 +51,7 @@ const OrderSummary = () => {
   </div>
 </RadioGroup>
 
-      <button className="bg-primaryOrange text-white py-4 w-full  font-bold rounded-[43px]">Place Order</button>
+      <button className="bg-primaryOrange text-white xl:py-4 py-2 w-full  xl:font-bold font-medium rounded-[43px]">Place Order</button>
     </div>
   );
 };
