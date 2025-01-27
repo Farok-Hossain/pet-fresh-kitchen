@@ -44,7 +44,7 @@ const OrderCard = () => {
   return (
     <div>
         {/* {heading && <h3>{hea}</h3>} */}
-      <div className="flex xl:flex-row flex-col gap-[15px] xl:mt-12 mt-5">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-3 grid-cols-1 gap-[15px] xl:mt-12 mt-5">
         {foodItems.map((item, index) => (
           <Card
             key={index}

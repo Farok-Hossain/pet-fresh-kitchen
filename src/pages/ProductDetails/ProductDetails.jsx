@@ -31,8 +31,8 @@ const ProductDetails = () => {
 
   return (
     <div className="container xl:gap-[50px] flex xl:flex-row flex-col xl:py-[200px] py-10">
-      <div className="xl:min-w-[518px] xl:min-h-[653px] border-[1px] rounded-[10px] border-[#E2E2E2]">
-        <img src={productImg} alt="" className="px-[41px] xl:py-[122px] py-10" />
+      <div className="xl:min-w-[518px] xl:min-h-[653px] flex justify-center border-[1px] rounded-[10px] border-[#E2E2E2]">
+        <img src={productImg} alt="" className="px-[41px]  xl:py-[122px] py-10" />
       </div>
       <div className="pt-[10px] xl:pl-[10px]">
         <div className="space-y-5">
