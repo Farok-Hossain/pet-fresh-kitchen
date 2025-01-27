@@ -25,8 +25,8 @@ const SampleSection = () => {
 
                         {/* Content goes here */}
                       <div className=" flex justify-between items-center">
-                      <div className="flex flex-col place-items-center justify-center">
-                            <h2 className=" xl:text-[64px] text-xl text-center text-white xl:leading-[80px] mt-5 xl:font-semibold font-medium xl:max-w-[800px] xl:mb-5 mb-3 ">Take control of your
+                      <div className="flex flex-col place-items-center justify-center lg:pb-5">
+                            <h2 className=" xl:text-[64px] lg:text-2xl text-xl text-center text-white xl:leading-[80px] mt-5 xl:font-semibold font-medium xl:max-w-[800px] xl:mb-5 mb-3 ">Take control of your
                             pet’s health</h2>
                             <p className="xl:text-lg text-center font-normal xl:leading-7 text-white max-w-[745px] xl:mb-8 mb-4 px-5 leading-5 xl:px-0">The process of cooking at lower temperatures & at Slower rates leads to an
                             increase in nutrient in nutrient retention.</p>

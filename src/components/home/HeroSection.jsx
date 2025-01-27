@@ -19,7 +19,7 @@ const HeroSection = () => {
             <div className="xl:min-w-[800px]">
                 <h2 className="text-2xl lg:text-3xl xl:text-[64px] text-textGray xl:leading-[80px] text-center font-semibold  mb-5">Premium Nutrition for Healthier, Happier Dogs</h2>
                 <p className="xl:text-lg font-normal xl:leading-7 text-textGraySm xl:max-w-[745px] text-center xl:text-left mb-3 xl:mb-8">Our carefully formulated dog food is packed with essential nutrients, vitamins, and minerals to promote optimal health, support strong immune systems, and enhance your dog&apos;s energy levels, ensuring they live a happy, active, and fulfilling life. </p>
-               <div className="flex justify-center xl:block">
+               <div className="flex justify-center xl:block lg:pt-6">
                <CommonButton className="rounded text-white" text="Get Free Sample"></CommonButton>
                </div>
             </div>

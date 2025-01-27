@@ -29,7 +29,7 @@ const TestimonialCard = ({ name, image, review, reviewTitle }) => {
         <h5 className="text-[#CFCFCF] text-xs font-normal leading-4">
           {reviewTitle}
         </h5>
-        <p className="text-[#CFCFCF] font-normal text-xs xl:max-w-[286px] mt-2">
+        <p className="text-[#CFCFCF] font-normal text-xs xl:max-w-[286px] lg:max-w-[250px] mt-2">
           {review}
         </p>
       </div>

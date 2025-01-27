@@ -10,7 +10,7 @@ const DogMeals = () => {
         <CurveIcon></CurveIcon>
         <div className="container flex flex-col xl:flex-row items-center xl:gap-[59px]">
         <div className=" relative flex items-center mt-[14px] text-center justify-center z-40">
-          <img className="xl:max-w-[637px]" src={dog2} alt="" />
+          <img className="xl:max-w-[637px] lg:max-w-[248px]" src={dog2} alt="" />
         </div>
 
         <div className="relative z-40">

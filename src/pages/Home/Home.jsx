@@ -11,7 +11,7 @@ import WhyChooseUs from "../../components/home/WhyChooseUs";
 
 const Home = () => {
     return (
-        <div>
+        <div className="lg:overflow-hidden">
             <HeroSection />
             <WhyChooseUs />
             <NutritiousSection />
