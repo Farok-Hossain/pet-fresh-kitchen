@@ -89,7 +89,7 @@ const CommonModal = ({
               </h3>
             </div>
 
-            <div className="flex xl:flex-row px-8 xl:gap-[14px] gap-[26px]">
+            <div className="flex xl:flex-row xl:px-0 px-8 xl:gap-[14px] gap-[26px]">
               <div>
                 <div className="flex justify-center">
                   {clickedButton === "cart" && (
@@ -99,19 +99,19 @@ const CommonModal = ({
                     </button></Link>
                   )}
                 </div>
-                <div className="flex">
+                <div className="flex justify-center">
                   {clickedButton === "buy" && (
                     <Link to="/checkout">
-                    <button className="bg-primaryOrange rounded-[10px] px-20 py-5 text-2xl font-bold text-white">
+                    <button className="bg-primaryOrange  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white">
                       Buy Now
                     </button>
                     </Link>
                   )}
                 </div>
-                <div className="flex">
+                <div className=" flex justify-center items-center xl:px-0 px-16">
                   {clickedButton === "sample" && (
                     <Link to="/orders">
-                    <button  className="bg-primaryOrange rounded-[10px] px-20 py-5 xl:text-2xl text-xl font-bold text-white">
+                    <button  className="bg-primaryOrange flex  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white">
                       Get Free Sample
                     </button></Link>
                   )}

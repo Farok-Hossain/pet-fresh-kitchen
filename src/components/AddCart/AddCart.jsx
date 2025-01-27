@@ -6,7 +6,7 @@ import { useState } from "react";
 import CrossIcon from "@/assets/Icons/CrossIcon";
 
 const AddCart = () => {
-    const [count, setCount] = useState(1);
+  const [count, setCount] = useState(1);
 
   const products = [
     {
@@ -38,39 +38,44 @@ const AddCart = () => {
       price: 132.93,
     },
   ];
-    return (
-        <div className="container py-[200px]">
+  return (
+    <div className="container xl:py-[200px] py-10">
       <div className="">
-        <h3 className="text-textGray text-[40px] font-semibold">Add to Cart</h3>
+        <h3 className="text-textGray xl:text-[40px] text-xl font-semibold">
+          Add to Cart
+        </h3>
       </div>
 
-      <div className="flex gap-[60px] mt-[30px] ">
+      <div className="flex xl:flex-row flex-col gap-[60px] mt-[30px] ">
         <div>
           {products.map((item, index) => (
-            <div key={index} className={`flex items-center gap-[38px] ${
+            <div
+              key={index}
+              className={`flex items-center xl:gap-[38px] gap-3 ${
                 index > 0 ? "mt-5" : ""
-              }`}>
+              }`}
+            >
               <div>
-                <Checkbox className="rounded-full h-[54px] w-[54px]" />
+                <Checkbox className="rounded-full xl:h-[54px] h-6 w-6 xl:w-[54px]" />
               </div>
 
-              <div className="flex items-center gap-10 border-[1px] w-[782px] border-[#E2E2E2] rounded-[10px]">
-                <div className="py-[10px] pl-10">
+              <div className="flex items-center xl:gap-10 border-[1px] xl:w-[782px] border-[#E2E2E2] rounded-[10px]">
+                <div className="xl:py-[10px] px-1 xl:pl-10 py-1">
                   <img src={rawMeals} alt="" />
                 </div>
-                <div className="pt-[15px]">
-                  <h3 className="text-textGray text-[32px] font-medium">
+                <div className="pt-[15px] pr-2 pl-1">
+                  <h3 className="text-textGray xl:text-[32px] xl:font-medium">
                     {item.title}
                   </h3>
-                  <h5 className="text-xl font-medium text-[#212121B2]">
+                  <h5 className="xl:text-xl font-medium text-[#212121B2]">
                     Net Weight: {item.netWeight}
                   </h5>
-                  <h5 className="text-xl font-medium text-[#212121B2]">
+                  <h5 className="xl:text-xl xl:mb-5 font-medium text-[#212121B2]">
                     Dog Type: {item.dogType}
                   </h5>
                 </div>
 
-                <div className="flex gap-5 items-center pr-7">
+                <div className="flex xl:flex-row flex-col gap-5 items-center pr-7">
                   <div className="border-[1px] rounded-[10px] border-[#E2E2E2] flex px-3 py-[6.5px]">
                     <button
                       className=""
@@ -84,7 +89,7 @@ const AddCart = () => {
                         <MinusIcon className="px-1 py-1" />
                       </div>
                     </button>
-                    <div className="px-[35px] flex justify-center items-center">
+                    <div className="xl:px-[35px] px-5 flex justify-center items-center">
                       {count}
                     </div>
                     <button
@@ -108,40 +113,42 @@ const AddCart = () => {
           ))}
         </div>
 
-        <div className="w-[505px] border-[1px] rounded-[10px] border-[#E2E2E2] px-5">
-          <h3 className="text-textGray text-[30px] font-semibold mt-10">
+        <div className="xl:w-[505px] border-[1px] rounded-[10px] border-[#E2E2E2] px-5">
+          <h3 className="text-textGray xl:text-[30px] text-xl font-semibold xl:mt-10 mt-4">
             Shopping Cart
           </h3>
-          <h5 className="text-[#545454] text-[18px] font-normal leading-4 mt-10 mb-2">
+          <h5 className="text-[#545454] xl:text-[18px] font-normal leading-4 xl:mt-10 mt-4 mb-2">
             Discount code
           </h5>
           <div className="border-[0.5px] mt-[5px] text-[#9F9F9F] rounded-[7px]">
-            <h5 className="text-[14px] leading-6 text-[#979797] p-4">code</h5>
+            <h5 className="text-[14px] leading-6 text-[#979797] xl:p-4 p-2">code</h5>
           </div>
 
-          <div className="flex justify-between mt-10 mb-10">
-            <h4 className="text-textGray text-xl font-medium">Subtotal</h4>
-            <h4 className="text-textGray text-xl font-normal">$455</h4>
+          <div className="flex justify-between xl:mt-10 mt-4 xl:mb-10 mb-2">
+            <h4 className="text-textGray xl:text-xl font-medium">Subtotal</h4>
+            <h4 className="text-textGray xl:text-xl font-normal">$455</h4>
           </div>
-          <div className="flex justify-between mb-5">
-            <h4 className="text-textGray text-[18px]">Estimated shipping</h4>
-            <h4 className="text-textGray text-xl font-normal">$25</h4>
+          <div className="flex justify-between xl:mb-5 mb-2">
+            <h4 className="text-textGray xl:text-xl">Estimated shipping</h4>
+            <h4 className="text-textGray xl:text-xl font-normal">$25</h4>
           </div>
-          <div className="flex justify-between">
-            <h4 className="text-textGray text-[18px]">Discount code</h4>
-            <h4 className="text-textGray text-xl font-normal">$00</h4>
+          <div className="flex justify-between mb-2">
+            <h4 className="text-textGray xl:text-xl">Discount code</h4>
+            <h4 className="text-textGray xl:text-xl font-normal">$00</h4>
           </div>
-          <div className="flex justify-between mt-10 mb-[25px]">
-            <h4 className="text-textGray text-xl font-medium">Total</h4>
-            <h4 className="text-textGray text-xl font-normal">$480</h4>
+          <div className="flex justify-between xl:mt-10 xl:mb-[25px] mb-4">
+            <h4 className="text-textGray xl:text-xl font-medium">Total</h4>
+            <h4 className="text-textGray xl:text-xl font-normal">$480</h4>
           </div>
-          <div>
-            <button className="bg-primaryOrange text-white py-5 w-full text-2xl font-bold rounded-[10px]">Buy Now</button>
+          <div className="pb-5">
+            <button className="bg-primaryOrange text-white xl:py-5 py-2 w-full xl:text-2xl xl:font-bold rounded-[10px]">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default AddCart;

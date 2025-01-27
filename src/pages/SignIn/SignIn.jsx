@@ -19,38 +19,38 @@ const SignIn = () => {
         setShowConfirmPassword((prev) => !prev)
       }
   return (
-    <div className="h-screen flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: `url(${loginBg})` }}>
+    <div className="h-screen px-5 flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: `url(${loginBg})` }}>
       <div className="absolute inset-0 bg-black opacity-70"></div>
-      <div className="bg-white min-w-[872px]  pt-[50px] pb-[74px]  rounded-lg shadow-lg px-[100px]  relative z-10">
-        <div className="flex justify-center ">
+      <div className="bg-white xl:min-w-[872px] px-5  xl:pt-[50px] pt-4 xl:pb-[74px] pb-4  rounded-lg shadow-lg xl:px-[100px]  relative z-10">
+        <div className="flex justify-center px-[120px] ">
             <img src={logo} alt="" />
         </div>
-        <h2 className="text-[40px] font-semibold text-textGray text-center leading-[53px]">Sign In</h2>
-        <p className="text-center font-normal text-[18px] text-[#5A5C5F] mt-5">Welcome Back, Please Enter your Details to Log In.</p>
-        <form  className=" mt-[50px]">
+        <h2 className="xl:text-[40px] text-2xl font-semibold text-textGray text-center xl:leading-[53px]">Sign In</h2>
+        <p className="text-center font-normal xl:text-[18px] text-[15px] text-[#5A5C5F] xl:mt-5 mt-2">Welcome Back, Please Enter your Details to Log In.</p>
+        <form  className=" xl:mt-[50px] mt-2">
           <div>
 
-            <label htmlFor="email" className="text-textGray text-[18px] font-medium leading-6 mb-3">Email Address</label>
+            <label htmlFor="email" className="text-textGray xl:text-[18px] font-medium leading-6 mb-3">Email Address</label>
             <input
               type="email"
               id="email"
               placeholder="abcd@gmail.com"
-              className="w-full px-6 py-[11px] border rounded-md pl-6 mt-3 focus:outline-none"
+              className="w-full xl:px-6  xl:py-[11px] py-2 border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
             />
           </div>
 
-          <div className="mt-5">
-            <label htmlFor="password" className="text-textGray text-[18px] font-medium leading-6 mb-3">Password</label>
-            <div className="flex justify-between items-center border rounded-md  overflow-hidden">
+          <div className="xl:mt-5 pt-2">
+            <label htmlFor="password" className="text-textGray xl:text-[18px] font-medium leading-6 mb-3">Password</label>
+            <div className="flex justify-between items-center border rounded-md  overflow-hidden mt-1">
             <input
               type="password"
               id="password"
               placeholder="************"
-              className="w-full px-6 py-[11px] focus:outline-none"
+              className="w-full xl:px-6 px-3 xl:py-[11px] py-2 focus:outline-none"
             />
             <button type="button" 
                 onClick={togglePasswordVisibility}
-                className=" text-gray-500 pr-6"
+                className=" text-gray-500 xl:pr-6 pr-3"
               >{showPassword? (
                 <ShowEyeIcon className="" />
               ): (
@@ -71,12 +71,12 @@ const SignIn = () => {
 
           <button
             type="submit"
-            className="w-full bg-primaryOrange text-white text-[18px] font-semibold rounded-md mt-10 py-[15px]"
+            className="w-full bg-primaryOrange text-white xl:text-[18px] font-semibold rounded-md xl:mt-10 mt-2 xl:py-[15px] py-2"
           >
             Sign In
           </button>
 
-          <h3 className="text-xl text-center mt-10 text-[#5A5C5F]">Don’t have an account? <Link to="/signup"><span className="text-primaryOrange">Sign Up</span></Link></h3>
+          <h3 className="xl:text-xl text-center xl:mt-10 mt-2 text-[#5A5C5F]">Don’t have an account? <Link to="/signup"><span className="text-primaryOrange">Sign Up</span></Link></h3>
         </form>
       </div>
     </div>
