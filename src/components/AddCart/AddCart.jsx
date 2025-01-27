@@ -106,7 +106,7 @@ const AddCart = () => {
                   <div>
                     <h4>${item.price}</h4>
                   </div>
-                  <div className="h-6 w-6 xl:mt-0 mt-[-75px]">
+                  <div className="h-6 w-6 ">
                     <CrossIcon />
                   </div>
                 </div>

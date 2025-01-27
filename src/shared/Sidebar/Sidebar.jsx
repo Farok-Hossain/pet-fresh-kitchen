@@ -36,7 +36,7 @@ const Sidebar = () => {
   return (
     <div>
       {/* Sidebar */}
-      <div className="border-[1px] w-[428px] rounded-lg mr-7 h-auto mt-[45px]">
+      <div className="border-[1px] xl:w-[428px] hidden xl:block rounded-lg mr-7 h-auto mt-[45px]">
         <h3 className="text-textGray text-xl font-medium leading-[30px] pt-6 pb-4 pl-5">
           Navigation
         </h3>

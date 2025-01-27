@@ -23,34 +23,34 @@ const DeliveryAddress = () => {
 
   return (
     <div>
-      <h3 className="text-textGray text-xl pl-5 py-4 font-medium leading-[30px]">
+      <h3 className="text-textGray text-xl pl-5 py-4 font-medium xl:leading-[30px]">
         Delivery Address
       </h3>
       <div className="border-[1px] w-full"></div>
       <div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="form-container flex gap-28 space-y-5 pl-5"
+          className="form-container gap-28 space-y-5 pl-5"
         >
           <div>
             {/* Street Address */}
             <div className="flex flex-col">
               <label
                 htmlFor="street address"
-                className="max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mt-6 mb-[6px]"
+                className="xl:max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mt-6 mb-[6px]"
               >
                 Street Address
               </label>
               <input
                 id="address"
                 placeholder="1425 park"
-                className="w-[936px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px]"
+                className="xl:w-[936px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px]"
                 {...register("address")}
               />
               {errors.name && <p className="error">{errors.address.message}</p>}
             </div>
 
-            <div className="flex mt-4 gap-[15px]">
+            <div className="flex xl:flex-row flex-col mt-4 gap-[15px]">
                 
               <div>
                 <CommonSelectField width="w-[302px]" options={country} label="Country / Region" />
@@ -80,7 +80,7 @@ const DeliveryAddress = () => {
             </div>
 
             {/* Email Address */}
-            <div className="flex gap-4 mt-4">
+            <div className="flex xl:flex-row flex-col gap-4 mt-4">
               <div>
                 <label
                   htmlFor="email"
@@ -91,7 +91,7 @@ const DeliveryAddress = () => {
                 <input
                   id="email"
                   placeholder="alzarijosef@gmail.com"
-                  className="w-[460px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px] mt-[6px]"
+                  className="xl:w-[460px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px] mt-[6px]"
                   type="email"
                   {...register("email")}
                 />
@@ -99,7 +99,7 @@ const DeliveryAddress = () => {
                   <p className="error">{errors.email.message}</p>
                 )}
               </div>
-              <div>
+              <div className="">
                 <label
                   htmlFor="phone"
                   className="max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] mt-4"
@@ -109,7 +109,7 @@ const DeliveryAddress = () => {
                 <input
                   id="phone"
                   placeholder="+880125487"
-                  className="w-[460px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px] mt-[6px]"
+                  className="xl:w-[460px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px] mt-[6px]"
                   type="tel"
                   {...register("phone")}
                 />
