@@ -38,7 +38,7 @@ const ChooseKitchen = () => {
         </p>
       </div>
 
-      <div className="grid xl:grid-cols-3 gap-[15px] ">
+      <div className="grid xl:grid-cols-3 lg:grid-cols-2 gap-[15px] ">
         {chooseItems.map((item, index) => (
           <div
             className=" flex flex-col justify-center items-center border-[1px] rounded-[20px] border-[#F7830D] text-center h-auto xl:min-h-[600px] xl:w-[470px] xl:px-10 px-3"

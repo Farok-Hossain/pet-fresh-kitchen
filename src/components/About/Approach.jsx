@@ -7,7 +7,7 @@ const Approach = () => {
   return (
     <CommonWrapper>
       <div>
-        <div className="flex xl:flex-row flex-col  xl:gap-[100px]">
+        <div className="flex xl:flex-row justify-center items-center flex-col  xl:gap-[100px]">
           <div className="xl:max-w-[587px]">
             <img src={dog} alt="dog" />
           </div>
@@ -72,7 +72,7 @@ const Approach = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-5">
+        <div className="flex justify-center items-center xl:pl-[55px] mt-5">
           <CommonButton
             className="rounded text-white"
             text="Get Free Sample"

@@ -40,7 +40,7 @@ const FreshFood = () => {
         </h3>
       </div>
       {/* chooseItems  */}
-      <div className="grid xl:grid-cols-2 gap-x-32 xl:gap-y-10 gap-y-7">
+      <div className="grid xl:grid-cols-2 lg:grid-cols-2 gap-x-32 xl:gap-y-10 gap-y-7">
         {chooseItems.map((item, index) => (
           <PetFreshKitchen
             key={index}

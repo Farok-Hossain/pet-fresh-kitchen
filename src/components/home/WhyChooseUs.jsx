@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
       </div>
       
       {/* chooseItems  */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-x-32 gap-y-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 lg:px-5 lg:gap-7 xl:gap-x-32 gap-y-10">
         {
             chooseItems.map((item, index) => (
               <PetFreshKitchen key={index} icon={item.icon} title={item.title} description={item.description}>

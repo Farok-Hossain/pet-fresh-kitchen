@@ -15,10 +15,10 @@ const Work = () => {
       <WorkBanner />
       {/* Pet details area */}
       <div className="xl:mt-[200px] mt-6">
-        <h3 className="text-textGray xl:text-5xl text-xl  xl:font-bold font-medium xl:leading-[70px] text-center xl:mb-5 mb-3">
+        <h3 className="text-textGray xl:text-5xl lg:text-2xl text-xl   xl:font-bold font-medium xl:leading-[70px] text-center xl:mb-5 mb-3">
           How It Works
         </h3>
-        <p className="xl:text-[18px] flex mx-auto text-center xl:w-[913px] font-normal px-4 xl:leading-7 text-textGray">
+        <p className="xl:text-[18px] flex mx-auto text-center xl:w-[913px] lg:px-10 font-normal px-4 xl:leading-7 text-textGray">
           At Pet Fresh Kitchen, we make pet nutrition super easy, convenient,
           and affordable. Feeding your furry friend fresh, healthy meals has
           never been simpler. Here’s how it works

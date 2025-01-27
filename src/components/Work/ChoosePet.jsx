@@ -6,18 +6,18 @@ const ChoosePet = () => {
   return (
     <CommonWrapper>
       <div>
-        <div className="flex xl:flex-row flex-col-reverse xl:gap-[100px] gap-[30px] items-center">
+        <div className="flex xl:flex-row lg:flex-row flex-col-reverse xl:gap-[100px] gap-[30px] items-center">
           {/* Image Section */}
-          <div className="max-w-[587px]">
+          <div className="xl:max-w-[587px] lg:max-w-[300px]">
             <img src={dog} alt="dog" />
           </div>
 
           {/* All Items Section */}
           <div className="flex flex-col justify-center">
-            <h4 className="text-[#212B36] xl:text-5xl text-xl xl:font-semibold font-medium text-center xl:text-start mb-5">
+            <h4 className="text-[#212B36] xl:text-5xl text-xl xl:font-semibold font-medium text-center xl:text-start lg:mb-2 mb-5">
               Why Choose Pet Fresh Kitchen?
             </h4>
-            <h5 className="text-[#212B36] xl:text-xl text-[18px] font-normal xl:leading-8 text-center xl:text-start mb-5">
+            <h5 className="text-[#212B36] xl:text-xl  text-[18px] font-normal xl:leading-8 text-center xl:text-start lg:mb-2 mb-5">
               <span className="xl:font-bold">
                 Pet Nutrition, Convenience, and Affordability
               </span>

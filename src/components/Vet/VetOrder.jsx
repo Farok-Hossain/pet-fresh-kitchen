@@ -10,7 +10,7 @@ const VetOrder = () => {
       backgroundRepeat: "no-repeat",
     }}>
       <div className="relative z-10 text-center px-4">
-      <h3 className="xl:max-w-[924px] mx-auto text-2xl  xl:text-[64px] xl:leading-[80px] font-semibold mb-4">Let’s Prioritize Pet Wellness Together</h3>
+      <h3 className="xl:max-w-[924px] mx-auto text-2xl  xl:text-[64px] lg:text-2xl xl:leading-[80px] font-semibold mb-4">Let’s Prioritize Pet Wellness Together</h3>
       <p className="xl:text-xl  xl:leading-[30px] xl:max-w-[798px] mx-auto text-center">As your trusted veterinary partner, I recommend incorporating fresh, balanced meals into your pet&apos;s diet to give them the best chance at a long and happy life. Remember, a healthier pet starts with better nutrition.</p>
       <p className="xl:text-xl xl:leading-[30px] mt-[10px] mb-[10px]">With love and care</p>
       <p className="xl:text-xl xl:leading[30px] xl:mb-8">Your Veterinarian Partner

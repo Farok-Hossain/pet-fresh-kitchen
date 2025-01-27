@@ -26,8 +26,8 @@ const CommonSection = ({
   return (
     <CommonWrapper>
       <div
-        className={`flex flex-col xl:gap-[30px] xl:flex-row ${
-          reverse ? "xl:flex-row-reverse" : ""
+        className={`flex flex-col xl:gap-[30px] xl:flex-row lg:flex-row ${
+          reverse ? "xl:flex-row-reverse lg:flex-row-reverse " : ""
         } items-center gap-6 xl:my-8`}
       >
         <div className="xl:min-w-[768px]">

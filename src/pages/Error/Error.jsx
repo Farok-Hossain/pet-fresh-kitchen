@@ -15,8 +15,8 @@ const Error = () => {
                 <img src={error} alt="" />
             </div>
             <div className="flex flex-col items-center">
-                <h3 className="text-textGray text-[40px] font-semibold leading-[48px] mb-5">Oops! page not found</h3>
-                <p className="w-[612px] text-center text-textGraySm text-[16px] font-normal leading-6 mb-6">Ut consequat ac tortor eu vehicula. Aenean accumsan purus eros. Maecenas sagittis tortor at metus mollis</p>
+                <h3 className="text-textGray xl:text-[40px] lg:text-3xl text-2xl font-semibold leading-[48px] mb-5">Oops! page not found</h3>
+                <p className="xl:w-[612px] text-center text-textGraySm text-[16px] font-normal leading-6 mb-6">Ut consequat ac tortor eu vehicula. Aenean accumsan purus eros. Maecenas sagittis tortor at metus mollis</p>
                 <CommonButton className="rounded-full mb-12 text-white" text="Back to Home"></CommonButton>
             </div>
         </CommonWrapper>
