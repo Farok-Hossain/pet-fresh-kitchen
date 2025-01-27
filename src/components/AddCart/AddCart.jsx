@@ -46,7 +46,7 @@ const AddCart = () => {
         </h3>
       </div>
 
-      <div className="flex xl:flex-row flex-col gap-[60px] mt-[30px] ">
+      <div className="flex xl:flex-row flex-col xl:gap-[60px] gap-5 mt-[30px] ">
         <div>
           {products.map((item, index) => (
             <div
@@ -59,26 +59,26 @@ const AddCart = () => {
                 <Checkbox className="rounded-full xl:h-[54px] h-6 w-6 xl:w-[54px]" />
               </div>
 
-              <div className="flex items-center xl:gap-10 border-[1px] xl:w-[782px] border-[#E2E2E2] rounded-[10px]">
-                <div className="flex xl:gap-10">
-                <div className="xl:py-[10px] px-1 xl:pl-10 py-1">
-                  <img src={rawMeals} alt="" />
-                </div>
-                <div className="pt-[15px] pr-2 pl-1">
-                  <h3 className="text-textGray xl:text-[32px] xl:font-medium">
-                    {item.title}
-                  </h3>
-                  <h5 className="xl:text-xl font-medium text-[#212121B2]">
-                    Net Weight: {item.netWeight}
-                  </h5>
-                  <h5 className="xl:text-xl xl:mb-5 font-medium text-[#212121B2]">
-                    Dog Type: {item.dogType}
-                  </h5>
-                </div>
+              <div className="flex xl:flex-row flex-col items-center xl:gap-10 border-[1px] xl:w-[782px] border-[#E2E2E2] rounded-[10px]">
+                <div className="flex xl:gap-6 gap-4">
+                  <div className="xl:py-[10px] w-12 xl:w-24 flex justify-center items-center  xl:pl-6 py-2">
+                    <img src={rawMeals} alt="" />
+                  </div>
+                  <div className="xl:pt-[15px] flex flex-col justify-center  pl-1">
+                    <h3 className="text-textGray xl:text-[32px] xl:font-medium">
+                      {item.title}
+                    </h3>
+                    <h5 className="xl:text-xl xl:font-medium text-[#212121B2]">
+                      Net Weight: {item.netWeight}
+                    </h5>
+                    <h5 className="xl:text-xl xl:mb-5 xl:font-medium text-[#212121B2]">
+                      Dog Type: {item.dogType}
+                    </h5>
+                  </div>
                 </div>
 
-                <div className="flex xl:flex-row flex-col gap-5 items-center pr-7">
-                  <div className="border-[1px] rounded-[10px] border-[#E2E2E2] flex px-3 py-[6.5px]">
+                <div className="flex xl:flex-row xl:gap-5 gap-8 items-center pl-4 xl:pl-0 pr-4 xl:pr-7 mb-3 xl:mb-0">
+                  <div className="border-[1px] rounded-[10px] border-[#E2E2E2] flex xl:px-3 px-4 py-[6.5px]">
                     <button
                       className=""
                       onClick={() => {
@@ -106,7 +106,7 @@ const AddCart = () => {
                   <div>
                     <h4>${item.price}</h4>
                   </div>
-                  <div className="h-6 w-6">
+                  <div className="h-6 w-6 xl:mt-0 mt-[-75px]">
                     <CrossIcon />
                   </div>
                 </div>
@@ -123,7 +123,9 @@ const AddCart = () => {
             Discount code
           </h5>
           <div className="border-[0.5px] mt-[5px] text-[#9F9F9F] rounded-[7px]">
-            <h5 className="text-[14px] leading-6 text-[#979797] xl:p-4 p-2">code</h5>
+            <h5 className="text-[14px] leading-6 text-[#979797] xl:p-4 p-2">
+              code
+            </h5>
           </div>
 
           <div className="flex justify-between xl:mt-10 mt-4 xl:mb-10 mb-2">
