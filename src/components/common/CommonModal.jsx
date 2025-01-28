@@ -89,7 +89,7 @@ const CommonModal = ({
               </h3>
             </div>
 
-            <div className="flex xl:flex-row xl:px-0 px-8 xl:gap-[14px] gap-[26px]">
+            <div className="flex lg:justify-center xl:justify-start xl:flex-row xl:px-0 px-8 xl:gap-[14px] gap-[26px]">
               <div>
                 <div className="flex justify-center">
                   {clickedButton === "cart" && (

@@ -5,11 +5,18 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { useState } from "react";
 import ShowEyeIcon from "@/assets/Icons/ShowEyeIcon";
 import EyeCloseIcon from "@/assets/Icons/EyeCloseIcon";
+import { useForm } from "react-hook-form";
 
 
 const SignIn = () => {
     const [showPassword, setShowPassword] = useState(false)
         const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+
+        const {
+                register,
+                handleSubmit,
+                formState: { errors },
+              } = useForm();
 
     const togglePasswordVisibility = () => {
         setShowPassword((prev) => !prev);
@@ -18,6 +25,11 @@ const SignIn = () => {
       const toggleConfirmPasswordVisibility = () => {
         setShowConfirmPassword((prev) => !prev)
       }
+
+      const onSubmit = (data) => {
+        console.log(data);
+      };
+
   return (
     <div className="h-screen px-5 flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: `url(${loginBg})` }}>
       <div className="absolute inset-0 bg-black opacity-70"></div>
@@ -27,7 +39,9 @@ const SignIn = () => {
         </div>
         <h2 className="xl:text-[40px] text-2xl font-semibold text-textGray text-center xl:leading-[53px]">Sign In</h2>
         <p className="text-center font-normal xl:text-[18px] text-[15px] text-[#5A5C5F] xl:mt-5 mt-1">Welcome Back, Please Enter your Details to Log In.</p>
-        <form  className=" xl:mt-[50px] mt-2">
+        <form
+        onSubmit={handleSubmit(onSubmit)}
+        className=" xl:mt-[50px] mt-2">
           <div>
 
             <label htmlFor="email" className="text-textGray xl:text-[18px] font-medium leading-6 mb-3">Email Address</label>
@@ -36,6 +50,7 @@ const SignIn = () => {
               id="email"
               placeholder="abcd@gmail.com"
               className="w-full xl:px-6  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
+              {...register("email")}
             />
           </div>
 
@@ -47,6 +62,7 @@ const SignIn = () => {
               id="password"
               placeholder="************"
               className="w-full xl:px-6 px-3 xl:py-[11px] py-[6px] focus:outline-none"
+              {...register("password")}
             />
             <button type="button" 
                 onClick={togglePasswordVisibility}

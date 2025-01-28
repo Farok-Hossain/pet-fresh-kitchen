@@ -47,7 +47,9 @@ const SignUp = () => {
         <p className="text-center font-normal xl:text-[18px] text-[15px] text-[#5A5C5F] xl:mt-5 mt-1">
           Lets have these fields
         </p>
-        <form className=" xl:mt-[50px] mt-2">
+        <form 
+        onSubmit={handleSubmit(onSubmit)}
+        className=" xl:mt-[50px] mt-2">
           <div>
             <label
               htmlFor="name"
@@ -60,6 +62,7 @@ const SignUp = () => {
               id="name"
               placeholder="First Name "
               className="w-full xl:px-6 text-[14px]  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
+              {...register("name")}
             />
           </div>
 
@@ -75,6 +78,7 @@ const SignUp = () => {
               id="email"
               placeholder="abcd@gmail.com"
               className="w-full xl:px-6  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
+              {...register("email")}
             />
           </div>
 

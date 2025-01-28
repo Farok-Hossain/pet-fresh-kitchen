@@ -51,7 +51,7 @@ const AddCart = () => {
           {products.map((item, index) => (
             <div
               key={index}
-              className={`flex items-center xl:gap-[38px] gap-3 ${
+              className={`flex items-center xl:gap-[38px] lg:gap-7 lg:pl-1 gap-3 ${
                 index > 0 ? "mt-5" : ""
               }`}
             >
@@ -59,26 +59,26 @@ const AddCart = () => {
                 <Checkbox className="rounded-full xl:h-[54px] h-6 w-6 xl:w-[54px]" />
               </div>
 
-              <div className="flex xl:flex-row flex-col items-center xl:gap-10 border-[1px] xl:w-[782px] border-[#E2E2E2] rounded-[10px]">
+              <div className="flex xl:flex-row lg:flex-row  flex-col items-center xl:gap-10 lg:gap-6 border-[1px]  xl:max-w-[782px] border-[#E2E2E2] rounded-[10px]">
                 <div className="flex xl:gap-6 gap-4">
-                  <div className="xl:py-[10px] w-12 xl:w-24 flex justify-center items-center  xl:pl-6 py-2">
+                  <div className="xl:py-[10px] lg:py-2 lg:px-2 w-12 xl:w-24 flex justify-center items-center  xl:pl-6 py-2">
                     <img src={rawMeals} alt="" />
                   </div>
                   <div className="xl:pt-[15px] flex flex-col justify-center  pl-1">
-                    <h3 className="text-textGray xl:text-[32px] xl:font-medium">
+                    <h3 className="text-textGray xl:text-[32px] lg:py-1 xl:font-medium">
                       {item.title}
                     </h3>
                     <h5 className="xl:text-xl xl:font-medium text-[#212121B2]">
                       Net Weight: {item.netWeight}
                     </h5>
-                    <h5 className="xl:text-xl xl:mb-5 xl:font-medium text-[#212121B2]">
+                    <h5 className="xl:text-xl xl:mb-5 lg:py-1 xl:font-medium text-[#212121B2]">
                       Dog Type: {item.dogType}
                     </h5>
                   </div>
                 </div>
 
-                <div className="flex xl:flex-row xl:gap-5 gap-8 items-center pl-4 xl:pl-0 pr-4 xl:pr-7 mb-3 xl:mb-0">
-                  <div className="border-[1px] rounded-[10px] border-[#E2E2E2] flex xl:px-3 px-4 py-[6.5px]">
+                <div className="flex xl:flex-row xl:gap-5 lg:gap-10 gap-8 items-center pl-4 xl:pl-0 pr-4 xl:pr-7 mb-3 xl:mb-0">
+                  <div className="border-[1px] rounded-[10px] border-[#E2E2E2] lg:gap-5 flex xl:px-3 px-4 py-[6.5px]">
                     <button
                       className=""
                       onClick={() => {
@@ -88,7 +88,7 @@ const AddCart = () => {
                       }}
                     >
                       <div className="bg-primaryOrange text-white w-5 h-5 rounded-full flex justify-center items-center">
-                        <MinusIcon className="px-1 py-1" />
+                        <MinusIcon />
                       </div>
                     </button>
                     <div className="xl:px-[35px] px-5 flex justify-center items-center">
@@ -99,7 +99,7 @@ const AddCart = () => {
                       onClick={() => setCount((count) => count + 1)}
                     >
                       <div className="bg-primaryOrange text-white w-5 h-5 rounded-full flex justify-center items-center">
-                        <PlusIcon className="w-2" />
+                        <PlusIcon />
                       </div>
                     </button>
                   </div>
