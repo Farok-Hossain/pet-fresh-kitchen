@@ -24,14 +24,14 @@ const Profile = () => {
   };
 
   return (
-    <div className="w-full xl:mb-[200px] mt-[19px]">
+    <div className="w-full lg:px-[160px] xl:px-10 xl:mb-[200px] mt-[19px]">
       <div className="mb-6">
         <h3 className="text-textGray text-xl xl:pl-5 text-center xl:text-start py-4 font-medium xl:leading-[30px]">
           Account Profile
         </h3>
         <div className="border-[1px] w-full"></div>
 
-        <div className="flex">
+        <div className="flex justify-center xl:justify-start">
           <div>
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -50,7 +50,7 @@ const Profile = () => {
                     <input
                       id="name"
                       placeholder="Full name here"
-                      className="xl:w-[512px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
+                      className="xl:w-[512px] lg:w-[800px] w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
                       {...register("name")}
                     />
                     {errors.name && (
@@ -139,9 +139,9 @@ const Profile = () => {
                   </div>
                 </div>
 
-                <div className="flex">
+               
                   {/* Profile Image Upload */}
-                  <div className="flex flex-col justify-center items-center">
+                  <div className="flex flex-col justify-center items-center ">
                     <div className="xl:mt-14 xl:w-56 xl:h-56">
                       <img
                         src={image}
@@ -160,7 +160,6 @@ const Profile = () => {
                       />
                     </label>
                   </div>
-                </div>
               </div>
 
               {/* Submit Button */}

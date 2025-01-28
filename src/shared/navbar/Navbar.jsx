@@ -43,9 +43,11 @@ const Navbar = () => {
     <div className="w-full bg-white sticky top-0 z-50">
       <div className="container flex justify-between items-center py-[10px]">
         {/* Logo */}
+        <Link to="/">
         <div>
           <img src={logo} alt="logoImg" />
         </div>
+        </Link>
 
         {/* Hamburger Icon */}
         <div className="xl:hidden">
@@ -58,7 +60,7 @@ const Navbar = () => {
         </div>
 
         {/* Nav Items (Hidden on smaller screens) */}
-        <div className="hidden xl:flex gap-10">
+        <div className="hidden xl:flex xl:gap-4 2xl:gap-10">
           {navItems.map((item, index) => (
             <div key={index}>
               <NavLink

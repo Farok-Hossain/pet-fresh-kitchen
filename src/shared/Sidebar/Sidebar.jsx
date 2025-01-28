@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import HistoryIcon from "@/assets/Icons/HistoryIcon";
 import LogoutIcon from "@/assets/Icons/LogoutIcon";
 import ProfileIcon2 from "@/assets/Icons/ProfileIcon2";
 import { NavLink } from "react-router-dom";
+import { X } from "lucide-react"; // Optional icons for toggling
+import { MdDashboard } from "react-icons/md";
 
 const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Track the active button
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Toggle sidebar visibility
+  const sidebarRef = useRef(null); // Reference to the sidebar
 
   const sidebarItems = [
     { icon: <ProfileIcon2 />, title: "Profile", path: "/sidebar" },
@@ -22,6 +26,7 @@ const Sidebar = () => {
   const handleItemClick = (index, onClick) => {
     setActiveIndex(index); // Update the active state
     if (onClick) onClick(); // Call the custom onClick if provided
+    setIsSidebarOpen(false); // Close the sidebar after clicking an item (for mobile)
   };
 
   const handleCloseModal = () => {
@@ -33,35 +38,63 @@ const Sidebar = () => {
     setIsModalOpen(false);
   };
 
+  // Detect clicks outside the sidebar
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsSidebarOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div>
+      {/* Toggle Button (Visible for screens <1200px) */}
+      <button
+        className="xl:hidden fixed top-[150px] left-[10px] z-50 bg-primaryOrange text-white p-2 rounded-full"
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+      >
+        {isSidebarOpen ? <X size={24} /> : <MdDashboard size={24} />}
+      </button>
+
       {/* Sidebar */}
-      <div className="border-[1px] xl:w-[428px] hidden xl:block rounded-lg mr-7 h-auto mt-[45px]">
+      <div
+        ref={sidebarRef} // Reference to the sidebar
+        className={`fixed xl:static xl:mt-3 mt-[200px] top-0 left-0 z-40 h-screen xl:h-auto bg-white xl:bg-transparent xl:w-[428px] w-[300px] shadow-lg xl:shadow-none transition-transform transform ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } xl:translate-x-0`}
+      >
         <h3 className="text-textGray text-xl font-medium leading-[30px] pt-6 pb-4 pl-5">
           Navigation
         </h3>
 
-        {sidebarItems.map((item, index) => (
-          <div key={index} className="flex items-center gap-[10px]">
-            <NavLink
-              className={`w-[428px] h-14 gap-[10px] pl-5 py-4 flex ${
-                activeIndex === index
-                  ? "bg-secondaryOrange text-textGray" // Active styles
-                  : "bg-white text-[#666]" // Inactive styles
-              } text-[16px]`}
-              to={item.path}
-              onClick={(e) => {
-                e.preventDefault(); // Prevent default navigation for logout
-                handleItemClick(index, item.onClick);
-              }}
-            >
-              <div className="w-6 h-6 p-1">{item.icon}</div>
-              <div className="text-[16px] font-normal leading-6 mb-4">
-                {item.title}
-              </div>
-            </NavLink>
-          </div>
-        ))}
+        <div>
+          {sidebarItems.map((item, index) => (
+            <div key={index} className="flex items-center gap-[10px]">
+              <NavLink
+                className={`w-full h-14 gap-[10px] pl-5 py-4 flex ${
+                  activeIndex === index
+                    ? "bg-secondaryOrange text-textGray" // Active styles
+                    : "bg-white text-[#666]" // Inactive styles
+                } text-[16px]`}
+                to={item.path}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default navigation for logout
+                  handleItemClick(index, item.onClick);
+                }}
+              >
+                <div className="w-6 h-6 p-1">{item.icon}</div>
+                <div className="text-[16px] font-normal leading-6 mb-4">
+                  {item.title}
+                </div>
+              </NavLink>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Modal */}
