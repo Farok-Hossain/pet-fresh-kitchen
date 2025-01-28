@@ -65,7 +65,7 @@ const Ingredient = () => {
         </p>
       </div>
 
-     <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-[30px] xl:pt-[60px] pt-6 ">
+     <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-[30px] xl:pt-[60px] pt-6 ">
      {ingredientItems.map((item, index) => (
         <IngredientCard
           key={index}

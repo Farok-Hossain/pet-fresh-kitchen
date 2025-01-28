@@ -40,7 +40,7 @@ const Recipe = () => {
                 </p>
               </div>
         
-             <div className="grid xl:grid-cols-4 lg:grid-cols-2 xl:gap-[30px] gap-6 xl:mt-[60px] lg:pt-10 mt-6">
+             <div className="grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 xl:gap-[30px] gap-6 xl:mt-[60px] lg:pt-10 mt-6">
              {ingredientItems.map((item, index) => (
                 <RecipeCard
                   key={index}

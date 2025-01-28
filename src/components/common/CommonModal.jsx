@@ -47,7 +47,7 @@ const CommonModal = ({
           </div>
 
           <div className="xl:space-y-5 space-y-2">
-            <h3 className="text-textGray xl:text-5xl text-xl text-center xl:font-semibold font-medium xl:leading-[70px] pt-2">
+            <h3 className="text-textGray xl:text-5xl text-xl xl:text-start text-center xl:font-semibold font-medium xl:leading-[70px] pt-2">
               {title}
             </h3>
             <h4 className="text-[#212121E6] xl:text-4xl text-xl text-center xl:text-start xl:font-medium">$132.92</h4>
@@ -89,7 +89,7 @@ const CommonModal = ({
               </h3>
             </div>
 
-            <div className="flex lg:justify-center xl:justify-start xl:flex-row xl:px-0 px-8 xl:gap-[14px] gap-[26px]">
+            <div className="flex justify-center xl:justify-start xl:flex-row xl:px-0 px-8 xl:gap-[14px] gap-[26px]">
               <div>
                 <div className="flex justify-center">
                   {clickedButton === "cart" && (

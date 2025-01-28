@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Card = ({ img, title, price, offer }) => {
   return (
-    <div className="relative">
-      <div className=" absolute xl:right-[16px] right-[36px] top-[-7px] flex justify-end">
+    <div className="relative flex justify-center">
+      <div className=" absolute sm:right-[16px] xs:right-24 right-[36px] top-[-7px] flex justify-end">
         <div className="relative ">
           <OfferIcon className="absolute top-0 left-0 w-full h-full" />
           <p className="absolute inset-0 flex items-center text-center justify-center z-10 text-white text-[14px] font-semibold">
@@ -16,8 +16,8 @@ const Card = ({ img, title, price, offer }) => {
 
       
       <div className="border border-[#E2E2E2] rounded-lg">
-      <div className=" w-full ">
-        <img src={img} alt="" className="w-full"/>
+      <div className=" w-full">
+        <img src={img} alt="" className="w-full object-cover"/>
       </div>
       <div className="xl:mt-12 mt-6">
       <h3 className=" text-textBlack text-center">{title}</h3>

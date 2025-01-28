@@ -26,7 +26,7 @@ const ChoosePet = () => {
 
             {/* Feature List */}
             <div className="xl:space-y-5 space-y-2">
-              <div className="flex items-center xl:justify-start justify-center gap-5">
+              <div className="flex items-center gap-5">
                 <div className="bg-primaryOrange xl:w-5 xl:h-5 rounded-full flex justify-center items-center">
                   <TrickIcon />
                 </div>

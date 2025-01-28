@@ -33,7 +33,7 @@ const SignIn = () => {
   return (
     <div className="h-screen px-5 flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: `url(${loginBg})` }}>
       <div className="absolute inset-0 bg-black opacity-70"></div>
-      <div className="bg-white xl:min-w-[872px] px-5  xl:pt-[50px] pt-3 xl:pb-[74px] pb-4  rounded-lg shadow-lg xl:px-[100px]  relative z-10">
+      <div className="bg-white xl:min-w-[872px] xlg:min-w-[700px] lg:min-w-[550px] md:min-w-[500px] px-5  xl:pt-[50px] pt-3 xl:pb-[74px] pb-4  rounded-lg shadow-lg xl:px-[100px]  relative z-10">
         <div className="flex justify-center px-[120px] ">
             <img src={logo} alt="" />
         </div>

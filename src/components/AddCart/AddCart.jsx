@@ -59,9 +59,9 @@ const AddCart = () => {
                 <Checkbox className="rounded-full xl:h-[54px] h-6 w-6 xl:w-[54px]" />
               </div>
 
-              <div className="flex xl:flex-row lg:flex-row  flex-col items-center xl:gap-10 lg:gap-6 border-[1px]  xl:max-w-[782px] border-[#E2E2E2] rounded-[10px]">
+              <div className="flex xl:flex-row md:flex-row  flex-col items-center xl:gap-10 lg:gap-6 border-[1px]  xl:max-w-[782px] border-[#E2E2E2] rounded-[10px]">
                 <div className="flex xl:gap-6 gap-4">
-                  <div className="xl:py-[10px] lg:py-2 lg:px-2 w-12 xl:w-24 flex justify-center items-center  xl:pl-6 py-2">
+                  <div className="xl:py-[10px] lg:py-2 lg:px-2 md:px-1 w-12 xl:w-24 flex justify-center items-center  xl:pl-6 py-2">
                     <img src={rawMeals} alt="" />
                   </div>
                   <div className="xl:pt-[15px] flex flex-col justify-center  pl-1">

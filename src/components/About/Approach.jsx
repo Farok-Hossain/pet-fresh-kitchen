@@ -7,7 +7,7 @@ const Approach = () => {
   return (
     <CommonWrapper>
       <div>
-        <div className="flex xl:flex-row justify-center items-center flex-col  xl:gap-[100px]">
+        <div className="flex lg:flex-row justify-center items-center flex-col  xl:gap-[100px]">
           <div className="xl:max-w-[587px]">
             <img src={dog} alt="dog" />
           </div>

@@ -76,7 +76,7 @@ export const router = createBrowserRouter([
         element: <Profile />,
       },
       {
-        path: "history",
+        path: "/sidebar/history",
         element: <OrderHistory />
       }
     ],

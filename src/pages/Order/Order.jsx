@@ -6,13 +6,7 @@ const Order = () => {
   const headings = [
     {
       heading1: "Starting From 50$ - 100$",
-    },
-    {
-      heading2: "Starting From 50$ - 100$",
-    },
-    {
-      heading3: "Starting From 50$ - 100$",
-    },
+    }
   ];
   return <CommonWrapper>
     {

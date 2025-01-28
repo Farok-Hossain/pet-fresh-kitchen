@@ -174,7 +174,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      {/* <DeliveryAddress /> */}
+      <DeliveryAddress />
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   const sidebarItems = [
     { icon: <ProfileIcon2 />, title: "Profile", path: "/sidebar" },
-    { icon: <HistoryIcon />, title: "Order History", path: "/history" },
+    { icon: <HistoryIcon />, title: "Order History", path: "/sidebar/history" },
     {
       icon: <LogoutIcon />,
       title: "Log-out",
@@ -71,21 +71,21 @@ const Sidebar = () => {
           onClick={handleCloseModal} // Close modal if clicking outside
         >
           <div
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-white lg:min-w-[400px] md:min-w-[380px] sm:min-w-[370px] rounded-lg shadow-lg p-8"
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
           >
-            <p className="xl:text-[32px] text-[#2F2F2F] xl:leading-[44px]">
+            <p className="xl:text-[32px] xlg:text-2xl text-xl text-center text-[#2F2F2F] xl:leading-[44px]">
               Are You Sure, You Want to Sign Out?
             </p>
             <div className="flex justify-center gap-4 mt-8">
               <button
-                className="xl:px-[44px] py-1 rounded-3xl bg-primaryOrange text-2xl text-white"
+                className="px-[44px] py-1 rounded-3xl bg-primaryOrange text-2xl text-white"
                 onClick={handleLogout}
               >
                 Yes
               </button>
               <button
-                className="xl:px-[44px] py-1 rounded-3xl xl:text-2xl bg-primaryOrange text-white"
+                className="px-[44px] py-1 rounded-3xl text-2xl bg-primaryOrange text-white"
                 onClick={handleCloseModal}
               >
                 No

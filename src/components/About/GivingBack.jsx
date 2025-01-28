@@ -5,10 +5,10 @@ const GivingBack = () => {
   return (
     <CommonWrapper>
       <div>
-        <h3 className="text-textGray xl:text-5xl text-xl text-center xl:text-start font-semibold xl:mb-5 mb-3">
+        <h3 className="text-textGray xl:text-5xl text-xl text-center lg:text-start font-semibold xl:mb-5 mb-3">
           Giving Back
         </h3>
-        <h5 className="text-textColor xl:text-[28px] xl:mb-5 mb-3 text-center lg:text-start xl:text-start">
+        <h5 className="text-textColor xl:text-[28px] xl:mb-5 mb-3 text-center  md:text-start">
           {" "}
           We believe in giving back to the community. With every purchase, you help:
         </h5>
