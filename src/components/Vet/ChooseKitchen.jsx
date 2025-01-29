@@ -3,6 +3,7 @@ import IngredientsIcon from "@/assets/Icons/IngredientsIcon";
 import BalancedIcon from "@/assets/Icons/BalancedIcon";
 import Essential from "@/assets/Icons/Essential";
 import { CommonButton } from "../common/CommonButton";
+import WhiteRightIcon from "@/assets/Icons/WhiteRightIcon";
 
 const ChooseKitchen = () => {
   const chooseItems = [
@@ -51,14 +52,22 @@ const ChooseKitchen = () => {
             <p className="xl:text-2xl font-normal xl:leading-7 xl:mb-[30px] mb-4">
               {item.description}
             </p>
-            <CommonButton
-              className="rounded text-white xl:mb-[52px] mb-5"
-              text="Order Now"
-              linkUrl="/orders"
-            ></CommonButton>
+            
             
           </div>
         ))}
+      </div>
+
+      <div className="pt-10 flex justify-center">
+      <CommonButton
+              className="rounded text-white group"
+              text="Get Free Samples"
+              rightIcon={
+                <span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]">
+                  <WhiteRightIcon />
+                </span>
+              }
+            ></CommonButton>
       </div>
 
       <div className="xl:mt-[60px]">

@@ -4,6 +4,8 @@ import CommonModal from "@/components/common/CommonModal";
 
 const ProductDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedId, setSelectedId] = useState(null);
+  const [weight, setWeight] = useState(null)
   const [clickedButton, setClickedButton] = useState(null);
 
   const weightData = [
@@ -28,7 +30,11 @@ const ProductDetails = () => {
   return (
     <div className="container xl:gap-[50px] flex xl:flex-row flex-col xl:py-[200px] py-10">
       <div className="xl:min-w-[518px] xl:min-h-[653px] flex justify-center border-[1px] rounded-[10px] border-[#E2E2E2]">
-        <img src={productImg} alt="" className="px-[41px]  xl:py-[122px] py-10" />
+        <img
+          src={productImg}
+          alt=""
+          className="px-[41px]  xl:py-[122px] py-10"
+        />
       </div>
       <div className="pt-[10px] xl:pl-[10px]">
         <div className="space-y-5">
@@ -39,7 +45,9 @@ const ProductDetails = () => {
           </div>
 
           <div>
-            <h4 className="text-[#212121E6] xl:text-4xl text-xl text-center xl:text-start font-medium">$132.93</h4>
+            <h4 className="text-[#212121E6] xl:text-4xl text-xl text-center xl:text-start font-medium">
+              $132.93
+            </h4>
           </div>
 
           <div>
@@ -49,7 +57,13 @@ const ProductDetails = () => {
             <div className="flex flex-wrap justify-center xl:justify-start xl:text-[18px] text-[14px] font-medium text-textGraySm gap-[10px]">
               {weightData.map((item) => (
                 <div
-                  className="border-[1px] rounded-[10px] xl:px-[18px] px-2 py-1 xl:py-[8px] border-[#124C5F] mt-[10px]"
+                className={`border-[1px] rounded-[10px] xl:px-[18px] px-2 py-1 xl:py-[8px] border-[#124C5F] mt-[10px] cursor-pointer 
+                  ${
+                    weight === item.id
+                      ? "bg-primaryOrange border-primaryOrange text-white"
+                      : "bg-white text-textGraySm"
+                  }`}
+                        onClick={() => setWeight(item.id)}
                   key={item.id}
                 >
                   {item.weight}
@@ -59,12 +73,20 @@ const ProductDetails = () => {
           </div>
 
           <div>
-            <h4 className="text-[#212121B3] xl:text-2xl text-center xl:text-start font-medium ">Dog Type</h4>
+            <h4 className="text-[#212121B3] xl:text-2xl text-center xl:text-start font-medium ">
+              Dog Type
+            </h4>
             <div className="flex xl:text-[18px] justify-center xl:justify-start text-[14px] font-medium text-textGraySm gap-[10px]">
               {petType.map((item) => (
                 <div
-                  className="border-[1px] rounded-[10px] xl:px-[18px] px-2 py-1 xl:py-[8px] border-[#124C5F] mt-[10px]"
                   key={item.id}
+                  className={`border-[1px] rounded-[10px] xl:px-[18px] px-2 py-1 xl:py-[8px] border-[#124C5F] mt-[10px] cursor-pointer 
+            ${
+              selectedId === item.id
+                ? "bg-primaryOrange border-primaryOrange text-white"
+                : "bg-white text-textGraySm"
+            }`}
+                  onClick={() => setSelectedId(item.id)}
                 >
                   {item.type}
                 </div>

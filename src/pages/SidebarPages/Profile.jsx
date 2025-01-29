@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import profileImg from "../../assets/images/profileImg.png";
 import DeliveryAddress from "./DeliveryAddress";
+import CommonSelectField from "@/components/common/CommonSelectField";
+import dogProfileImg from "../../assets/images/dogProfileImg.png"
+import profileImg from "../../assets/images/profileImg.png"
 
 const Profile = () => {
   const {
@@ -9,7 +11,7 @@ const Profile = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const [image, setImage] = useState(profileImg);
+  const [image, setImage] = useState(dogProfileImg);
 
   const onSubmit = (data) => {
     console.log(data);
@@ -23,20 +25,38 @@ const Profile = () => {
     }
   };
 
+  const petType = [
+    { label: "Dog", value: "dog" },
+    { label: "Cat", value: "cat" },
+  ];
+
+  const activityLavel = [
+    { label: "Small", value: "small" },
+    { label: "Medium", value: "medium" },
+    { label: "Large", value: "large" },
+  ];
+
+  const PetNutrition = [
+    { label: "Vegetarian", value: "vegetarian" },
+    { label: "Non Vegetarian", value: "non vegetarian" },
+  ];
+
   return (
     <div className="w-full lg:px-10 xl:px-10 xl:mb-[200px] mt-[19px]">
-      <div className="mb-6">
+      <div className=" mb-6">
+        <div className="flex justify-start items-center">
+        <div className="w-10">
+          <img src={profileImg} alt="" />
+        </div>
         <h3 className="text-textGray text-xl xl:pl-5 text-center xl:text-start py-4 font-medium xl:leading-[30px]">
           Account Profile
         </h3>
+        </div>
         <div className="border-[1px] w-full"></div>
 
         <div className=" xl:justify-start">
           <div>
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className=" xl:pl-5 w-full"
-            >
+            <form onSubmit={handleSubmit(onSubmit)} className=" xl:pl-5 w-full">
               <div className="flex xl:flex-row flex-col-reverse xl:gap-28 space-y-5 ">
                 <div className=" grid md:grid-cols-2 xl:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-4 mb-5">
                   {/* Full Name */}
@@ -104,7 +124,7 @@ const Profile = () => {
                         htmlFor="date"
                         className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] xl:mt-4"
                       >
-                        Date
+                        Pet Birth
                       </label>
                       <input
                         id="date"
@@ -115,6 +135,52 @@ const Profile = () => {
                       {errors.date && (
                         <p className="error">{errors.date.message}</p>
                       )}
+                    </div>
+                  </div>
+
+                  <div className="flex xl:flex-row flex-col mt-[23px] gap-[15px]">
+                    <div>
+                      <CommonSelectField
+                        width="xl:w-[250px]"
+                        options={petType}
+                        label="Pet Type"
+                      />
+                    </div>
+
+                    <div className="flex flex-col w-full">
+                      <label
+                        htmlFor="Zip Code"
+                        className=" w-[100px] text-textGray text-[14px] font-normal xl:leading-[21px] xl:mb-[6px] mb-1"
+                      >
+                        Pet Weight
+                      </label>
+                      <input
+                        id="address"
+                        placeholder=""
+                        className=" xl:w-[250px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-3"
+                        {...register("address")}
+                      />
+                      {errors.name && (
+                        <p className="error">{errors.address.message}</p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="flex xl:flex-row flex-col mt-[23px] gap-[15px]">
+                    <div>
+                      <CommonSelectField
+                        width="xl:w-[250px]"
+                        options={activityLavel}
+                        label="Activity Level"
+                      />
+                    </div>
+
+                    <div className="">
+                      <CommonSelectField
+                        width="xl:w-[250px]"
+                        options={PetNutrition}
+                        label="Pet Nutrition"
+                      />
                     </div>
                   </div>
 
@@ -139,39 +205,37 @@ const Profile = () => {
                   </div>
                 </div>
 
-               
-                  {/* Profile Image Upload */}
-                  <div className="flex w-full flex-col justify-center items-center ">
-                    <div className="xl:mt-14 flex justify-center xl:w-56 xl:h-56 w-full">
-                      <img
-                        src={image}
-                        alt="Profile"
-                        className=" xl:w-56 xl:h-56 object-cover rounded-full"
-                      />
-                    </div>
-
-                    <label className="bg-white text-primaryOrange rounded-full text-center border-[2px] border-[#F7830D] mt-5 px-8 py-[14px] font-semibold cursor-pointer">
-                      Choose Image
-                      <input
-                        type="file"
-                        accept="image/*"
-                        className="hidden"
-                        onChange={handleImageChange}
-                      />
-                    </label>
+                {/* Profile Image Upload */}
+                <div className="flex w-full flex-col justify-center items-center ">
+                  <div className="xl:mt-14 flex justify-center xl:w-56 xl:h-56 w-full">
+                    <img
+                      src={image}
+                      alt="Profile"
+                      className=" xl:w-56 xl:h-56 object-cover rounded-full"
+                    />
                   </div>
+
+                  <label className="bg-white text-primaryOrange rounded-full text-center border-[2px] border-[#F7830D] mt-5 px-8 py-[14px] font-semibold cursor-pointer">
+                    Choose Image
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleImageChange}
+                    />
+                  </label>
+                </div>
               </div>
 
               {/* Submit Button */}
               <div className="flex justify-center xl:justify-start">
-              <button
-                type="submit"
-                className="rounded-full  bg-primaryOrange px-8 py-[14px] text-white"
-              >
-                Changes
-              </button>
+                <button
+                  type="submit"
+                  className="rounded-full  bg-primaryOrange px-8 py-[14px] text-white"
+                >
+                  Changes
+                </button>
               </div>
-              
             </form>
           </div>
         </div>

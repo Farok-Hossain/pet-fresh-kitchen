@@ -55,7 +55,7 @@ const Ingredient = () => {
   return (
     <CommonWrapper>
       <div>
-        <SectionTitle className="text-center" title="Our Ingredients" />
+        <SectionTitle className="text-center" title="Fresh Ingredients" />
         <p className=" xl:max-w-[960px] lg:px-24 mx-auto text-center text-textColor xl:text-xl font-normal xl:leading-[30px]">
           We encourage label readers because it’s essential to understand what
           you&apos;re feeding your dog. However, knowing the ingredients

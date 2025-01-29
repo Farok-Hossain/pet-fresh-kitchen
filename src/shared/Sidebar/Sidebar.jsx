@@ -13,7 +13,7 @@ const Sidebar = () => {
   const sidebarRef = useRef(null); // Reference to the sidebar
 
   const sidebarItems = [
-    { icon: <ProfileIcon2 />, title: "Profile", path: "/sidebar" },
+    { icon: <ProfileIcon2 />, title: "Profile", path: "/sidebar/profile" },
     { icon: <HistoryIcon />, title: "Order History", path: "/sidebar/history" },
     {
       icon: <LogoutIcon />,
@@ -83,7 +83,9 @@ const Sidebar = () => {
                 } text-[16px]`}
                 to={item.path}
                 onClick={(e) => {
-                  e.preventDefault(); // Prevent default navigation for logout
+                  if (item.onClick) {
+                    e.preventDefault(); // Prevent default navigation for logout
+                  }
                   handleItemClick(index, item.onClick);
                 }}
               >
@@ -112,12 +114,12 @@ const Sidebar = () => {
             </p>
             <div className="flex justify-center gap-4 mt-8">
               <Link to="/signin">
-              <button
-                className="px-[44px] py-1 rounded-3xl bg-primaryOrange text-2xl text-white"
-                onClick={handleLogout}
-              >
-                Yes
-              </button>
+                <button
+                  className="px-[44px] py-1 rounded-3xl bg-primaryOrange text-2xl text-white"
+                  onClick={handleLogout}
+                >
+                  Yes
+                </button>
               </Link>
               <button
                 className="px-[44px] py-1 rounded-3xl text-2xl bg-primaryOrange text-white"

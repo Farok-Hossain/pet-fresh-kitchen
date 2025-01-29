@@ -8,18 +8,18 @@ const DogMeals = () => {
     <div className="relative mt-[100px] mb-[100px]">
       <div className="relative">
         <CurveIcon></CurveIcon>
-        <div className="container flex flex-col xl:flex-row items-center xl:gap-[59px]">
+        <div className=" xl:px-[150px] px-10 flex  items-center xl:gap-[100px]">
         <div className=" relative flex items-center mt-[14px] text-center justify-center z-40">
-          <img className="xl:max-w-[637px] lg:max-w-[248px]" src={dog2} alt="" />
+          <img className="xl:max-w-[635px] lg:max-w-[248px] max-w-[50px] " src={dog2} alt="" />
         </div>
 
         <div className="relative z-40">
           <div>
             <SectionTitle
-              className="xl:w-[785px] text-white text-start mb-[38.7px]"
+              className=" text-white text-start xl:mb-[38.7px] leading-1 text-xs"
               title="Delicious Meals for Happy, Healthy Dogs!"
             ></SectionTitle>
-            <p className="xl:max-w-[761px] mb-10 text-white text-xl font-normal leading-8">Treat your four-legged food lover to a wide selection of wholesome, flavorful, and nutritious meals designed to support their health, happiness, and boundless energy every day. Because your furry friend deserves the best in every bite</p>
+            <p className=" mb-10 text-white xl:text-xl  font-normal xl:leading-8">Treat your four-legged food lover to a wide selection of wholesome, flavorful, and nutritious meals designed to support their health, happiness, and boundless energy every day. Because your furry friend deserves the best in every bite</p>
             <Link to="/orders">
             <button className="bg-white text-primaryOrange rounded-md text-center text-xl py-[10px] px-6 flex items-center gap-[10px]">Shop Now</button>
             </Link>

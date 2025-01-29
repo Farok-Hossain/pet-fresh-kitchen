@@ -2,6 +2,7 @@ import CommonWrapper from "../common/CommonWrapper";
 import dog from "../../assets/images/dog.jpg";
 import { CommonButton } from "../common/CommonButton";
 import TrickIcon from "@/assets/Icons/TrickIcon";
+import WhiteRightIcon from "@/assets/Icons/WhiteRightIcon";
 
 const Approach = () => {
   return (
@@ -72,10 +73,12 @@ const Approach = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center xl:pl-[55px] mt-5">
+        <div className="flex justify-center items-center mt-5">
           <CommonButton
-            className="rounded text-white"
-            text="Get Free Samples"
+            className="rounded text-white group"
+            text="Follow us on Social"
+            linkUrl="https://www.instagram.com/accounts/login/?hl=en"
+            rightIcon={<span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]"><WhiteRightIcon /></span>}
           ></CommonButton>
         </div>
       </div>

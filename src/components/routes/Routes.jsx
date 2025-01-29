@@ -41,10 +41,6 @@ export const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/details",
-        element: <RecipeDetails />,
-      },
-      {
         path: "/vet",
         element: <Vet />,
       },
@@ -72,11 +68,11 @@ export const router = createBrowserRouter([
     element: <SidebarLayout></SidebarLayout>,
     children: [
       {
-        path: "/sidebar",
+        path: "profile",
         element: <Profile />,
       },
       {
-        path: "/sidebar/history",
+        path: "history",
         element: <OrderHistory />
       }
     ],

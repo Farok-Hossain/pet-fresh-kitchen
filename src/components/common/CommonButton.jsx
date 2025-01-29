@@ -4,8 +4,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import CommonModal from "./CommonModal";
 import productImg from "../../assets/images/productImg.png";
+import RightIcon from "@/assets/Icons/RightIcon";
+import RightArrow from "@/assets/Icons/RightArrow";
 
-export const CommonButton = ({ className, text, type, linkUrl, icon, icon2 }) => {
+export const CommonButton = ({ className, text, type, linkUrl, icon, rightIcon, icon2 }) => {
 
   // sample modal data 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -48,6 +50,7 @@ export const CommonButton = ({ className, text, type, linkUrl, icon, icon2 }) =>
       >
         {icon && <span>{icon}</span>}
         <span className="">{text}</span>   {icon2 && <span>{icon2}</span>}
+        {rightIcon}
       </button>
       <CommonModal
               isOpen={isModalOpen}

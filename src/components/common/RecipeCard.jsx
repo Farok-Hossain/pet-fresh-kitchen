@@ -10,13 +10,13 @@ const RecipeCard = ({ img, title, description }) => {
         <h3 className="text-textGray xl:font-semibold font-medium text-[18px] xl:leading-[36px] xl:ml-[30px] text-center xl:text-start">
           {title}
         </h3>
-        <h3 className="xl:text-xl text-textColor text-center xl:text-start px-5 xl:leading-[30px] xl:ml-[30px] mb-3">
+        <h3 className="xl:text-xl text-textColor text-center xl:text-start px-5 xl:px-0 xl:leading-[30px] xl:ml-[30px] mb-3">
           {description}
         </h3>
-        <Link to="/details">
-          <div className="border border-primaryOrange rounded-[6px] text-center mx-5 mb-5">
-            <button className="py-3 text-center text-[16px text-primaryOrange ">
-              View details
+        <Link to="/productdetails">
+          <div className="border bg-primaryOrange rounded-[6px] text-center mx-5 mb-5">
+            <button className="py-3 text-center text-[16px text-white ">
+              Order Now
             </button>
           </div>
         </Link>

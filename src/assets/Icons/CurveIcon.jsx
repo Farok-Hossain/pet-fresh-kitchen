@@ -1,6 +1,6 @@
 const CurveIcon = () => {
   return (
-    <div className=" h-[599px]  absolute top-0 left-0 w-full z-10 ">
+    <div className=" xl:h-[599px]  absolute top-0 left-0 w-full z-10 ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1920 599"
