@@ -30,7 +30,7 @@ const SampleSection = () => {
                             pet’s health</h2>
                             <p className="xl:text-lg text-center font-normal xl:leading-7 text-white max-w-[745px] xl:mb-8 mb-4 px-5 leading-5 xl:px-0">The process of cooking at lower temperatures & at Slower rates leads to an
                             increase in nutrient in nutrient retention.</p>
-                            <CommonButton className="rounded mb-4 xl:mb-0 text-primaryOrange bg-white" text="Get Free Sample"></CommonButton>
+                            <CommonButton className="rounded mb-4 xl:mb-0 text-primaryOrange bg-white" text="Get Free Samples"></CommonButton>
                         </div>
             
                         {/* image here  */}

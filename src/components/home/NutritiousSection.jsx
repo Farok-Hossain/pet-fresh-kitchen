@@ -11,6 +11,7 @@ const NutritiousSection = () => {
       id: 1,
       image: img1,
       title: "Intelligent Marble Knife",
+      start:"Starting From  50$",
       price: "$132.93",
       offer: "35% OFF",
     },
@@ -18,6 +19,7 @@ const NutritiousSection = () => {
       id: 2,
       image: img2,
       title: "Intelligent Marble Knife",
+      start:"Starting From  50$",
       price: "$132.93",
       offer: "35% OFF",
     },
@@ -25,6 +27,7 @@ const NutritiousSection = () => {
       id: 3,
       image: img3,
       title: "Intelligent Marble Knife",
+      start:"Starting From  50$",
       price: "$132.93",
       offer: "35% OFF",
     },
@@ -32,6 +35,7 @@ const NutritiousSection = () => {
         id: 4,
         image: img1,
         title: "Intelligent Marble Knife",
+        start:"Starting From  50$",
         price: "$132.93",
         offer: "35% OFF",
       },
@@ -39,6 +43,7 @@ const NutritiousSection = () => {
         id: 5,
         image: img2,
         title: "Intelligent Marble Knife",
+        start:"Starting From  50$",
         price: "$132.93",
         offer: "35% OFF",
       },
@@ -60,6 +65,7 @@ const NutritiousSection = () => {
             <Card
               key={index}
               title={item.title}
+              start={item.start}
               img={item.image}
               price={item.price}
               offer={item.offer}

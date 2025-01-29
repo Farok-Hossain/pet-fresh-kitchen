@@ -14,18 +14,14 @@ const ProductDetails = () => {
     { id: 5, weight: "500 gm" },
   ];
 
-  const dogType = [
+  const petType = [
     {
       id: 1,
-      type: "Puppy",
+      type: "Male",
     },
     {
       id: 2,
-      type: "Adult",
-    },
-    {
-      id: 3,
-      type: "Senior",
+      type: "Female",
     },
   ];
 
@@ -65,7 +61,7 @@ const ProductDetails = () => {
           <div>
             <h4 className="text-[#212121B3] xl:text-2xl text-center xl:text-start font-medium ">Dog Type</h4>
             <div className="flex xl:text-[18px] justify-center xl:justify-start text-[14px] font-medium text-textGraySm gap-[10px]">
-              {dogType.map((item) => (
+              {petType.map((item) => (
                 <div
                   className="border-[1px] rounded-[10px] xl:px-[18px] px-2 py-1 xl:py-[8px] border-[#124C5F] mt-[10px]"
                   key={item.id}
@@ -119,7 +115,7 @@ const ProductDetails = () => {
         title="Instinct Raw Meals"
         img={productImg}
         weightData={weightData}
-        dogType={dogType}
+        dogType={petType}
         clickedButton={clickedButton}
         category="Vegetarian"
       />

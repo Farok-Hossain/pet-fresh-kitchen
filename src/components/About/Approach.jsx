@@ -75,7 +75,7 @@ const Approach = () => {
         <div className="flex justify-center items-center xl:pl-[55px] mt-5">
           <CommonButton
             className="rounded text-white"
-            text="Get Free Sample"
+            text="Get Free Samples"
           ></CommonButton>
         </div>
       </div>

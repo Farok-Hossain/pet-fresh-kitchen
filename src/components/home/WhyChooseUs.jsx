@@ -4,6 +4,7 @@ import IngredientsIcon from "../../assets/Icons/IngredientsIcon";
 import DigestiveIcon from "../../assets/Icons/DigestiveIcon";
 import AdditivesIcon from "../../assets/Icons/AdditivesIcon";
 import PetFreshKitchen from "../common/PetFreshKitchen";
+import freshFood from "../../assets/images/freshFood.png"
 
 const WhyChooseUs = () => {
 
@@ -16,16 +17,16 @@ const WhyChooseUs = () => {
   return (
     <CommonWrapper version="lg">
       <div className="xl:flex items-center xl:gap-[57px] mb-10 xl:mb-[100px]">
-        <div className="">
-          <p className="xl:w-[215px] h-[5px] hidden xl:block bg-bgBlack rounded-md"> </p>
+
+        <div className="flex justify-center">
+          <img src={freshFood} alt="" />
         </div>
-        <div>
+       
+          <div className="mt-10 xl:mt-0">
           <h2 className="text-center xl:text-left text-2xl xl:text-[56px] font-semibold xl:max-w-[456px] mt-2 mb-4  xl:mb-[18px] xl:leading-[64px]">
             Welcome To Pet{" "}
             <span className="text-primaryOrange">Fresh Kitchen</span>
           </h2>
-          <div className="flex xl:gap-8">
-            <div className="w-[1px] xl:h-[84px] hidden xl:block bg-primaryOrange"></div>
             <p className="text-textGraySm xl:max-w-[904px]  xl:text-[18px] text-center xl:text-left">
               Welcome to Pet Fresh Kitchen, where we provide your dog with
               balanced nutrition, premium ingredients, digestive support, and no
@@ -33,7 +34,6 @@ const WhyChooseUs = () => {
               health, vitality, and overall well-being.
             </p>
           </div>
-        </div>
       </div>
       
       {/* chooseItems  */}
