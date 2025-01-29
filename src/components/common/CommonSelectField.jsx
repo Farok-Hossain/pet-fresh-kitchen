@@ -9,10 +9,10 @@ import {
 const CommonSelectField = ({ options = [], label, width }) => {
   return (
     <div>
-      <h3 className="text-textGray text-[14px] mb-[6px]">{label}</h3>
+      <h3 className="text-textGray text-[14px] mb-[6px] ">{label}</h3>
       <Select>
         <SelectTrigger
-          className={`${width}  text-[#666666] focus:outline-primaryOrange rounded-xl text-[14px] px-[16px] xl:py-[14px]`}
+          className={`${width}  text-[#666666] focus:outline-primaryOrange rounded-xl text-[14px] px-[16px] py-3`}
         >
           <SelectValue placeholder={options.length > 0 && options[0].label} />
         </SelectTrigger>

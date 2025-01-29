@@ -24,21 +24,21 @@ const Profile = () => {
   };
 
   return (
-    <div className="w-full lg:px-[160px] xl:px-10 xl:mb-[200px] mt-[19px]">
+    <div className="w-full lg:px-10 xl:px-10 xl:mb-[200px] mt-[19px]">
       <div className="mb-6">
         <h3 className="text-textGray text-xl xl:pl-5 text-center xl:text-start py-4 font-medium xl:leading-[30px]">
           Account Profile
         </h3>
         <div className="border-[1px] w-full"></div>
 
-        <div className="flex justify-center xl:justify-start">
+        <div className=" xl:justify-start">
           <div>
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="form-container xl:pl-5"
+              className=" xl:pl-5 w-full"
             >
               <div className="flex xl:flex-row flex-col-reverse xl:gap-28 space-y-5 ">
-                <div>
+                <div className=" grid md:grid-cols-2 xl:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-4 mb-5">
                   {/* Full Name */}
                   <div className="flex flex-col">
                     <label
@@ -50,7 +50,7 @@ const Profile = () => {
                     <input
                       id="name"
                       placeholder="Full name here"
-                      className="xl:w-[512px] lg:w-[800px] w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
+                      className="xl:w-[512px]  w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
                       {...register("name")}
                     />
                     {errors.name && (
@@ -83,7 +83,7 @@ const Profile = () => {
                     <div className="flex flex-col">
                       <label
                         htmlFor="petName"
-                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] mt-4"
+                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] xl:mt-4"
                       >
                         Pet Name
                       </label>
@@ -102,7 +102,7 @@ const Profile = () => {
                     <div className="flex flex-col">
                       <label
                         htmlFor="date"
-                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] mt-4"
+                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] xl:mt-4"
                       >
                         Date
                       </label>
@@ -122,7 +122,7 @@ const Profile = () => {
                   <div className="flex flex-col">
                     <label
                       htmlFor="password"
-                      className="xl:max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] mt-4"
+                      className="xl:max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] xl:mt-4"
                     >
                       Password
                     </label>
@@ -141,8 +141,8 @@ const Profile = () => {
 
                
                   {/* Profile Image Upload */}
-                  <div className="flex flex-col justify-center items-center ">
-                    <div className="xl:mt-14 xl:w-56 xl:h-56">
+                  <div className="flex w-full flex-col justify-center items-center ">
+                    <div className="xl:mt-14 flex justify-center xl:w-56 xl:h-56 w-full">
                       <img
                         src={image}
                         alt="Profile"
@@ -163,12 +163,15 @@ const Profile = () => {
               </div>
 
               {/* Submit Button */}
+              <div className="flex justify-center xl:justify-start">
               <button
                 type="submit"
-                className="rounded-full bg-primaryOrange px-8 py-[14px] text-white"
+                className="rounded-full  bg-primaryOrange px-8 py-[14px] text-white"
               >
                 Changes
               </button>
+              </div>
+              
             </form>
           </div>
         </div>

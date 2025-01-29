@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import HistoryIcon from "@/assets/Icons/HistoryIcon";
 import LogoutIcon from "@/assets/Icons/LogoutIcon";
 import ProfileIcon2 from "@/assets/Icons/ProfileIcon2";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { X } from "lucide-react"; // Optional icons for toggling
 import { MdDashboard } from "react-icons/md";
 
@@ -64,7 +64,7 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div
         ref={sidebarRef} // Reference to the sidebar
-        className={`fixed xl:static xl:mt-3 mt-[200px] top-0 left-0 z-40 h-screen xl:h-auto bg-white xl:bg-transparent xl:w-[428px] w-[300px] shadow-lg xl:shadow-none transition-transform transform ${
+        className={`fixed xl:static xl:mt-3 mt-[200px] top-0 left-0 z-40 h-screen xl:h-auto bg-white xl:bg-transparent xl:w-[428px] w-[250px] shadow-lg xl:shadow-none transition-transform transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } xl:translate-x-0`}
       >
@@ -111,12 +111,14 @@ const Sidebar = () => {
               Are You Sure, You Want to Sign Out?
             </p>
             <div className="flex justify-center gap-4 mt-8">
+              <Link to="/signin">
               <button
                 className="px-[44px] py-1 rounded-3xl bg-primaryOrange text-2xl text-white"
                 onClick={handleLogout}
               >
                 Yes
               </button>
+              </Link>
               <button
                 className="px-[44px] py-1 rounded-3xl text-2xl bg-primaryOrange text-white"
                 onClick={handleCloseModal}
