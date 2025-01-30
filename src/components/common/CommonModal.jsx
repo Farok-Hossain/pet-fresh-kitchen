@@ -115,7 +115,7 @@ const CommonModal = ({
                   <input
                     id="name"
                     placeholder="Pet age..."
-                    className="  w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
+                    className="  w-full h-12 border-[1px] text-[#666666] outline-none rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
                     {...register("name")}
                   />
                   {errors.name && (
@@ -132,7 +132,7 @@ const CommonModal = ({
                   <input
                     id="name"
                     placeholder="Pet weight..."
-                    className="  w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
+                    className="  w-full h-12 border-[1px] text-[#666666] outline-none rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
                     {...register("name")}
                   />
                   {errors.name && (

@@ -14,12 +14,13 @@ const BillingInformation = () => {
   };
 
   const country = [
-    { label: "Bangladesh", value: "bangladesh" },
     { label: "India", value: "india" },
+    { label: "Bangladesh", value: "bangladesh" },
   ];
   const states = [
-    { label: "Dhaka", value: "dhaka" },
     { label: "Mumbai", value: "mumbai" },
+    { label: "Dhaka", value: "dhaka" },
+    
   ];
   return (
     <div className=" max-w-[984px] w-full">
@@ -67,10 +68,12 @@ const BillingInformation = () => {
                 Phone Number
               </label>
               <input
-                type="number"
-                id="number"
+                
+                id="phone"
                 placeholder="+88015854557"
                 className="w-full px-4 xl:py-[14px] py-2 text-[14px] border border-[#E6E6E6] rounded-md pl-6 mt-[6px] focus:outline-none"
+                type="tel"
+                {...register("phone")}
               />
             </div>
           </div>
@@ -111,7 +114,7 @@ const BillingInformation = () => {
                   <input
                     id="address"
                     placeholder="1425 park"
-                    className="xl:h-12 border-[1px] text-[#666666] text-[14px] focus:outline-primaryOrange rounded-xl px-[16px] xl:py-[14px] py-2"
+                    className="xl:h-12 border-[1px] text-[#666666] text-[14px] outline-none rounded-xl px-[16px] xl:py-[14px] py-2"
                     {...register("address")}
                   />
                   {errors.name && (
@@ -138,7 +141,7 @@ const BillingInformation = () => {
           Order Notes (Optional)
         </h3>
         <div className=" text-[#E5E5E5] rounded-md ">
-          <textarea name="" rows="5" placeholder="Notes about your order, special notes for delivery" id="" className=" pl-4 pt-[14px] rounded-md border w-full"></textarea>
+          <textarea name="" rows="5" placeholder="Notes about your order, special notes for delivery" id="" className=" pl-4 pt-[14px] text-textGray outline-none rounded-md border w-full"></textarea>
         </div>
       </div>
     </div>
