@@ -2,18 +2,18 @@ import { useForm } from "react-hook-form";
 import contactImg from "../../assets/images/contactImg.png";
 
 const ContactForm = () => {
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-      } = useForm();
-    
-      const onSubmit = (data) => {
-        console.log(data);
-      };
-    return (
-        <div>
-              {/* contact form  */}
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+  return (
+    <div>
+      {/* contact form  */}
       <div className="flex flex-col xl:flex-row lg:flex-row lg:pb-5 lg:gap-5 items-center justify-between xl:mt-[60px] mt-[30px]">
         <div className="xl:min-w-[693px] lg:min-w-[410px]">
           <form
@@ -93,8 +93,9 @@ const ContactForm = () => {
             </div>
 
             {/* Submit Button */}
-            <button className="bg-primaryOrange w-full rounded-md xl:py-[17px] py-2 text-white flex justify-center mt-3 ">Sent</button>
-
+            <button className="bg-primaryOrange w-full rounded-md xl:py-[17px] py-2 text-white flex justify-center mt-3 ">
+              Sent
+            </button>
           </form>
         </div>
 
@@ -103,8 +104,8 @@ const ContactForm = () => {
           <img className="" src={contactImg} alt="" />
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ContactForm;

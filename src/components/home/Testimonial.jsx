@@ -13,7 +13,7 @@ const Testimonial = () => {
     {
       img: testimonialImg1,
       name: "Hannah Schmitt",
-      reviewTitle: "Quality product",
+      reviewTitle: "Quality product", 
       review:
         "I’ve been searching for a one-stop shop for my dog's food and health needs, and I’ve finally found it! The website is easy to navigate, and the variety of dog food options is impressive.",
     },
