@@ -18,7 +18,7 @@ const SampleSection = () => {
         }}
       >
         {/* image here  */}
-        <div className=" absolute hidden xl:block  top-0 left-0 h-full">
+        <div className=" absolute hidden 2xl:block  top-0 left-0 h-full">
           <img
             src={dogFood1}
             alt="dogFood"
@@ -27,7 +27,7 @@ const SampleSection = () => {
         </div>
 
         {/* Content goes here */}
-        <div className=" flex justify-between items-center">
+        <div className=" flex justify-center items-center">
           <div className="flex flex-col place-items-center justify-center lg:pb-5">
             <h2 className=" xl:text-[64px] lg:text-2xl text-xl text-center text-white xl:leading-[80px] mt-5 xl:font-semibold font-medium xl:max-w-[800px] xl:mb-5 mb-3 ">
               Take control of your pet’s health
@@ -44,15 +44,16 @@ const SampleSection = () => {
             ></CommonButton>
           </div>
 
+        </div>
+        
           {/* image here  */}
-          <div className=" hidden xl:block absolute top-0 right-0 h-full">
+          <div className=" hidden 2xl:block absolute top-0 right-0 h-full">
             <img
               src={dogFood2}
               alt="dogFood"
               className="w-full h-full object-cover"
             />
           </div>
-        </div>
       </div>
     </CommonWrapper>
   );
