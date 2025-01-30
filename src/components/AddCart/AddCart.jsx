@@ -122,11 +122,6 @@ const AddCart = () => {
           <h5 className="text-[#545454] xl:text-[18px] font-normal leading-4 xl:mt-10 mt-4 mb-2">
             Discount code
           </h5>
-          {/* <div className="border-[0.5px] mt-[5px] text-[#9F9F9F] rounded-[7px]">
-            <h5 className="text-[14px] leading-6 text-[#979797] xl:p-4 p-2">
-              code
-            </h5>
-          </div> */}
           <div>
           <input
                 id="phone"

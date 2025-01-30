@@ -61,7 +61,8 @@ const ChooseKitchen = () => {
       <div className="pt-10 flex justify-center">
       <CommonButton
               className="rounded text-white group"
-              text="Get Free Samples"
+              text="Order Now"
+              linkUrl="/orders"
               rightIcon={
                 <span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]">
                   <WhiteRightIcon />

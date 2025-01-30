@@ -16,7 +16,7 @@ const AboutUs = () => {
           ensure your furry friends receive the love, care, and nutrition they
           deserve, because pets are family and deserve the best.
         </p>
-        <img className="xl:mt-10 pt-5" src={petFreshKitchen} alt="" />
+        <img className="xl:mt-10 pt-5 object-cover" src={petFreshKitchen} alt="" />
       </div>
     </CommonWrapper>
   );

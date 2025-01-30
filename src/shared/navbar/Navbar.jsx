@@ -100,19 +100,19 @@ const Navbar = () => {
             </button>
             {/* Dropdown Menu */}
             <div
-              className={`absolute top-12 right-0 bg-primaryOrange rounded-[10px] mt-2 border-[2px] flex flex-col gap-2 p-2 shadow-lg transform transition-all duration-300 ${
+              className={`absolute top-12 right-0 bg-primaryOrange rounded-[10px] mt-2 border-[2px] flex flex-col gap-2 shadow-lg transform transition-all duration-300 ${
                 isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
               }`}
             >
               <Link to="/signin">
-                <button className="flex justify-center items-center gap-3 bg-primaryOrange text-white py-2 px-6 rounded-lg hover:bg-orange-500 transition duration-300">
+                <button className="flex justify-center items-center gap-3 bg-primaryOrange text-white py-2 px-6 rounded-lg transition duration-300">
                   <SignInIcon />
                   <span className="text-xl font-medium">Sign In</span>
                 </button>
               </Link>
               <div className="border-[1px]"></div>
               <Link to="/signup">
-                <button className="flex justify-center items-center gap-3 bg-primaryOrange text-white py-2 px-6 rounded-lg hover:bg-orange-500 transition duration-300">
+                <button className="flex justify-center items-center gap-3 bg-primaryOrange text-white py-2 px-6 rounded-lg transition duration-300">
                   <SignUpIcon />
                   <span className="text-xl font-medium">Sign Up</span>
                 </button>
