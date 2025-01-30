@@ -15,7 +15,7 @@ const RecipeCard = ({ img, title, description }) => {
         </h3>
         <Link to="/productdetails">
           <div className="border bg-primaryOrange rounded-[6px] text-center mx-5 mb-5">
-            <button className="py-3 text-center text-[16px text-white ">
+            <button className="py-3 text-center text-[16px text-white transition duration-300 ease-in-out transform hover:scale-105 ">
               Order Now
             </button>
           </div>

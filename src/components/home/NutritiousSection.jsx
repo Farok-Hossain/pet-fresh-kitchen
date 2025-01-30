@@ -59,7 +59,7 @@ const NutritiousSection = () => {
         </p>
       </div>
        
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xlg:grid-cols-4 gap-6 pt-4 xl:grid-cols-5 xl:gap-[15px] xl:mt-12">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xlg:grid-cols-3  xl:grid-cols-4 2xl:grid-cols-5 gap-6 pt-4  xl:gap-[15px] xl:mt-12">
         {foodItems.map((item, index) => (
         
             <Card

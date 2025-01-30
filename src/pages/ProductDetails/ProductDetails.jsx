@@ -116,7 +116,7 @@ const ProductDetails = () => {
               setClickedButton("cart");
               setIsModalOpen(true);
             }}
-            className="border-[1px] border-[#124C5F] rounded-[10px] xl:px-20 px-6 xl:py-5 py-3 xl:text-2xl font-bold text-textGray"
+            className="border-[1px] border-[#124C5F] rounded-[10px] xl:px-20 px-6 xl:py-5 py-3 xl:text-2xl font-bold text-textGray transition duration-300 ease-in-out transform hover:scale-105"
           >
             Add to Cart
           </button>
@@ -125,7 +125,7 @@ const ProductDetails = () => {
               setClickedButton("buy");
               setIsModalOpen(true);
             }}
-            className="bg-primaryOrange rounded-[10px] xl:px-20 px-10 xl:py-5 py-3 xl:text-2xl font-bold text-white"
+            className="bg-primaryOrange rounded-[10px] xl:px-20 px-10 xl:py-5 py-3 xl:text-2xl font-bold text-white transition duration-300 ease-in-out transform hover:scale-105"
           >
             Buy Now
           </button>

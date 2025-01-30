@@ -16,7 +16,7 @@ const VetOrder = () => {
       <p className="xl:text-xl xl:leading[30px] xl:mb-8">Your Veterinarian Partner
       <span className="font-bold">  Pet Fresh Kitchen</span></p>
       <Link to="/">
-      <button className="bg-white text-primaryOrange px-8 py-[14px] rounded xl:mt-8 mt-5">Contact Us</button></Link>
+      <button className="bg-white text-primaryOrange px-8 py-[14px] rounded xl:mt-8 mt-5 transition duration-300 ease-in-out transform hover:scale-105">Contact Us</button></Link>
       </div>
     </div>
 

@@ -44,9 +44,9 @@ const Navbar = () => {
       <div className="container flex justify-between items-center py-[10px]">
         {/* Logo */}
         <Link to="/">
-        <div>
-          <img src={logo} alt="logoImg" />
-        </div>
+          <div>
+            <img src={logo} alt="logoImg" />
+          </div>
         </Link>
 
         {/* Hamburger Icon */}
@@ -83,6 +83,7 @@ const Navbar = () => {
             <CardIcons />
           </Link>
 
+          {/* Profile button */}
           <div
             className="relative flex gap-6 items-center"
             onMouseEnter={() => setIsHovered(true)}
@@ -97,27 +98,26 @@ const Navbar = () => {
                 <DropDownIcon />
               </span>
             </button>
-            {isHovered && (
-              <div className="absolute top-12 bg-primaryOrange rounded-[10px] mt-2 flex justify-center right-0 border-[2px] flex-col gap-2">
-                <Link to="/signin">
-                  <button className="flex justify-center items-center gap-[29px] bg-primaryOrange text-white py-[10px] pl-6 pr-7 rounded-[10px] hover:bg-primaryOrange">
-                    <span>
-                      <SignInIcon />
-                    </span>
-                    <span className="text-xl font-medium">Sign In</span>
-                  </button>
-                </Link>
-                <div className="border-[1px]"></div>
-                <Link to="/signup">
-                  <button className="flex justify-center items-center gap-[29px] bg-primaryOrange text-white py-[10px] px-6 rounded-lg hover:bg-primaryOrange">
-                    <span>
-                      <SignUpIcon />
-                    </span>
-                    <span className="text-xl font-medium">Sign Up</span>
-                  </button>
-                </Link>
-              </div>
-            )}
+            {/* Dropdown Menu */}
+            <div
+              className={`absolute top-12 right-0 bg-primaryOrange rounded-[10px] mt-2 border-[2px] flex flex-col gap-2 p-2 shadow-lg transform transition-all duration-300 ${
+                isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
+              }`}
+            >
+              <Link to="/signin">
+                <button className="flex justify-center items-center gap-3 bg-primaryOrange text-white py-2 px-6 rounded-lg hover:bg-orange-500 transition duration-300">
+                  <SignInIcon />
+                  <span className="text-xl font-medium">Sign In</span>
+                </button>
+              </Link>
+              <div className="border-[1px]"></div>
+              <Link to="/signup">
+                <button className="flex justify-center items-center gap-3 bg-primaryOrange text-white py-2 px-6 rounded-lg hover:bg-orange-500 transition duration-300">
+                  <SignUpIcon />
+                  <span className="text-xl font-medium">Sign Up</span>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -125,9 +125,9 @@ const Navbar = () => {
       {/* Sidebar for Smaller Screens */}
       <div
         ref={sidebarRef} // Attach the ref here
-        className={`fixed top-0 right-0 transform ${
+        className={`fixed top-0 right-0 transform transition-transform duration-500 ease-in-out ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
-        } w-[200px] xlg:w-[250px] lg:w-[230px] md:w-[220px] sm:w-[210px] h-full bg-white shadow-lg z-50 flex flex-col transition-transform duration-300 ease-in-out`}
+        } w-[200px] xlg:w-[250px] lg:w-[230px] md:w-[220px] sm:w-[210px] h-full bg-white shadow-lg z-50 flex flex-col`}
       >
         <div className="flex justify-between items-center p-4 border-b">
           <img src={logo} alt="logoImg" />

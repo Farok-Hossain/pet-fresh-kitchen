@@ -153,7 +153,7 @@ const CommonModal = ({
                 <div className="flex justify-center">
                   {clickedButton === "cart" && (
                     <Link to="/addcart">
-                      <button className="bg-primaryOrange  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white">
+                      <button className="bg-primaryOrange  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white transition duration-300 ease-in-out transform hover:scale-105">
                         Add to Cart
                       </button>
                     </Link>
@@ -162,7 +162,7 @@ const CommonModal = ({
                 <div className="flex justify-center">
                   {clickedButton === "buy" && (
                     <Link to="/checkout">
-                      <button className="bg-primaryOrange  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white">
+                      <button className="bg-primaryOrange  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white transition duration-300 ease-in-out transform hover:scale-105">
                         Buy Now
                       </button>
                     </Link>
@@ -171,7 +171,7 @@ const CommonModal = ({
                 <div className=" flex justify-center items-center xl:px-0 px-16">
                   {clickedButton === "sample" && (
                     <Link to="/orders">
-                      <button className="bg-primaryOrange flex  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white">
+                      <button className="bg-primaryOrange flex  rounded-[10px] xl:px-20 px-6 xl:py-5 py-2 xl:text-2xl xl:font-bold text-white transition duration-300 ease-in-out transform hover:scale-105">
                         Get Free Sample
                       </button>
                     </Link>
