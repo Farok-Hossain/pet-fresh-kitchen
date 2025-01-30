@@ -43,7 +43,7 @@ const Approach = () => {
             </div>
 
             <div className="flex gap-5">
-              <div className="bg-primaryOrange xl:w-12 w-3 h-3 xl:h-5 mt-2 rounded-full flex justify-center items-center">
+              <div className="bg-primaryOrange xl:w-10 w-3 h-3 xl:h-5 mt-2 rounded-full flex justify-center items-center">
                 <TrickIcon />
               </div>
               <div>
@@ -57,7 +57,7 @@ const Approach = () => {
             </div>
 
             <div className="flex gap-5">
-              <div className="bg-primaryOrange xl:w-12 w-3 h-3 xl:h-5 mt-2 rounded-full flex justify-center items-center">
+              <div className="bg-primaryOrange xl:w-[42px] w-3 h-3 xl:h-5 mt-2 rounded-full flex justify-center items-center">
                 <TrickIcon />
               </div>
               <div>
