@@ -35,7 +35,7 @@ const DogMeals = () => {
                   Because your furry friend deserves the best in every bite
                 </p>
                 <Link to="/orders">
-                  <button className="bg-white text-primaryOrange rounded-md text-center text-xl py-[10px]  px-6 flex items-center gap-[10px]">
+                  <button className="bg-white text-primaryOrange rounded-md text-center py-[10px]  xl:text-xl text-[16px] sm:px-4 sm:py-[6px]  px-6 flex items-center gap-[10px]">
                     Shop Now
                   </button>
                 </Link>

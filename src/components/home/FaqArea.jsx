@@ -43,7 +43,7 @@ const FaqArea = () => {
     <div className="container mt-9">
       <div>
         <div className="text-center xl:mb-20 mb-5">
-          <h3 className="text-textGray xl:text-5xl lg:text-2xl lg:leading-9 text-lg xl:font-semibold font-medium xl:leading-[70px] mb-[10px]">
+          <h3 className="text-textGray xl:text-5xl lg:text-2xl md:text-xl sm:text-xl xs:text-xl lg:leading-9 text-lg xl:font-semibold font-medium xl:leading-[70px] mb-[10px]">
             Frequently Asked Questions
           </h3>
           <p className="xl:text-xl xl:leading-[30px] xl:max-w-[960px] mx-auto">

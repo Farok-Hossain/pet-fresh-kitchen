@@ -8,9 +8,8 @@ import ShowEyeIcon from "@/assets/Icons/ShowEyeIcon";
 import EyeCloseIcon from "@/assets/Icons/EyeCloseIcon";
 
 const SignUp = () => {
-
-    const [showPassword, setShowPassword] = useState(false)
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const {
     register,
@@ -24,12 +23,11 @@ const SignUp = () => {
 
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
-  }
+  };
 
   const toggleConfirmPasswordVisibility = () => {
-    setShowConfirmPassword((prev) => !prev)
-  }
-
+    setShowConfirmPassword((prev) => !prev);
+  };
 
   return (
     <div
@@ -47,9 +45,7 @@ const SignUp = () => {
         <p className="text-center font-normal xl:text-[18px] text-[15px] text-[#5A5C5F] xl:mt-5 mt-1">
           Lets have these fields
         </p>
-        <form 
-        onSubmit={handleSubmit(onSubmit)}
-        className=" xl:mt-[50px] mt-2">
+        <form onSubmit={handleSubmit(onSubmit)} className="xl:mt-[50px] mt-2">
           <div>
             <label
               htmlFor="name"
@@ -131,56 +127,54 @@ const SignUp = () => {
               </label>
 
               <div className="flex justify-between items-center border rounded-md border-gray-300 overflow-hidden">
-              <input
-                id="password"
-                placeholder="********"
-                className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]   text-[#666666] focus:outline-none  xl:text-[16px] "
-                type="password"
-                {...register("password")}
-              />
-              <button type="button" 
-                onClick={togglePasswordVisibility}
-                className=" text-gray-500 xl:pr-6 pr-3"
-              >{showPassword? (
-                <ShowEyeIcon className="" />
-              ): (
-                <EyeCloseIcon />
-              )}</button>
+                <input
+                  id="password"
+                  placeholder="********"
+                  className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]   text-[#666666] focus:outline-none  xl:text-[16px] "
+                  type={showPassword ? "text" : "password"} // Toggle input type
+                  {...register("password")}
+                />
+                <button
+                  type="button"
+                  onClick={togglePasswordVisibility}
+                  className="text-gray-500 xl:pr-6 pr-3"
+                >
+                  {showPassword ? <EyeCloseIcon /> : <ShowEyeIcon />}
+                </button>
               </div>
               {errors.password && (
                 <p className="error">{errors.password.message}</p>
               )}
             </div>
 
-            {/* confirm password  */}
+            {/* Confirm Password */}
             <div className="w-full flex flex-col mt-2">
               <label
-                htmlFor="password"
+                htmlFor="confirmPassword"
                 className="text-textGray xl:text-[18px] font-medium leading-6 xl:mb-3 mb-1"
               >
                 Confirm Password
               </label>
-              
+
               <div className="flex justify-between items-center border-[1px] rounded-md border-gray-300 overflow-hidden">
-              <input
-                id="password"
-                placeholder="********"
-                className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]  text-[#666666] focus:outline-none  xl:text-[16px] "
-                type="password"
-                {...register("password")}
-              />
-              <button type="button" 
-                onClick={toggleConfirmPasswordVisibility}
-                className=" text-gray-500 xl:pr-6 pr-3"
-              >{showConfirmPassword? (
-                <ShowEyeIcon className="" />
-              ): (
-                <EyeCloseIcon />
-              )}</button>
+                <input
+                  id="confirmPassword"
+                  placeholder="********"
+                  className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]  text-[#666666] focus:outline-none  xl:text-[16px] "
+                  type={showConfirmPassword ? "text" : "password"} // Toggle input type
+                  {...register("confirmPassword")}
+                />
+                <button
+                  type="button"
+                  onClick={toggleConfirmPasswordVisibility}
+                  className="text-gray-500 xl:pr-6 pr-3"
+                >
+                  {showConfirmPassword ? <EyeCloseIcon /> : <ShowEyeIcon />}
+                </button>
               </div>
 
-              {errors.password && (
-                <p className="error">{errors.password.message}</p>
+              {errors.confirmPassword && (
+                <p className="error">{errors.confirmPassword.message}</p>
               )}
             </div>
           </div>
