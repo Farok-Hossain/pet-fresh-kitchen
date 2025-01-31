@@ -13,7 +13,7 @@ const Testimonial = () => {
     {
       img: testimonialImg1,
       name: "Hannah Schmitt",
-      reviewTitle: "Quality product", 
+      reviewTitle: "Quality product",
       review:
         "I’ve been searching for a one-stop shop for my dog's food and health needs, and I’ve finally found it! The website is easy to navigate, and the variety of dog food options is impressive.",
     },
@@ -57,53 +57,53 @@ const Testimonial = () => {
   return (
     <CommonWrapper>
       <div>
-        <h2 className="xl:text-[34px] lg:text-2xl text-lg xl:font-semibold font-medium xl:leading-[48px] text-center xl:text-start mb-4 xl:mb-[60px]">
+        <h2 className="xl:text-[34px] text-textGray lg:text-2xl text-lg xl:font-semibold font-medium xl:leading-[48px] text-center xl:text-start mb-4 xl:mb-[60px]">
           What our customers are saying
         </h2>
         <div className="hidden xl:block">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          pagination={{
-            dynamicBullets: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {testimonials.map((item, index) => (
-            <SwiperSlide key={index}>
-              <TestimonialCard
-                image={item.img}
-                name={item.name}
-                reviewTitle={item.reviewTitle}
-                review={item.review}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={3}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {testimonials.map((item, index) => (
+              <SwiperSlide key={index}>
+                <TestimonialCard
+                  image={item.img}
+                  name={item.name}
+                  reviewTitle={item.reviewTitle}
+                  review={item.review}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
 
         <div className="xl:hidden">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={1}
-          pagination={{
-            dynamicBullets: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {testimonials.map((item, index) => (
-            <SwiperSlide key={index}>
-              <TestimonialCard
-                image={item.img}
-                name={item.name}
-                reviewTitle={item.reviewTitle}
-                review={item.review}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {testimonials.map((item, index) => (
+              <SwiperSlide key={index}>
+                <TestimonialCard
+                  image={item.img}
+                  name={item.name}
+                  reviewTitle={item.reviewTitle}
+                  review={item.review}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </CommonWrapper>
