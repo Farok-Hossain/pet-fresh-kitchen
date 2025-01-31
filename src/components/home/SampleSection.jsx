@@ -1,8 +1,8 @@
 import { CommonButton } from "../common/CommonButton";
 import CommonWrapper from "../common/CommonWrapper";
-import bgDogImag from "../../assets/images/bgDogFrame.jpg";
-import dogFood1 from "../../assets/images/dogfood1.png";
-import dogFood2 from "../../assets/images/dogFood2.png";
+import bgDogImag from "@/assets/images/bgDogFrame.jpg";
+import dogFood1 from "@/assets/images/dogfood1.png";
+import dogFood2 from "@/assets/images/dogFood2.png";
 import RightArrow from "@/assets/Icons/RightArrow";
 
 const SampleSection = () => {
@@ -39,21 +39,24 @@ const SampleSection = () => {
 
             <CommonButton
               className="rounded group mb-4 xl:mb-0 text-primaryOrange bg-white"
-              rightIcon={<span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]"><RightArrow /></span>}
+              rightIcon={
+                <span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]">
+                  <RightArrow />
+                </span>
+              }
               text="Get Free Samples"
             ></CommonButton>
           </div>
-
         </div>
-        
-          {/* image here  */}
-          <div className=" hidden 2xl:block absolute top-0 right-0 h-full">
-            <img
-              src={dogFood2}
-              alt="dogFood"
-              className="w-full h-full object-cover"
-            />
-          </div>
+
+        {/* image here  */}
+        <div className=" hidden 2xl:block absolute top-0 right-0 h-full">
+          <img
+            src={dogFood2}
+            alt="dogFood"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </CommonWrapper>
   );
