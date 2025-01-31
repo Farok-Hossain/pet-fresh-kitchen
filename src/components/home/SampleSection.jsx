@@ -19,6 +19,7 @@ const SampleSection = () => {
       >
         {/* image here  */}
         <div className=" absolute hidden 2xl:block  top-0 left-0 h-full">
+          
           <img
             src={dogFood1}
             alt="dogFood"

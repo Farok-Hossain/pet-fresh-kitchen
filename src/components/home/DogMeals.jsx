@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import CurveIcon from "../../assets/Icons/CurveIcon";
-import dog2 from "../../assets/images/dog2.png";
+import CurveIcon from "@/assets/Icons/CurveIcon";
+import dog2 from "@/assets/images/dog2.png";
 import SectionTitle from "../common/SectionTitle";
 
 const DogMeals = () => {

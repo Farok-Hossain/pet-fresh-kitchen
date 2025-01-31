@@ -1,5 +1,5 @@
 import { Checkbox } from "@/components/ui/checkbox";
-import rawMeals from "../../assets/images/rawMeals.png";
+import rawMeals from "@/assets/images/rawMeals.png";
 import PlusIcon from "@/assets/Icons/PlusIcon";
 import { MinusIcon } from "lucide-react";
 import { useState } from "react";

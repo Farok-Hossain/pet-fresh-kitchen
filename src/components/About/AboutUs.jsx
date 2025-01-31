@@ -1,5 +1,5 @@
 import CommonWrapper from "../common/CommonWrapper";
-import petFreshKitchen from "../../assets/images/PetFreshKitchen.png"
+import petFreshKitchen from "@/assets/images/PetFreshKitchen.png"
 
 const AboutUs = () => {
   return (

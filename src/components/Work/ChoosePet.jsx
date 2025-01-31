@@ -1,5 +1,5 @@
 import CommonWrapper from "../common/CommonWrapper";
-import dog from "../../assets/images/dog.jpg";
+import dog from "@/assets/images/dog.jpg";
 import TrickIcon from "@/assets/Icons/TrickIcon";
 
 const ChoosePet = () => {

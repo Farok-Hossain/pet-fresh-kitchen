@@ -1,5 +1,5 @@
 import CommonWrapper from "../common/CommonWrapper";
-import dog from "../../assets/images/dog.jpg";
+import dog from "@/assets/images/dog.jpg";
 import { CommonButton } from "../common/CommonButton";
 import TrickIcon from "@/assets/Icons/TrickIcon";
 import WhiteRightIcon from "@/assets/Icons/WhiteRightIcon";

@@ -2,8 +2,8 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import DeliveryAddress from "./DeliveryAddress";
 import CommonSelectField from "@/components/common/CommonSelectField";
-import dogProfileImg from "../../assets/images/dogProfileImg.png"
-import profileImg from "../../assets/images/profileImg.png"
+import dogProfileImg from "@/assets/images/dogProfileImg.png"
+import profileImg from "@/assets/images/profileImg.png"
 
 const Profile = () => {
   const {

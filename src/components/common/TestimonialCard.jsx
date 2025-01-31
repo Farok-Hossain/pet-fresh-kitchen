@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import BlueCard from "../../assets/Icons/BlueCard";
-import YellowCard from "../../assets/Icons/YellowCard";
+import BlueCard from "@/assets/Icons/BlueCard";
+import YellowCard from "@/assets/Icons/YellowCard";
 
 const TestimonialCard = ({ name, image, review, reviewTitle }) => {
   return (

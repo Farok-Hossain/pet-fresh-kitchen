@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import loginBg from "../../assets/images/loginBg.jpg";
-import logo from "../../assets/images/logo.png";
+import loginBg from "@/assets/images/loginBg.jpg";
+import logo from "@/assets/images/logo.png";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
 import ShowEyeIcon from "@/assets/Icons/ShowEyeIcon";

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import OfferIcon from "../../assets/Icons/OfferIcon";
+import OfferIcon from "@/assets/Icons/OfferIcon";
 import { Link } from "react-router-dom";
 
 const Card = ({ img, title, start, price, offer }) => {

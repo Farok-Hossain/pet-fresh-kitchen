@@ -4,7 +4,6 @@ import Home from "../../pages/Home/Home";
 import Order from "@/pages/Order/Order";
 import About from "@/pages/About/About";
 import Recipes from "@/pages/RecipeNutrition/Recipes";
-import RecipeDetails from "@/pages/RecipeDetails/RecipeDetailsPage";
 import Vet from "@/pages/Vet/Vet";
 import Work from "@/pages/Work/Work";
 import Error from "@/pages/Error/Error";

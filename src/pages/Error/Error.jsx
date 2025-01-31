@@ -1,6 +1,6 @@
 
 import CommonWrapper from "@/components/common/CommonWrapper";
-import error from "../../assets/images/error.svg"
+import error from "@/assets/images/error.svg"
 import { CommonButton } from "@/components/common/CommonButton";
 import Navbar from "@/shared/navbar/Navbar";
 import Footer from "@/shared/footer/Footer";

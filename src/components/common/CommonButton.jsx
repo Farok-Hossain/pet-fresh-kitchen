@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import CommonModal from "./CommonModal";
-import productImg from "../../assets/images/productImg.png";
-import RightIcon from "@/assets/Icons/RightIcon";
-import RightArrow from "@/assets/Icons/RightArrow";
+import productImg from "@/assets/images/productImg.png";
 
 export const CommonButton = ({ className, text, type, linkUrl, icon, rightIcon, icon2 }) => {
 

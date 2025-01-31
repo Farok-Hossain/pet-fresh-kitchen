@@ -1,6 +1,6 @@
 
 import WhiteRightIcon from "@/assets/Icons/WhiteRightIcon";
-import dog from "../../assets/images/dog.jpg"
+import dog from "@/assets/images/dog.jpg"
 import { CommonButton } from "../common/CommonButton";
 import SectionTitle from "../common/SectionTitle";
 

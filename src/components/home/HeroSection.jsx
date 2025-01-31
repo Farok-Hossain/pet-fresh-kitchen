@@ -1,6 +1,6 @@
 import WhiteRightIcon from "@/assets/Icons/WhiteRightIcon";
-import bgimg from "../../assets/images/herobgImg.jpg";
-import heroImg from "../../assets/images/heroImg.png";
+import bgimg from "@/assets/images/herobgImg.jpg";
+import heroImg from "@/assets/images/heroImg.png";
 import { CommonButton } from "../common/CommonButton";
 
 const HeroSection = () => {

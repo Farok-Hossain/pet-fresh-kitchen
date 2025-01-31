@@ -1,10 +1,10 @@
 import CommonWrapper from "../common/CommonWrapper";
-import BalancedIcon from "../../assets/Icons/BalancedIcon";
-import IngredientsIcon from "../../assets/Icons/IngredientsIcon";
-import DigestiveIcon from "../../assets/Icons/DigestiveIcon";
-import AdditivesIcon from "../../assets/Icons/AdditivesIcon";
+import BalancedIcon from "@/assets/Icons/BalancedIcon";
+import IngredientsIcon from "@/assets/Icons/IngredientsIcon";
+import DigestiveIcon from "@/assets/Icons/DigestiveIcon";
+import AdditivesIcon from "@/assets/Icons/AdditivesIcon";
 import PetFreshKitchen from "../common/PetFreshKitchen";
-import freshFood from "../../assets/images/freshFood.png"
+import freshFood from "@/assets/images/freshFood.png"
 
 const WhyChooseUs = () => {
 

@@ -1,6 +1,6 @@
 import CommonBanner from "../common/CommonBanner";
-import perfectMeal from "../../assets/images/perfectMeal.png";
-import girlWithDog from "../../assets/images/girlWithDog.png";
+import perfectMeal from "@/assets/images/perfectMeal.png";
+import girlWithDog from "@/assets/images/girlWithDog.png";
 
 const VetBanner = () => {
   return (

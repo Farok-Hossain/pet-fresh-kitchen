@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import contactImg from "../../assets/images/contactImg.png";
+import contactImg from "@/assets/images/contactImg.png";
 
 const ContactForm = () => {
   const {

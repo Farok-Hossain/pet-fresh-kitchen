@@ -1,7 +1,7 @@
 import CommonWrapper from "../common/CommonWrapper";
-import testimonialImg1 from "../../assets/images/testImg4.png";
-import testimonialImg2 from "../../assets/images/testImg5.png";
-import testimonialImg3 from "../../assets/images/testImg6.png";
+import testimonialImg1 from "@/assets/images/testImg4.png";
+import testimonialImg2 from "@/assets/images/testImg5.png";
+import testimonialImg3 from "@/assets/images/testImg6.png";
 import TestimonialCard from "../common/TestimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

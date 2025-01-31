@@ -1,11 +1,10 @@
 import CommonSection from "@/components/common/CommonSection";
 import WorkBanner from "@/components/Work/WorkBanner";
-import dogImg1 from "../../assets/images/dogImg1.png";
-import dogImg2 from "../../assets/images/dogImg2.png";
-import dogImg3 from "../../assets/images/dogImg3.png";
-import dogImg4 from "../../assets/images/dogImg4.png";
-import dogImg5 from "../../assets/images/dogImg5.png";
-import CommonWrapper from "@/components/common/CommonWrapper";
+import dogImg1 from "@/assets/images/dogImg1.png";
+import dogImg2 from "@/assets/images/dogImg2.png";
+import dogImg3 from "@/assets/images/dogImg3.png";
+import dogImg4 from "@/assets/images/dogImg4.png";
+import dogImg5 from "@/assets/images/dogImg5.png";
 import GetStarted from "@/components/Work/GetStarted";
 import ChoosePet from "@/components/Work/ChoosePet";
 

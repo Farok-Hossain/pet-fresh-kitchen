@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
-import loginBg from "../../assets/images/loginBg.jpg";
-import logo from "../../assets/images/logo.png";
+import loginBg from "@/assets/images/loginBg.jpg";
+import logo from "@/assets/images/logo.png";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Link } from "react-router-dom";
 import { useState } from "react";

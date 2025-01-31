@@ -1,5 +1,5 @@
 import CommonWrapper from "../common/CommonWrapper";
-import perfectDogMeal from "../../assets/images/perfectDogMeal.png";
+import perfectDogMeal from "@/assets/images/perfectDogMeal.png";
 import { CommonButton } from "../common/CommonButton";
 import RightArrow from "@/assets/Icons/RightArrow";
 

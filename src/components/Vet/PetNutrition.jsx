@@ -1,5 +1,5 @@
 import CommonWrapper from "../common/CommonWrapper";
-import petNutritionImg from "../../assets/images/petNutritionImg.png"
+import petNutritionImg from "@/assets/images/petNutritionImg.png"
 
 const PetNutrition = () => {
     return (

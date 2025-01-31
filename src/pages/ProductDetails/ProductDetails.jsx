@@ -1,5 +1,5 @@
 import { useState } from "react";
-import productImg from "../../assets/images/productImg.png";
+import productImg from "@/assets/images/productImg.png";
 import CommonModal from "@/components/common/CommonModal";
 
 const ProductDetails = () => {

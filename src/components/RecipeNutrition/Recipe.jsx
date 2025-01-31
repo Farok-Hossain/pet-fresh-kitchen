@@ -1,4 +1,4 @@
-import recipeCardImg from "../../assets/images/recipeCardImage.png"
+import recipeCardImg from "@/assets/images/recipeCardImage.png"
 import CommonWrapper from "../common/CommonWrapper";
 import RecipeCard from "../common/RecipeCard";
 import SectionTitle from "../common/SectionTitle";

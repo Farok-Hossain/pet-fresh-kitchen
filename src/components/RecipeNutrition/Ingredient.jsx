@@ -2,12 +2,12 @@
 import CommonWrapper from "@/components/common/CommonWrapper";
 import IngredientCard from "../common/IngredientCard";
 import SectionTitle from "../common/SectionTitle";
-import ingredientImg1 from "../../assets/images/ingredient1.jpg"
-import ingredientImg2 from "../../assets/images/ingredient2.png"
-import ingredientImg3 from "../../assets/images/ingredient3.png"
-import ingredientImg4 from "../../assets/images/ingredient4.png"
-import ingredientImg5 from "../../assets/images/ingredient5.png"
-import ingredientImg6 from "../../assets/images/ingredient6.png"
+import ingredientImg1 from "@/assets/images/ingredient1.jpg"
+import ingredientImg2 from "@/assets/images/ingredient2.png"
+import ingredientImg3 from "@/assets/images/ingredient3.png"
+import ingredientImg4 from "@/assets/images/ingredient4.png"
+import ingredientImg5 from "@/assets/images/ingredient5.png"
+import ingredientImg6 from "@/assets/images/ingredient6.png"
 
 const Ingredient = () => {
   const ingredientItems = [

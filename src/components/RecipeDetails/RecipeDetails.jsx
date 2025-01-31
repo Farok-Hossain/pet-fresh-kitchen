@@ -1,5 +1,5 @@
 import CommonWrapper from "@/components/common/CommonWrapper";
-import recipeCardImg from "../../assets/images/recipeCardImage.png";
+import recipeCardImg from "@/assets/images/recipeCardImage.png";
 import { CommonButton } from "@/components/common/CommonButton";
 
 const RecipeDetails = () => {

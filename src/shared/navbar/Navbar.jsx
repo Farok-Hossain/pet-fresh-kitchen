@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "@/assets/images/logo.png";
 import CardIcons from "@/assets/Icons/CardIcons";
 import ProfileIcon from "@/assets/Icons/ProfileIcon";
 import DropDownIcon from "@/assets/Icons/DropDownIcon";
