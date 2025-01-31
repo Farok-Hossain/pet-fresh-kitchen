@@ -17,8 +17,9 @@ const PerfectMeal = () => {
            <div className="xl:block flex justify-center">
            <CommonButton
               className="rounded group mb-4 xl:mb-0 text-primaryOrange bg-white"
+              linkUrl="/orders"
               rightIcon={<span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]"><RightArrow /></span>}
-              text="Get Free Samples"
+              text="Explore our Products"
             ></CommonButton>
            </div>
           </div>
