@@ -150,7 +150,7 @@ const OrderCard = () => {
   ];
   return (
     <div>
-      {/* {heading && <h3>{hea}</h3>} */}
+      {/* Vegetarian food items  */}
       <p className="text-textGray text-[34px] font-semibold leading-[48px]">
         Vegetarian
       </p>
@@ -167,30 +167,28 @@ const OrderCard = () => {
         ))}
       </div>
 
-     <div className="hidden xl:block">
-       {/* Pagination Controls */}
-       <div className="flex justify-end mt-5">
-        <button
-          onClick={handlePrev}
-          disabled={currentPage === 1}
-          className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50"
-        >
-          <LeftArro />
-        </button>
-        <button
-          onClick={handleNext}
-          disabled={currentPage === totalPages}
-          className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50 "
-        >
-          <RightIcon />
-        </button>
+      <div className="hidden xl:block">
+        {/* Pagination Controls */}
+        <div className="flex justify-end mt-5">
+          <button
+            onClick={handlePrev}
+            disabled={currentPage === 1}
+            className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50"
+          >
+            <LeftArro />
+          </button>
+          <button
+            onClick={handleNext}
+            disabled={currentPage === totalPages}
+            className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50 "
+          >
+            <RightIcon />
+          </button>
+        </div>
       </div>
-     </div>
 
-      
-
-      {/* {heading && <h3>{hea}</h3>} */}
-      <p className="text-textGray text-[34px] font-semibold leading-[48px]">
+      {/* Non Vegetarian food items  */}
+      <p className="text-textGray text-[34px] font-semibold leading-[48px]  pt-8 xl:pt-0">
         Non Vegetarian{" "}
       </p>
       <div className="grid xl:grid-cols-5 xlg:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[15px] mt-5">
@@ -207,22 +205,22 @@ const OrderCard = () => {
       </div>
       <div className="hidden xl:block">
         {/* Pagination Controls */}
-      <div className=" flex justify-end mt-5">
-        <button
-          onClick={handlePrev}
-          disabled={currentPage === 1}
-          className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50"
-        >
-          <LeftArro />
-        </button>
-        <button
-          onClick={handleNext}
-          disabled={currentPage === totalPages}
-          className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50 "
-        >
-          <RightIcon />
-        </button>
-      </div>
+        <div className=" flex justify-end mt-5">
+          <button
+            onClick={handlePrev}
+            disabled={currentPage === 1}
+            className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50"
+          >
+            <LeftArro />
+          </button>
+          <button
+            onClick={handleNext}
+            disabled={currentPage === totalPages}
+            className="px-3 py-2 border-[1px] border-primaryOrange rounded-full mx-2 disabled:opacity-50 "
+          >
+            <RightIcon />
+          </button>
+        </div>
       </div>
     </div>
   );
