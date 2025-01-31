@@ -168,7 +168,7 @@ const OrderCard = () => {
       </div>
 
       <div className="hidden xl:block">
-        {/* Pagination Controls */}
+        {/* Pagination Controlss */}
         <div className="flex justify-end mt-5">
           <button
             onClick={handlePrev}
