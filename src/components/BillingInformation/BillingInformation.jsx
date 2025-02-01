@@ -44,7 +44,11 @@ const BillingInformation = () => {
               id="name"
               placeholder="Full name here"
               className="w-full xl:py-[14px] py-2 border border-[#E6E6E6] text-[14px] rounded-md pl-6 mt-[6px] focus:outline-none"
+              {...register("name", { required: true })}
             />
+            {errors.date && (
+              <span className="text-red-600">Name is required</span>
+            )}
           </div>
 
           <div className="flex xl:flex-row flex-col gap-4 w-full">
@@ -60,7 +64,11 @@ const BillingInformation = () => {
                 id="email"
                 placeholder="abcd@gmail.com"
                 className=" w-full px-4 xl:py-[14px] py-2 border border-[#E6E6E6] rounded-md pl-6 mt-[6px] focus:outline-none"
+                {...register("email", { required: true })}
               />
+              {errors.date && (
+                <span className="text-red-600">Email is required</span>
+              )}
             </div>
             <div className="w-full">
               <label
@@ -94,7 +102,11 @@ const BillingInformation = () => {
               id="address"
               placeholder="here...."
               className="w-full px-4 xl:py-[14px] py-2 text-[14px] border border-[#E6E6E6] rounded-md pl-6 mt-[6px] focus:outline-none"
+              {...register("address", { required: true })}
             />
+            {errors.date && (
+              <span className="text-red-600">Strees address is required</span>
+            )}
           </div>
 
           <div className="flex flex-col xl:flex-row w-full gap-4">
@@ -116,13 +128,13 @@ const BillingInformation = () => {
                     Zip Code
                   </label>
                   <input
-                    id="address"
+                    id="zip code"
                     placeholder="1425 park"
                     className="xl:h-12 border-[1px] text-[#666666] text-[14px] outline-none rounded-xl px-[16px] xl:py-[14px] py-2"
-                    {...register("address")}
+                    {...register("zip code", { required: true })}
                   />
-                  {errors.name && (
-                    <p className="error">{errors.address.message}</p>
+                  {errors.date && (
+                    <span className="text-red-600">Zip code is required</span>
                   )}
                 </div>
               </div>
