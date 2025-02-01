@@ -130,7 +130,6 @@ const Navbar = () => {
         } w-[200px] xlg:w-[250px] lg:w-[230px] md:w-[220px] sm:w-[210px] h-full bg-white shadow-lg z-50 flex flex-col`}
       >
         <div className="flex justify-between items-center p-4 border-b">
-          <img src={logo} alt="logoImg" />
           <button
             onClick={() => setIsSidebarOpen(false)}
             className="text-primaryOrange"

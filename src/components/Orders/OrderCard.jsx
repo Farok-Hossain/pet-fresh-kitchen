@@ -151,7 +151,7 @@ const OrderCard = () => {
   return (
     <div>
       {/* Vegetarian food items  */}
-      <p className="text-textGray text-[34px] font-semibold leading-[48px]">
+      <p className="text-textGray xl:text-[34px] lg:text-2xl text-xl text-center sm:text-start font-semibold leading-[48px]">
         Vegetarian
       </p>
       <div className="grid xl:grid-cols-5 xlg:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[15px] mt-5">
@@ -188,7 +188,7 @@ const OrderCard = () => {
       </div>
 
       {/* Non Vegetarian food items  */}
-      <p className="text-textGray text-[34px] font-semibold leading-[48px]  pt-8 xl:pt-0">
+      <p className="text-textGray xl:text-[34px] lg:text-2xl text-xl text-center sm:text-start font-semibold leading-[48px]">
         Non Vegetarian{" "}
       </p>
       <div className="grid xl:grid-cols-5 xlg:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[15px] mt-5">
