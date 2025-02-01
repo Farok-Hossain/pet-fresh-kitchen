@@ -1,10 +1,7 @@
 import BillingInformation from "../BillingInformation/BillingInformation";
 import OrderSummary from "../OrderSummary/OrderSummary";
 
-
-
-const CheckOut = () => {
- 
+const CheckOuts = () => {
   return (
     <div className="xl:mb-[200px] flex flex-col xl:flex-row gap-8 xl:mt-[70px] py-5">
       <BillingInformation />
@@ -13,4 +10,4 @@ const CheckOut = () => {
   );
 };
 
-export default CheckOut;
+export default CheckOuts;
