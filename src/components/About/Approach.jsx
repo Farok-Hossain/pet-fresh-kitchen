@@ -47,12 +47,12 @@ const Approach = () => {
                 <TrickIcon />
               </div>
               <div>
-              <p className="text-textColor xl:text-xl mb-5">
-                <span className="font-medium">Licensed and Recommended:</span>{" "}
-                Pet Fresh Kitchen is proud to be fully licensed, with
-                recommendations from leading pet care professionals and
-                organizations
-              </p>
+                <p className="text-textColor xl:text-xl mb-5">
+                  <span className="font-medium">Licensed and Recommended:</span>{" "}
+                  Pet Fresh Kitchen is proud to be fully licensed, with
+                  recommendations from leading pet care professionals and
+                  organizations
+                </p>
               </div>
             </div>
 
@@ -61,14 +61,14 @@ const Approach = () => {
                 <TrickIcon />
               </div>
               <div>
-              <p className="text-textColor xl:text-xl xl:mb-5">
-                <span className="font-medium">
-                  Convenience and Affordability:
-                </span>{" "}
-                We make pet nutrition accessible to all through easy
-                subscription options, customizable meal plans, and eco-friendly
-                delivery services.
-              </p>
+                <p className="text-textColor xl:text-xl xl:mb-5">
+                  <span className="font-medium">
+                    Convenience and Affordability:
+                  </span>{" "}
+                  We make pet nutrition accessible to all through easy
+                  subscription options, customizable meal plans, and
+                  eco-friendly delivery services.
+                </p>
               </div>
             </div>
           </div>
@@ -78,7 +78,11 @@ const Approach = () => {
             className="rounded text-white group"
             text="Follow us on Social"
             linkUrl="https://www.instagram.com/accounts/login/?hl=en"
-            rightIcon={<span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]"><WhiteRightIcon /></span>}
+            rightIcon={
+              <span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]">
+                <WhiteRightIcon />
+              </span>
+            }
           ></CommonButton>
         </div>
       </div>

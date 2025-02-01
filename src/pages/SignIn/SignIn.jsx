@@ -9,7 +9,6 @@ import { useForm } from "react-hook-form";
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const {
     register,
@@ -19,10 +18,6 @@ const SignIn = () => {
 
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
-  };
-
-  const toggleConfirmPasswordVisibility = () => {
-    setShowConfirmPassword((prev) => !prev);
   };
 
   const onSubmit = (data) => {
@@ -46,6 +41,8 @@ const SignIn = () => {
           Welcome Back, Please Enter your Details to Log In.
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="xl:mt-[50px] mt-2">
+          
+          {/* Email field  */}
           <div>
             <label
               htmlFor="email"
@@ -62,6 +59,7 @@ const SignIn = () => {
             />
           </div>
 
+          {/* Password field  */}
           <div className="xl:mt-5 pt-2">
             <label
               htmlFor="password"
@@ -82,9 +80,14 @@ const SignIn = () => {
                 onClick={togglePasswordVisibility}
                 className="text-gray-500 xl:pr-6 pr-3"
               >
-                {showPassword ?   <EyeCloseIcon /> : <ShowEyeIcon />}
+                {showPassword ? <EyeCloseIcon /> : <ShowEyeIcon />}
               </button>
             </div>
+            {errors.password && (
+              <p className="text-red-500 text-sm mt-2">
+                {errors.password.message}
+              </p>
+            )}
           </div>
 
           <div className="flex justify-between">

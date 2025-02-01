@@ -46,6 +46,8 @@ const SignUp = () => {
           Lets have these fields
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="xl:mt-[50px] mt-2">
+
+          {/* Name field  */}
           <div>
             <label
               htmlFor="name"
@@ -58,10 +60,14 @@ const SignUp = () => {
               id="name"
               placeholder="First Name "
               className="w-full xl:px-6 text-[14px]  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
-              {...register("name")}
+              {...register("name", { required: true })}
             />
+            {errors.name && (
+              <span className="text-red-600">Name is required</span>
+            )}
           </div>
 
+          {/* Email field    */}
           <div className="xl:mt-5 mt-2">
             <label
               htmlFor="email"
@@ -74,11 +80,14 @@ const SignUp = () => {
               id="email"
               placeholder="abcd@gmail.com"
               className="w-full xl:px-6  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none"
-              {...register("email")}
+              {...register("email", { required: true })}
             />
+            {errors.email && (
+              <span className="text-red-600">Email is required</span>
+            )}
           </div>
 
-          {/* Pet Name and Date */}
+          {/* Pet Name and Date field */}
           <div className="flex xl:gap-[26px] gap-2 xl:mt-5 mt-2 ">
             <div className="w-full flex flex-col">
               <label
@@ -92,10 +101,10 @@ const SignUp = () => {
                 placeholder="Tome"
                 className=" w-full xl:px-6  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none "
                 type="text"
-                {...register("petName")}
+                {...register("petName", { required: true })}
               />
               {errors.petName && (
-                <p className="error">{errors.petName.message}</p>
+                <span className="text-red-600">Pet Name is required</span>
               )}
             </div>
 
@@ -110,13 +119,15 @@ const SignUp = () => {
                 id="date"
                 className=" w-full xl:px-6 px-3  xl:py-[11px] py-[6px] border rounded-md xl:pl-6 pl-3 xl:mt-3 mt-1 focus:outline-none "
                 type="date"
-                {...register("date")}
+                {...register("date", { required: true })}
               />
-              {errors.date && <p className="error">{errors.date.message}</p>}
+              {errors.date && (
+                <span className="text-red-600">Date is required</span>
+              )}
             </div>
           </div>
 
-          {/* Password */}
+          {/* Password field */}
           <div className="flex xl:flex-row flex-col xl:gap-[26px] xl:mt-5 mt-2">
             <div className="w-full flex flex-col">
               <label
@@ -128,12 +139,29 @@ const SignUp = () => {
 
               <div className="flex justify-between items-center border rounded-md border-gray-300 overflow-hidden">
                 <input
-                  id="password"
+                  name="password"
                   placeholder="********"
+                  
                   className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]   text-[#666666] focus:outline-none  xl:text-[16px] "
                   type={showPassword ? "text" : "password"} // Toggle input type
-                  {...register("password")}
+                  {...register("password", {
+                    required: "Password is required",
+                    minLength: {
+                      value: 6,
+                      message: "Password must be at least 6 characters",
+                    },
+                    maxLength: {
+                      value: 20,
+                      message: "Password cannot exceed 20 characters",
+                    },
+                    pattern: {
+                      value: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
+                      message:
+                        "Password must include uppercase, lowercase, number, and special character",
+                    },
+                  })}
                 />
+
                 <button
                   type="button"
                   onClick={togglePasswordVisibility}
@@ -143,12 +171,14 @@ const SignUp = () => {
                 </button>
               </div>
               {errors.password && (
-                <p className="error">{errors.password.message}</p>
+                <p className="text-red-500 text-sm mt-2">
+                  {errors.password.message}
+                </p>
               )}
             </div>
 
-            {/* Confirm Password */}
-            <div className="w-full flex flex-col mt-2">
+            {/* Confirm Password field */}
+            <div className="w-full flex flex-col mt-0">
               <label
                 htmlFor="confirmPassword"
                 className="text-textGray xl:text-[18px] font-medium leading-6 xl:mb-3 mb-1"
@@ -158,11 +188,11 @@ const SignUp = () => {
 
               <div className="flex justify-between items-center border-[1px] rounded-md border-gray-300 overflow-hidden">
                 <input
-                  id="confirmPassword"
+                  name="confirmPassword"
                   placeholder="********"
                   className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]  text-[#666666] focus:outline-none  xl:text-[16px] "
                   type={showConfirmPassword ? "text" : "password"} // Toggle input type
-                  {...register("confirmPassword")}
+                  {...register("password")}
                 />
                 <button
                   type="button"
@@ -172,10 +202,6 @@ const SignUp = () => {
                   {showConfirmPassword ? <EyeCloseIcon /> : <ShowEyeIcon />}
                 </button>
               </div>
-
-              {errors.confirmPassword && (
-                <p className="error">{errors.confirmPassword.message}</p>
-              )}
             </div>
           </div>
 

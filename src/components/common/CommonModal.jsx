@@ -16,7 +16,6 @@ const CommonModal = ({
   clickedButton,
   dogType,
   category,
-  button,
 }) => {
   const [count, setCount] = useState(1);
 
@@ -101,45 +100,41 @@ const CommonModal = ({
             </div>
 
             {/* pet age weight field  */}
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                className="w-full gap-5 flex xl:px-2 flex-col xl:flex-row px-5"
-              >
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="name"
-                    className=" text-[#212121B3] text-[14px] xl:text-2xl font-medium  xl:leading-[21px]  mt-2 xl:mb-3 mb-[6px]"
-                  >
-                    Pet Age
-                  </label>
-                  <input
-                    id="name"
-                    placeholder="Pet age..."
-                    className="  w-full h-12 border-[1px] text-[#666666] outline-none rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
-                    {...register("name")}
-                  />
-                  {errors.name && (
-                    <p className="error">{errors.name.message}</p>
-                  )}
-                </div>
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="name"
-                    className=" text-[#212121B3] font-medium xl:text-2xl text-[14px]  xl:leading-[21px]  mt-2 xl:mb-3 mb-[6px]"
-                  >
-                    Pet Weight
-                  </label>
-                  <input
-                    id="name"
-                    placeholder="Pet weight..."
-                    className="  w-full h-12 border-[1px] text-[#666666] outline-none rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
-                    {...register("name")}
-                  />
-                  {errors.name && (
-                    <p className="error">{errors.name.message}</p>
-                  )}
-                </div>
-              </form>
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="w-full gap-5 flex xl:px-2 flex-col xl:flex-row px-5"
+            >
+              <div className="flex flex-col">
+                <label
+                  htmlFor="name"
+                  className=" text-[#212121B3] text-[14px] xl:text-2xl font-medium  xl:leading-[21px]  mt-2 xl:mb-3 mb-[6px]"
+                >
+                  Pet Age
+                </label>
+                <input
+                  id="name"
+                  placeholder="Pet age..."
+                  className="  w-full h-12 border-[1px] text-[#666666] outline-none rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
+                  {...register("name")}
+                />
+                {errors.name && <p className="error">{errors.name.message}</p>}
+              </div>
+              <div className="flex flex-col">
+                <label
+                  htmlFor="name"
+                  className=" text-[#212121B3] font-medium xl:text-2xl text-[14px]  xl:leading-[21px]  mt-2 xl:mb-3 mb-[6px]"
+                >
+                  Pet Weight
+                </label>
+                <input
+                  id="name"
+                  placeholder="Pet weight..."
+                  className="  w-full h-12 border-[1px] text-[#666666] outline-none rounded-xl xl:text-[16px] text-[14px] px-[16px] py-[14px]"
+                  {...register("name")}
+                />
+                {errors.name && <p className="error">{errors.name.message}</p>}
+              </div>
+            </form>
 
             <div>
               <h3 className="text-textGray text-center xl:text-start pt-2 xl:pt-0 xl:text-[16px] font-medium mb-3 xl:mb-0">

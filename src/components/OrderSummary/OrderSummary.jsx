@@ -1,6 +1,6 @@
 import productImg from "@/assets/images/productImg.png";
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 const OrderSummary = () => {
   return (
@@ -39,19 +39,27 @@ const OrderSummary = () => {
         <h5 className="text-[14px] text-[#1A1A1A] font-medium">$75</h5>
       </div>
 
-      <h3 className="text-xl text-center xl:text-start font-medium mt-6 mb-4">Payment Method</h3>
+      <h3 className="text-xl text-center xl:text-start font-medium mt-6 mb-4">
+        Payment Method
+      </h3>
       <RadioGroup defaultValue="option-one">
-  <div className="flex items-center space-x-2">
-    <RadioGroupItem value="option-one" id="option-one" />
-    <Label htmlFor="option-one" className="text-[14px] text-[#4D4D4D]">Cash on Delivery</Label>
-  </div>
-  <div className="flex items-center space-x-2 mb-6">
-    <RadioGroupItem value="option-two" id="option-two" />
-    <Label htmlFor="option-two" className="text-[14px] text-[#4D4D4D]">Stripe</Label>
-  </div>
-</RadioGroup>
+        <div className="flex items-center space-x-2">
+          <RadioGroupItem value="option-one" id="option-one" />
+          <Label htmlFor="option-one" className="text-[14px] text-[#4D4D4D]">
+            Cash on Delivery
+          </Label>
+        </div>
+        <div className="flex items-center space-x-2 mb-6">
+          <RadioGroupItem value="option-two" id="option-two" />
+          <Label htmlFor="option-two" className="text-[14px] text-[#4D4D4D]">
+            Stripe
+          </Label>
+        </div>
+      </RadioGroup>
 
-      <button className="bg-primaryOrange text-white xl:py-4 py-2 w-full  xl:font-bold font-medium rounded-[43px]">Place Order</button>
+      <button className="bg-primaryOrange text-white xl:py-4 py-2 w-full  xl:font-bold font-medium rounded-[43px]">
+        Place Order
+      </button>
     </div>
   );
 };
