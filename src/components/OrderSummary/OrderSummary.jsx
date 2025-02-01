@@ -39,7 +39,7 @@ const OrderSummary = () => {
         <h5 className="text-[14px] text-[#1A1A1A] font-medium">$75</h5>
       </div>
 
-      <h3 className="text-xl text-center xl:text-start font-medium mt-6 mb-4">
+      <h3 className="text-xl text-textGray text-center xl:text-start font-medium mt-6 mb-4">
         Payment Method
       </h3>
       <RadioGroup defaultValue="option-one">

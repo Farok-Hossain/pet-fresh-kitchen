@@ -63,7 +63,7 @@ const BillingInformation = () => {
                 type="email"
                 id="email"
                 placeholder="abcd@gmail.com"
-                className=" w-full px-4 xl:py-[14px] py-2 border border-[#E6E6E6] rounded-md pl-6 mt-[6px] focus:outline-none"
+                className=" w-full px-4 xl:py-[14px] py-2 text-[14px] border border-[#E6E6E6] rounded-md pl-6 mt-[6px] focus:outline-none"
                 {...register("email", { required: true })}
               />
               {errors.date && (
@@ -130,7 +130,7 @@ const BillingInformation = () => {
                   <input
                     id="zip code"
                     placeholder="1425 park"
-                    className="xl:h-12 border-[1px] text-[#666666] text-[14px] outline-none rounded-xl px-[16px] xl:py-[14px] py-2"
+                    className="xl:h-12 border-[1px] text-[#666666] text-[14px] outline-none rounded-md px-[16px] xl:py-[14px] py-2"
                     {...register("zip code", { required: true })}
                   />
                   {errors.date && (

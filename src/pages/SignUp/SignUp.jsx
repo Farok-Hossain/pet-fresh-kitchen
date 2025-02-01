@@ -46,7 +46,6 @@ const SignUp = () => {
           Lets have these fields
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="xl:mt-[50px] mt-2">
-
           {/* Name field  */}
           <div>
             <label
@@ -141,7 +140,6 @@ const SignUp = () => {
                 <input
                   name="password"
                   placeholder="********"
-                  
                   className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]   text-[#666666] focus:outline-none  xl:text-[16px] "
                   type={showPassword ? "text" : "password"} // Toggle input type
                   {...register("password", {
@@ -192,7 +190,7 @@ const SignUp = () => {
                   placeholder="********"
                   className="xl:pl-6 pl-3  xl:py-[11px] pt-[10px] pb-[2px]  text-[#666666] focus:outline-none  xl:text-[16px] "
                   type={showConfirmPassword ? "text" : "password"} // Toggle input type
-                  {...register("password")}
+                  {...register("confirmPassword")}
                 />
                 <button
                   type="button"
