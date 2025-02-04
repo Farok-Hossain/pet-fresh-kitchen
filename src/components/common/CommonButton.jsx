@@ -71,5 +71,6 @@ CommonButton.propTypes = {
   type: PropTypes.string,
   linkUrl: PropTypes.any,
   icon: PropTypes.any,
+  rightIcon: PropTypes.any,
   icon2: PropTypes.any
 };

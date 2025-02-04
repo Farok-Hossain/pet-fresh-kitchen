@@ -47,7 +47,7 @@ const RecipeDetails = ({
             ))}
           </div>
         </div>
-        <div>
+        <div className="space-y-8">
           <div className="xl:min-w-[460px] xlg:min-w-[300px] lg:min-w-[250px] md:max-w-[300px] max-w-[280px] flex   mx-auto  border-[1px] border-[#E5E5E5] rounded-[10px]">
             <img
               className="xl:p-[52px] xlg:p-8 lg:p-5 md:p-8 p-8"
@@ -55,9 +55,9 @@ const RecipeDetails = ({
               alt=""
             />
           </div>
-          <div className="flex justify-center xl:block pt-8">
+          <div className="flex justify-center w-full lg:block">
             <CommonButton
-              className="rounded text-white flex justify-center group w-full"
+              className="rounded text-white flex justify-center group w-full lg:px-16 md:px-[88px] px-20"
               text="Order Now"
               linkUrl="/orders"
               rightIcon={
