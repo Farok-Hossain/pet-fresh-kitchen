@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 const RecipeDetails = ({
   title,
+  description,
   greateData,
   NutritionData,
   img,
@@ -15,10 +16,10 @@ const RecipeDetails = ({
       <div className="flex  lg:flex-row flex-col-reverse gap-[60px]">
         <div>
           <h3 className="xl:text-[32px] xlg:text-2xl text-xl text-textGray font-semibold xl:leading-[44px] xlg:leading-9 lg:leading-7 xlg:mb-5 lg:mb-4 mb-3">
-            Chicken & Rice Delight
+            {title}
           </h3>
           <h4 className="xl:text-xl xlg:text-[18px] lg:text-[16px] text-[14px] xlg:leading-8 xl:mb-8 xlg:mb-6lg:mb-5 mb-4">
-            {title}
+            {description}
           </h4>
           <h3 className="xl:text-[32px] xlg:text-2xl text-xl text-textGray font-semibold xl:leading-[44px] xlg:leading-9 lg:leading-7 xlg:mb-5 lg:mb-4 mb-3">
             Why It’s Greate
@@ -76,6 +77,7 @@ const RecipeDetails = ({
 
 RecipeDetails.propTypes = {
   title: PropTypes.string,
+  description: PropTypes.string,
   greateData: PropTypes.array,
   NutritionData: PropTypes.array,
   img: PropTypes.any,

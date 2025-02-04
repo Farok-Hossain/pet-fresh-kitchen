@@ -31,7 +31,8 @@ const VeggieFeastBowl = () => {
   return (
     <div className="lg:pt-[60px] pt-8 lg:pb-[88px]">
       <RecipeDetails
-        title="Ingredients:  Paneer, Brown Rice, Pumpkin, Green Peas, Carrots, Sweet Potatoes, Spinach, Turmeric, Coconut Oil, Flaxseeds, Tricalcium Phosphate, Iodized Salt, Vitamin Supplements, Zinc Gluconate, Iron Supplements."
+        title="Veggie Feast Bowl"
+        description="Ingredients:  Paneer, Brown Rice, Pumpkin, Green Peas, Carrots, Sweet Potatoes, Spinach, Turmeric, Coconut Oil, Flaxseeds, Tricalcium Phosphate, Iodized Salt, Vitamin Supplements, Zinc Gluconate, Iron Supplements."
         greateData={greateData}
         NutritionData={NutritionData}
         img={VeggieFeastBowlImg}

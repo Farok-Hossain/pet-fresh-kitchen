@@ -15,7 +15,6 @@ import SignUp from "@/pages/SignUp/SignUp";
 import ProductDetails from "@/pages/ProductDetails/ProductDetails";
 import AddToCart from "@/pages/AddToCart/AddToCart";
 import Checkout from "@/pages/Checkout/Checkout";
-import RecipeDetails from "../RecipeDetails/ExtraRecipes";
 
 export const router = createBrowserRouter([
   {
@@ -59,10 +58,6 @@ export const router = createBrowserRouter([
       {
         path: "/checkout",
         element: <Checkout />,
-      },
-      {
-        path: "/details",
-        element: <RecipeDetails />,
       },
     ],
   },
