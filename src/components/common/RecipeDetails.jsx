@@ -48,9 +48,9 @@ const RecipeDetails = ({
           </div>
         </div>
         <div>
-          <div className="xl:min-w-[460px] xlg:min-w-[300px] lg:min-w-[250px] md:max-w-[300px] flex   mx-auto  border-[1px] border-[#E5E5E5] rounded-[10px]">
+          <div className="xl:min-w-[460px] xlg:min-w-[300px] lg:min-w-[250px] md:max-w-[300px] max-w-[280px] flex   mx-auto  border-[1px] border-[#E5E5E5] rounded-[10px]">
             <img
-              className="xl:p-[52px] xlg:p-8 lg:p-5 md:p-8"
+              className="xl:p-[52px] xlg:p-8 lg:p-5 md:p-8 p-8"
               src={img}
               alt=""
             />

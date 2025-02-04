@@ -30,7 +30,7 @@ const ChickenRiceDelight = () => {
         { id: 5, text: "Moisture: 10%" },
       ];
     return (
-        <div className="pt-[60px]">
+        <div className="lg:pt-[60px] pt-8">
             <RecipeDetails
                     title="Ingredients: how , Tricalcium Phosphate, Salmon Oil, Salt, Taurine, Zinc Gluconate, Vitamin E Supplement, Ferrous Sulfate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Vitamin D3, Vitamin B2, Vitamin B1, Vitamin B6, Potassium Iodide."
                     greateData={greateData}
