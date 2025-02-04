@@ -14,12 +14,12 @@ const BillingInformation = () => {
   };
 
   const country = [
+    { label: "America", value: "america" },
     { label: "India", value: "india" },
-    { label: "Bangladesh", value: "bangladesh" },
   ];
   const states = [
+    { label: "Washington, D.C.", value: "washington, d.c." },
     { label: "Mumbai", value: "mumbai" },
-    { label: "Dhaka", value: "dhaka" },
   ];
   return (
     <div className=" max-w-[984px] w-full">
