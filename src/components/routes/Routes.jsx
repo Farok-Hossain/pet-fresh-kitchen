@@ -15,6 +15,7 @@ import SignUp from "@/pages/SignUp/SignUp";
 import ProductDetails from "@/pages/ProductDetails/ProductDetails";
 import AddToCart from "@/pages/AddToCart/AddToCart";
 import Checkout from "@/pages/Checkout/Checkout";
+import RecipeDetails from "../RecipeDetails/ExtraRecipes";
 
 export const router = createBrowserRouter([
   {
@@ -48,17 +49,21 @@ export const router = createBrowserRouter([
         element: <Work />,
       },
       {
-        path:"/productdetails",
-        element: <ProductDetails />
+        path: "/productdetails",
+        element: <ProductDetails />,
       },
       {
         path: "/addcart",
-        element: <AddToCart />
+        element: <AddToCart />,
       },
       {
         path: "/checkout",
-        element: <Checkout />
-      }
+        element: <Checkout />,
+      },
+      {
+        path: "/details",
+        element: <RecipeDetails />,
+      },
     ],
   },
 
@@ -72,16 +77,16 @@ export const router = createBrowserRouter([
       },
       {
         path: "history",
-        element: <OrderHistory />
-      }
+        element: <OrderHistory />,
+      },
     ],
   },
   {
-    path:"/signin",
-    element: <SignIn />
+    path: "/signin",
+    element: <SignIn />,
   },
   {
     path: "/signup",
-    element: <SignUp />
-  }
+    element: <SignUp />,
+  },
 ]);
