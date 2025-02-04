@@ -29,7 +29,7 @@ const VeggieFeastBowl = () => {
     { id: 5, text: "Moisture: 12%" },
   ];
   return (
-    <div>
+    <div className="pt-[60px] pb-[88px]">
       <RecipeDetails
         title="Ingredients:  Paneer, Brown Rice, Pumpkin, Green Peas, Carrots, Sweet Potatoes, Spinach, Turmeric, Coconut Oil, Flaxseeds, Tricalcium Phosphate, Iodized Salt, Vitamin Supplements, Zinc Gluconate, Iron Supplements."
         greateData={greateData}

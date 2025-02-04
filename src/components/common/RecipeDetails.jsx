@@ -2,9 +2,15 @@ import WhiteRightIcon from "@/assets/Icons/WhiteRightIcon";
 import { CommonButton } from "./CommonButton";
 import PropTypes from "prop-types";
 
-const RecipeDetails = ({ title, greateData, NutritionData, img, borderClassName }) => {
+const RecipeDetails = ({
+  title,
+  greateData,
+  NutritionData,
+  img,
+  borderClassName,
+}) => {
   return (
-    <div className="container py-[120px]">
+    <div className="container">
       {/* chicken chow  */}
       <div className="flex gap-[60px]">
         <div>
@@ -34,13 +40,14 @@ const RecipeDetails = ({ title, greateData, NutritionData, img, borderClassName 
           </div>
         </div>
         <div>
-          <div className="min-w-[460px] border-[1px] border-[#E5E5E5] rounded-[10px]">
-            <img className="p-[52px]" src={img} alt="" />
+          <div className="xl:min-w-[460px] min-w-[300px] border-[1px] border-[#E5E5E5] rounded-[10px]">
+            <img className="xl:p-[52px] p-8" src={img} alt="" />
           </div>
           <div className="flex justify-center xl:block pt-8">
             <CommonButton
               className="rounded text-white flex justify-center group w-full"
               text="Order Now"
+              linkUrl="/orders"
               rightIcon={
                 <span className="inline-block transition-transform duration-300 ease-in-out group-hover:rotate-[-30deg]">
                   <WhiteRightIcon />
@@ -50,7 +57,7 @@ const RecipeDetails = ({ title, greateData, NutritionData, img, borderClassName 
           </div>
         </div>
       </div>
-      <div className={borderClassName}></div>
+      <div className={`mb-7 ${borderClassName}`}></div>
     </div>
   );
 };

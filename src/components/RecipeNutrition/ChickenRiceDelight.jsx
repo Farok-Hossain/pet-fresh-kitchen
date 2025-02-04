@@ -30,13 +30,13 @@ const ChickenRiceDelight = () => {
         { id: 5, text: "Moisture: 10%" },
       ];
     return (
-        <div>
+        <div className="pt-[60px]">
             <RecipeDetails
                     title="Ingredients: how , Tricalcium Phosphate, Salmon Oil, Salt, Taurine, Zinc Gluconate, Vitamin E Supplement, Ferrous Sulfate, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Vitamin D3, Vitamin B2, Vitamin B1, Vitamin B6, Potassium Iodide."
                     greateData={greateData}
                     NutritionData={NutritionData}
                     img={ChickenChowImg}
-                    borderClassName="border-[1px] border-[#E5E5E5] rounded-[10px]"
+                    borderClassName="border-[1px] border-[#E5E5E5] rounded-[10px] mt-7"
                 />
         </div>
     );
