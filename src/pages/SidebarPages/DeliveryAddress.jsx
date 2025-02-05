@@ -45,7 +45,7 @@ const DeliveryAddress = () => {
               <input
                 id="address"
                 placeholder="1425 park"
-                className=" h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px]"
+                className=" h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-[14px]"
                 {...register("address")}
               />
               {errors.name && <p className="error">{errors.address.message}</p>}
@@ -63,7 +63,7 @@ const DeliveryAddress = () => {
               <input
                 id="email"
                 placeholder="alzarijosef@gmail.com"
-                className=" h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px] mt-[6px]"
+                className=" h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-[14px] mt-[6px]"
                 type="email"
                 {...register("email")}
               />
@@ -79,7 +79,7 @@ const DeliveryAddress = () => {
               <input
                 id="phone"
                 placeholder="+880125487"
-                className=" h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-[14px] mt-[6px]"
+                className=" h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-[14px] mt-[6px]"
                 type="tel"
                 {...register("phone")}
               />
@@ -115,7 +115,7 @@ const DeliveryAddress = () => {
               <input
                 id="address"
                 placeholder="1425 park"
-                className=" w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-xl text-[16px] px-[16px] py-3"
+                className=" w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-3"
                 {...register("address")}
               />
               {errors.name && <p className="error">{errors.address.message}</p>}
