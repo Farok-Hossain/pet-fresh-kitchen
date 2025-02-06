@@ -13,6 +13,7 @@ const SignIn = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -22,6 +23,7 @@ const SignIn = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    reset();
   };
 
   return (
