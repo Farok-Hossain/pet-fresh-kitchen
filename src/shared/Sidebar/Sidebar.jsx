@@ -64,7 +64,7 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div
         ref={sidebarRef} // Reference to the sidebar
-        className={`fixed xl:static xl:mt-3 mt-[200px] top-0 left-0 z-40 h-screen xl:h-auto bg-white xl:bg-transparent xl:w-[428px] w-[250px] shadow-lg xl:shadow-none transition-transform transform ${
+        className={`fixed xl:static xl:mt-3 mt-[200px] top-0 left-0 z-40 border-[1px] rounded-md h-screen xl:h-auto bg-white xl:bg-transparent xl:w-[428px] w-[250px] shadow-lg xl:shadow-none transition-transform transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } xl:translate-x-0`}
       >
