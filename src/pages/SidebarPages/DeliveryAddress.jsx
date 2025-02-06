@@ -87,7 +87,7 @@ const DeliveryAddress = () => {
             </div>
           </div>
 
-          <div className="flex xl:flex-row flex-col mt-[23px] gap-[15px]">
+          <div className="flex xl:flex-row flex-col xl:mt-0 mt-[23px] gap-[15px]">
             <div>
               <CommonSelectField
                 width="xl:w-[302px]"

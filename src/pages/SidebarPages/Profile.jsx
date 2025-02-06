@@ -2,8 +2,8 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import DeliveryAddress from "./DeliveryAddress";
 import CommonSelectField from "@/components/common/CommonSelectField";
-import dogProfileImg from "@/assets/images/dogProfileImg.png"
-import profileImg from "@/assets/images/profileImg.png"
+import dogProfileImg from "@/assets/images/dogProfileImg.png";
+import profileImg from "@/assets/images/profileImg.png";
 
 const Profile = () => {
   const {
@@ -45,19 +45,19 @@ const Profile = () => {
     <div className="w-full lg:px-10 xl:px-10 xl:mb-[200px] mt-[19px]">
       <div className=" mb-6">
         <div className="flex justify-start items-center">
-        <div className="w-10">
-          <img src={profileImg} alt="" />
-        </div>
-        <h3 className="text-textGray text-xl xl:pl-5 text-center xl:text-start py-4 font-medium xl:leading-[30px]">
-          Account Profile
-        </h3>
+          <div className="w-10">
+            <img src={profileImg} alt="" />
+          </div>
+          <h3 className="text-textGray text-xl xl:pl-5 text-center xl:text-start py-4 font-medium xl:leading-[30px]">
+            Account Profile
+          </h3>
         </div>
         <div className="border-[1px] w-full"></div>
 
         <div className=" xl:justify-start">
           <div>
             <form onSubmit={handleSubmit(onSubmit)} className=" xl:pl-5 w-full">
-              <div className="flex xl:flex-row flex-col-reverse xl:gap-28 space-y-5 ">
+              <div className="flex xl:flex-row flex-col-reverse xl:gap-[250px] space-y-5 ">
                 <div className=" grid md:grid-cols-2 xl:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-4 mb-5">
                   {/* Full Name */}
                   <div className="flex flex-col">
@@ -82,7 +82,7 @@ const Profile = () => {
                   <div className="flex flex-col">
                     <label
                       htmlFor="email"
-                      className="xl:max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] mt-4"
+                      className="xl:max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px]"
                     >
                       Email Address
                     </label>
@@ -103,7 +103,7 @@ const Profile = () => {
                     <div className="flex flex-col">
                       <label
                         htmlFor="petName"
-                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] xl:mt-4"
+                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px]"
                       >
                         Pet Name
                       </label>
@@ -122,7 +122,7 @@ const Profile = () => {
                     <div className="flex flex-col">
                       <label
                         htmlFor="date"
-                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] xl:mt-4"
+                        className="xl:max-w-[100px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px]"
                       >
                         Pet Birth
                       </label>
@@ -138,7 +138,7 @@ const Profile = () => {
                     </div>
                   </div>
 
-                  <div className="flex xl:flex-row flex-col mt-[23px] gap-[15px]">
+                  <div className="flex xl:flex-row flex-col gap-[15px]">
                     <div>
                       <CommonSelectField
                         width="xl:w-[250px]"
@@ -166,7 +166,7 @@ const Profile = () => {
                     </div>
                   </div>
 
-                  <div className="flex xl:flex-row flex-col mt-[23px] gap-[15px]">
+                  <div className="flex xl:flex-row flex-col gap-[15px]">
                     <div>
                       <CommonSelectField
                         width="xl:w-[250px]"
@@ -188,7 +188,7 @@ const Profile = () => {
                   <div className="flex flex-col">
                     <label
                       htmlFor="password"
-                      className="xl:max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px] xl:mt-4"
+                      className="xl:max-w-[250px] text-textGray text-[14px] font-normal leading-[21px] mb-[6px]"
                     >
                       Password
                     </label>
