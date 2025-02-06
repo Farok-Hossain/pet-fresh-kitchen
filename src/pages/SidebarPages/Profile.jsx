@@ -70,7 +70,7 @@ const Profile = () => {
                     <input
                       id="name"
                       placeholder="Full name here"
-                      className="xl:w-[512px]  w-full h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md xl:text-[16px] text-[14px] px-[16px] py-[14px]"
+                      className="xl:w-[512px]  w-full h-12 border-[1px] text-[#666666] outline-none rounded-md xl:text-[16px] text-[14px] px-[16px] py-[14px]"
                       {...register("name")}
                     />
                     {errors.name && (
@@ -89,7 +89,7 @@ const Profile = () => {
                     <input
                       id="email"
                       placeholder="alzarijosef@gmail.com"
-                      className="xl:w-[512px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-[14px]"
+                      className="xl:w-[512px] h-12 border-[1px] text-[#666666] outline-none  rounded-md text-[16px] px-[16px] py-[14px]"
                       type="email"
                       {...register("email")}
                     />
@@ -110,7 +110,7 @@ const Profile = () => {
                       <input
                         id="petName"
                         placeholder="Tome"
-                        className="xl:w-[248px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-[14px]"
+                        className="xl:w-[248px] h-12 border-[1px] text-[#666666] outline-none  rounded-md text-[16px] px-[16px] py-[14px]"
                         type="text"
                         {...register("petName")}
                       />
@@ -128,7 +128,7 @@ const Profile = () => {
                       </label>
                       <input
                         id="date"
-                        className="xl:w-[248px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-[14px]"
+                        className="xl:w-[248px] h-12 border-[1px] text-[#666666] outline-none rounded-md text-[16px] px-[16px] py-[14px]"
                         type="date"
                         {...register("date")}
                       />
@@ -157,7 +157,7 @@ const Profile = () => {
                       <input
                         id="address"
                         placeholder=""
-                        className=" xl:w-[250px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-3"
+                        className=" xl:w-[250px] h-12 border-[1px] text-[#666666] outline-none rounded-md text-[16px] px-[16px] py-3"
                         {...register("address")}
                       />
                       {errors.name && (
@@ -195,7 +195,7 @@ const Profile = () => {
                     <input
                       id="password"
                       placeholder="********"
-                      className="xl:w-[512px] h-12 border-[1px] text-[#666666] focus:outline-primaryOrange rounded-md text-[16px] px-[16px] py-[14px] mb-6"
+                      className="xl:w-[512px] h-12 border-[1px] text-[#666666] outline-none rounded-md text-[16px] px-[16px] py-[14px] mb-6"
                       type="password"
                       {...register("password")}
                     />
