@@ -93,7 +93,7 @@ const ContactForm = () => {
             </div>
 
             {/* Submit Button */}
-            <button className="bg-primaryOrange w-full rounded-md xl:py-[17px] py-2 text-white flex justify-center mt-3 ">
+            <button className="bg-primaryOrange xl:text-2xl text-[16px] w-full rounded-md xl:py-[17px] py-2 text-white flex justify-center mt-3 ">
               Sent
             </button>
           </form>
