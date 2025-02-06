@@ -40,7 +40,7 @@ const FaqArea = () => {
 
     ]
   return (
-    <div className="container mt-9">
+    <div className="container mt-9 xl:pt-[80px] xlg:pt-12 lg:pt-10 pt-5">
       <div>
         <div className="text-center xl:mb-20 mb-5">
           <h3 className="text-textGray xl:text-5xl lg:text-2xl md:text-xl sm:text-xl xs:text-xl lg:leading-9 text-lg xl:font-semibold font-medium xl:leading-[70px] mb-[10px]">
