@@ -21,21 +21,21 @@ const AddCart = () => {
       title: "Healthy Dog Biscuits",
       netWeight: "250 gm",
       dogType: "Adult",
-      price: 132.93,
+      price: 132.99,
     },
     {
       img: rawMeals,
       title: "Grain-Free Dog Food",
       netWeight: "250 gm",
       dogType: "Adult",
-      price: 132.93,
+      price: 132.99,
     },
     {
       img: rawMeals,
       title: "Organic Dog Treats",
       netWeight: "250 gm",
       dogType: "Adult",
-      price: 132.93,
+      price: 132.99,
     },
   ];
   return (
@@ -123,12 +123,12 @@ const AddCart = () => {
             Discount code
           </h5>
           <div>
-          <input
-                id="phone"
-                placeholder="code"
-                className="border-[1px] text-[#041F29] focus:outline-none rounded-[7px] text-[16px] w-full px-4 py-4"
-                type="tel"
-              />
+            <input
+              id="phone"
+              placeholder="code"
+              className="border-[1px] text-[#041F29] focus:outline-none rounded-[7px] text-[16px] w-full px-4 py-4"
+              type="tel"
+            />
           </div>
 
           <div className="flex justify-between xl:mt-10 mt-4 xl:mb-10 mb-2">
