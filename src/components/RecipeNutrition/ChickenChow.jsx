@@ -17,7 +17,7 @@ const ChickenChow = () => {
     },
     {
       id: 4,
-      text: "Salmon oil and added vitamins promote a shiny coat and robust immune system.",
+      text: "Salmon oil vitamins promote a shiny coat and robust immune system.",
     },
   ];
 
@@ -36,7 +36,7 @@ const ChickenChow = () => {
         greateData={greateData}
         NutritionData={NutritionData}
         img={ChickenChowImg}
-        borderClassName="border-[1px] border-[#E5E5E5] rounded-[10px] mt-7" 
+        borderClassName="border-[1px] border-[#E5E5E5] rounded-[10px] mt-7"
       />
     </div>
   );
