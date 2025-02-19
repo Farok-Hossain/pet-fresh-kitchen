@@ -32,7 +32,7 @@ const ChickenChow = () => {
     <div className="lg:pt-[120px] pt-16">
       <RecipeDetails
         title="Chicken Chow"
-        description="Ingredients: how , Tricalcium, Salmon Oil, Salt, Taurine, Zinc Gluconate, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Vitamin D3, Vitamin B2, Vitamin B1, Vitamin B6, Potassium Iodide."
+        description="Ingredients: how , Tricalcium, Salmon Oil, Taurine, Zinc Gluconate, Vitamin E Supplement, Copper Amino Acid Chelate, Manganese Amino Acid Chelate, Vitamin D3, Vitamin B2, Vitamin B1, Vitamin B6, Potassium Iodide."
         greateData={greateData}
         NutritionData={NutritionData}
         img={ChickenChowImg}
